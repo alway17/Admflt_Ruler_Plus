@@ -3,8 +3,6 @@
 !-----| 此规则由本人自用规则（ADM）而来，开放给有兴趣同学，其他程序可能会不兼容
 !-----| 不介意其他程序可以稍改语法拿去使用，共同学习，请注明来源
 !-----|
-!-----| 【2017-10-02 起本规则不再提供骚规则，只提供正常规则】
-!-----|
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -163,6 +161,7 @@ www.gaoqingkong.com#@#.widget.box.row
 
 !======[ABP css]---↓
 163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"]
+3dmgame.com##%[node-type^="ad"]{clip: rect(1px,1px,1px,1px)
 4399.com###addiv,#defaultbglink,.a-d
 4399.com##%body{background-image:none!important}
 51cto.com##%.top_bg{height:85px!important}
@@ -176,7 +175,6 @@ btime.com##[adview-id]
 chinaz.com###bottomImg
 cri.cn##.ad-item
 dayoo.com##.ad-area
-3dmgame.com##%[node-type^="ad"]{clip: rect(1px,1px,1px,1px)
 dl.3dmgame.com##[class^="youdao"]
 eastmoney.com##.lyad
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
@@ -198,6 +196,7 @@ q.z.vip.totv.72du.com##.secs strong
 qiushibaike.com##.shopwindow
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner
 sports.qq.com##[data-matchtype]
+subhd.com##a[target*="blank"]>img[src$=".gif"][width]
 tech.ifeng.com##[class^="adv"]
 tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_WW"],[id^="Baidu_PIC"]
 ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
@@ -212,8 +211,8 @@ www.17sucai.com##div[class^="tb"][class*="x"]$B
 www.65yw.com##.tui__header
 www.aihami.com##%.conText>.recommend{margin-top:4em}
 www.aihami.com##.conText>div[style*="overflow"][style*="hidden"],.adDingT,.ad640x90,ad300x90,.h250
-www.biquzi.com##iframe[src*="html/click"]
 www.bilibili.com##.bilibili-player-promote-wrap
+www.biquzi.com##iframe[src*="html/click"]
 www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
 www.cnbeta.com##.article-global
