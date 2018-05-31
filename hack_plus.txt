@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-05-31
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-01
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -193,6 +193,7 @@ outlook.live##._n_h
 q.z.vip.totv.72du.com##.secs strong
 qiushibaike.com##.shopwindow
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner
+sports.eastday.com##.ad-r
 sports.qq.com##[data-matchtype]
 subhd.com##a[target*="blank"]>img[src$=".gif"][width]
 tech.ifeng.com##[class^="adv"]
