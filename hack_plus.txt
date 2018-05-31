@@ -166,6 +166,7 @@ www.gaoqingkong.com#@#.widget.box.row
 72du.com##.tipb
 7k7k.com###player-ad,#J-loop-flash,.loop-flash
 91.com##.banner-gg,.side-bs,.top_a,.advs[class*="advs-"],[class^="ad"],iframe.iframe-pic-box
+aa^^y.com###buffer,.qr_code_pc
 bbs.tiexue.net##%.foucs.border{margin-top:50px}
 bt-film.co*##[id^="ad"]
 btime.com##[adview-id]
@@ -332,9 +333,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"]
 -!======[v.qq.com]---↑
 
 !======[v.youku.com]---↓
-||alicdn.com/ku/youkuplayer/*/youku-player.min.js$S@\|\|\(r\+=" ?disable"\)@||(r+=" adm-hack-1080")@
 ||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
-||vali.*.ott.cibntv.net/*.mp4
 !======[v.youku.com]---↑
 
 !------[TMP临时区  end]------!
