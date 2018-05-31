@@ -311,7 +311,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |http://*/2e4d96dca598a574*.js
 |https://*/2e4d96dca598a574*.js
 !Baidu-src-js
-||bvzdas.js
+||baidu_ad.js
 ||idm-su.baidu.com
 ||cir-smart.baidu.com
 /cpro/*/noexpire/*.min.js$f@302:s@@@
