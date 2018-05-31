@@ -23,7 +23,7 @@ S:jd.hk
 @@||mc.zzidc.com$pass
 @@||mmstat.com/yt/*$pass
 @@||player.pptv.com/flashplayer/pid/*/baiduduanshipin.swf$pass
-@@||static.yxdown.com/pc/index/js/jquery.lazyload.js
+@@||static.yxdown.com/pc/index/js/jquery.lazyload.js$pass
 @@||wkinfo.com.cn$pass
 @@||www.hdsky.net/ad/down.png
 news.xinhuanet.com#@#.domPC
