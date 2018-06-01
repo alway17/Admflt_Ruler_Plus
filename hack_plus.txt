@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-01
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-02
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -10,6 +10,7 @@ S:api.weibo.com
 S:incapsula.consoleom
 S:ins-ssl.admflt.com
 S:jd.hk
+163.com#@#.post_header
 @@|http://ins.admflt.com/*$pass
 @@|https://su.baidu.com/console/website/$pass
 @@||99ddd.com/*.7z
@@ -18,6 +19,7 @@ S:jd.hk
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
 @@||admup.admflt.com/d/*.txt$pass
+@@||bdstatic.com/*/admLoader/main_$script
 @@||dianping.com
 @@||g1.dfcfw.com/g2/201702/20170216133526.png
 @@||mc.zzidc.com$pass
@@ -28,7 +30,6 @@ S:jd.hk
 @@||www.hdsky.net/ad/down.png
 news.xinhuanet.com#@#.domPC
 www.gaoqingkong.com#@#.widget.box.row
-163.com#@#.post_header
 !======[wlist]---↑
 
 !======[adm add socks]-----↓
@@ -84,6 +85,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.999hdhd.com/js/js.js
 |http://www.gaoqingkong.com/wp-content/themes/*/bar.js
 |http://www.mingxing.com/*/js/_$script
+|http://www.rarbt.com/*bds_*.js
 |http://www.yuledaily.com/hbimg/wapc.js
 |http://yyygwz.com/$image
 ||.0x55.com
@@ -231,6 +233,7 @@ www.lbldy.com##%#center{min-height:0!important}
 www.lbldy.com##.ad-pc,.listad
 www.mgtv.com##.m-focus-ad
 www.ouhua.info##img[src*="/ad2015/"]
+www.rarbt.com##div[style*="980"]
 www.takefoto.cn##.news-ad,.advert
 www.tiexue.net/ShowPicClass##%.picleft{display:block!important}
 www.ttmeiju.com##img[alt$=".jpg"]
