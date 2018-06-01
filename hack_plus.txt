@@ -207,6 +207,7 @@ user.qzone.qq.com##li.f-single-biz,#top_tips_container
 v.qq.com/x/##.tvip_layer,.mask_layer
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
+video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
 www.65yw.com##.tui__header
