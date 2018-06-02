@@ -1,5 +1,5 @@
 # 使用说明
-* 将fcss.min.js拷贝到配置文件夹下的doc文件夹里
+* 将fcss.min.js拷贝到配置文件夹下的doc文件夹里（如果使用for monkey就不必了或建一个空的fcss.min.js在doc文件夹里）
 * 订阅hack_plus.txt -> 主规则
 * 订阅Baidu_AD_JS.txt -> 百度推广JS
 * 更多帮助见：[阿呆喵使用帮助](http://doc.admflt.com/)
