@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-03
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-04
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -286,6 +286,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||jx.2012net.com$s@fuckyou();@@
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
+||ttrar.com/statics/pos_js/*.js$S@( )*?document.write.+?(a href|iframe|script).+?\).?@@img
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.65yw.com$S@<frame .*?\.html[^>]>@@
