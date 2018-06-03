@@ -1,5 +1,6 @@
 # 使用说明
 * 将fcss.min.js拷贝到配置文件夹下的doc文件夹里（如果使用for monkey就不必了或建一个空的fcss.min.js在doc文件夹里）
+* 将block文件夹下载并拷贝到配置文件夹下的doc文件夹里
 * 更多帮助见：[阿呆喵使用帮助](http://doc.admflt.com/)
 
 ## hack_plus.tx
