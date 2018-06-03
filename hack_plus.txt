@@ -143,6 +143,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||temaidi.com/*.js*pid=*$script
 ||tongji/tj.php
 ||vamaker.com$third-party
+||www.cr173.com/jsBI/js/info.js
 ||www.douyu.com/lapi/sign/phonegameapi/getinfo
 ||www.douyu.com/lapi/sign/signapi/getinfo
 ||www.gucheng.com/*/common.js
@@ -194,6 +195,8 @@ news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend
 nipic.com##[class*="advertCloseBtn"]
 outlook.live##._n_h
 q.z.vip.totv.72du.com##.secs strong
+qianzhan.com##.advBox,.footApp
+qichamao.com##.side-ad1
 qiushibaike.com##.shopwindow
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner
 sports.eastday.com##.ad-r
@@ -262,18 +265,18 @@ zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000
 /Scripts/jquery-1.4.1.min.js$f@302:s@^https?:\/\/.*/jquery.*.js@https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.4.1.min.js@
 cupid.iqiyi.com/show2?a=qc_$f@302:s@^http:\/\/.{450,}@http://admup.admflt.com/null.html@
 js.ykimg.com/youku/dist/js/page/find/revision/index_*.js$s@$focusH5Ad.show()@$focusH5Ad.remove()@
-media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://block.admflt.com/block.m3u8@
+media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/block.m3u8@
 tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerror="javascript:this.parentNode.parentNode.style.display='none';">@
 tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
-|http://*.zimuku.*/*.js$S@^document.write.+?(a href|iframe|script).+?\);*$@@mg
+|http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a href|iframe|script).+?\).?$@@img
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
 |http://*btkitty$s@<head>@<head><script>window.opoen=null</script>@
 |http://data.video.qiyi.com/videos/other/$S@http:\/\/.*?f4v@http://data.video.qiyi.com/v.f4v@
 |http://q.z.vip.totv.72du.com/$S@showTime\(\d{1,2}\);@showTime(0);@
 |http://static.ali213.net/js/data/zad/$s@http*"@"@
 |http://www.zimuku.net/$s@</head>@<script>isAdEnabled=1;document.write=null</script></head>@
-|https://*.zimuku.*/*.js$S@^document.write.+?(a href|iframe|script).+?\);*$@@mg
+|https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a href|iframe|script).+?\).?$@@img
 ||*/videos/other/*.f4v$f@302:s@^http.*?(\d|\.)+/(.)*videos/other/.*?\.f4v@http://data.video.qiyi.com/v.f4v@
 ||aikan-tv.com/*url=*$S@<frame .*?\.html[^>]>@@
 ||aikan-tv.com/*url=*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
@@ -295,7 +298,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 !======[H webs]---↓
 91porn.com##iframe[src*="/fans/"],.vast-blocker
 |http:/*/fans/ad.php|
-!91ad_cn_CN.php$s@<![CDATA[*]]>@<![CDATA[http://block.admflt.com/null.mp4]]>@
+!91ad_cn_CN.php$s@<![CDATA[*]]>@<![CDATA[http://ssl.admflt.com/doc/block/null.mp4]]>@
 !91ad_cn_CN.php$S@\d{2}:\d{2}:\d{2}@00:00:01@
 !-
 !www.qylsp7.com##[class="ads"],.ads-player

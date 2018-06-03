@@ -1,0 +1,6 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:2
+#EXTINF:0.001,
+http://block.admflt.com/null.mp4
+#EXT-X-ENDLIST
