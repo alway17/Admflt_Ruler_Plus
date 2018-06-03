@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-02
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-03
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -95,6 +95,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/caches/poster_js/$script
 ||/ggg/tj.js
 ||/projectpoi
+||2345.com/duoteimg/dtnew_recom_img/duoteself/$script
 ||3987.com$third-party
 ||71.am/*AdManager
 ||AdModel/$script
@@ -221,6 +222,7 @@ www.cnbeta.com##.article-global
 www.cr173.com/soft/*.html##.m-black-bg
 www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap
 www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des
+www.duote.com##div[class*="-banner"],div[class*="-ad"]
 www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
 www.fawan.com##[id^="ynetG"]
 www.fun.tv##.play-banner-ad,[class^="dialog-"][id^="dialog-"],.banner-ad,[class$="-ad"]
@@ -243,6 +245,7 @@ www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,
 www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 www.webqianduan.cn##.adW
 www.xianliao.me##[class^="ads_"]
+www.youtube.com##.video-ads,#player-ads
 www.yxdown.com/*.html##div[id*="adv"],iframe
 www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display:block!important"]
 www.zimuku.cn##.page-header.prel,li.li[style]
@@ -375,6 +378,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||down.51cto.com/css/newcss/module.css$pass
 @@||css.ykimg.com/youku/dist/css/find/revision/g_*.css$pass
 @@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
+@@||www.css-js.com/*/compressor.css$pass
 !-白名单放行end
 
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i

@@ -1,21 +1,41 @@
 // ==UserScript==
 // @name         Global hidecss plus
 // @namespace    https://weibo.com/emcupid
-// @version      1.0
+// @version      1.1
 // @description  Fcss - Fuck css for monkey
 // @author       emCupid
 // @run-at       document-start
 // @match        *://*/*
-// @exclude      *://*.youtube.com/*
+// @exclude      *://*.example.com/*
 // ==/UserScript==
 
 (function() {
     'use strict';
+    /*getMainHost by pon*/
+    function getMainHost() {
+        let key = `mh_${Math.random()}`;
+        let keyR = new RegExp(`(^|;)\\s*${key}=12345`);
+        let expiredTime = new Date(0);
+        let domain = document.domain;
+        let domainList = domain.split('.');
+        let urlItems = [];
+        urlItems.unshift(domainList.pop());
+        while (domainList.length) {
+            urlItems.unshift(domainList.pop());
+            let mainHost = urlItems.join('.');
+            let cookie = `${key}=${12345};domain=.${mainHost}`;
+            document.cookie = cookie;
+            if (keyR.test(document.cookie)) {
+                document.cookie = `${cookie};expires=${expiredTime}`;
+                return mainHost;
+            }
+        }
+    }
     function __fkcss(str) {
             var t = document.createProcessingInstruction("xml-stylesheet", 'type="text/css" href="data:text/css,' + encodeURIComponent(str) + '"');
             return document.insertBefore(t, document.documentElement);
     }
-    var WhiteList = document.domain.split(".").slice(-2).join("."),
+    var WhiteList = getMainHost(),
         //浮动过滤域名白名单
         FloatWhiteDomain = "youku.com|weibo.com|pptv.com|le.com|mgtv.com|iqiyi.com|xianliao.me".split('|'),
         AdvCss = "",
