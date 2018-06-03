@@ -13,6 +13,7 @@ S:jd.hk
 163.com#@#.post_header
 @@|http://ins.admflt.com/*$pass
 @@|https://su.baidu.com/console/website/$pass
+@@||www.3987.com/*.html
 @@||99ddd.com/*.7z
 @@||99ddd.com/*.exe
 @@||99ddd.com/*.rar
@@ -96,7 +97,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/ggg/tj.js
 ||/projectpoi
 ||2345.com/duoteimg/dtnew_recom_img/duoteself/$script
-||3987.com$third-party
 ||71.am/*AdManager
 ||AdModel/$script
 ||AdSystem/$script
@@ -139,6 +139,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||ppoi.org/*key*
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
+||statics/js/xzq*.js
 ||stats.chinaz.com/zz_img/
 ||temaidi.com/*.js*pid=*$script
 ||tongji/tj.php
@@ -149,6 +150,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.gucheng.com/*/common.js
 ||www.gyingyuan.com/jiexi/$image
 ||www.ixiumei.com/otherhtml/$script
+||www.qqtn.com/js/downinfo-*.js
 ||www.xdowns.com/template/tshouyou/js/jietu.js
 ||www.zzlxs.net/ap
 ||www1.elecfans.com
@@ -230,6 +232,7 @@ www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisem
 www.fawan.com##[id^="ynetG"]
 www.fun.tv##.play-banner-ad,[class^="dialog-"][id^="dialog-"],.banner-ad,[class$="-ad"]
 www.gaoqingkong.com###cgVshow
+www.greenxf.com/*.html##a[class][href="#"]
 www.haha.mx##.fl.sidebar>div[class][style],.waterfall-column iframe
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iqiyi.com/*.html##.rightPCAdv$B
@@ -239,6 +242,7 @@ www.lbldy.com##%#center{min-height:0!important}
 www.lbldy.com##.ad-pc,.listad
 www.mgtv.com##.m-focus-ad
 www.ouhua.info##img[src*="/ad2015/"]
+www.qqtn.com##[class*="-ban"],iframe
 www.rarbt.com##div[style*="980"]
 www.takefoto.cn##.news-ad,.advert
 www.tiexue.net/ShowPicClass##%.picleft{display:block!important}
@@ -257,7 +261,7 @@ wzshipin.com##img[width="1200"],.boxg
 xinhuanet.com##[id^="YCADS"]
 youtube.com###masthead-ad,#player-ads
 zol.com.cn##%body{background-image:none!important}
-zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000
+zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"]
 |http://*btkitty##.footer+*,.footer>[id*="_"],body>[id*="_"],a[style*="100%"]
 !======[ABP css]---↑
 
@@ -286,6 +290,8 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||jx.2012net.com$s@fuckyou();@@
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
+||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
+||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
 ||ttrar.com/statics/pos_js/*.js$S@( )*?document.write.+?(a href|iframe|script).+?\).?@@img
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
