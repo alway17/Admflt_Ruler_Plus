@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-04
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-06
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -93,6 +93,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||.com/vs.php?id=
 ||/521fl/pc.js
 ||/521fl/tj.js
+||/api/ad.ashx
 ||/caches/poster_js/$script
 ||/ggg/tj.js
 ||/projectpoi
@@ -119,6 +120,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||dfpcitv
 ||dingding*.com$third-party
 ||dydab.com$third-party
+||g.alicdn.com/*odv.min.js
 ||ge95.com:8008/?aspx=
 ||gg.dsxdn.com/2cto/$script
 ||googletagservices.com
@@ -140,7 +142,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
 ||statics/js/xzq*.js
-||stats.chinaz.com/zz_img/
+||stats.chinaz.com/zx_g/$script
 ||temaidi.com/*.js*pid=*$script
 ||tongji/tj.php
 ||vamaker.com$third-party
@@ -177,6 +179,7 @@ bbs.tiexue.net##%.foucs.border{margin-top:50px}
 bt-film.co*##[id^="ad"]
 btime.com##[adview-id]
 chinaz.com###bottomImg
+cnbeta.com##[class="cbv810"],[class*="left"][class*="00"],[class*="right"][class*="00"],section>[style*="float"][style*="hidden"],.article-global
 cri.cn##.ad-item
 dayoo.com##.ad-area
 dl.3dmgame.com##[class^="youdao"]
@@ -204,6 +207,7 @@ sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bot
 sports.eastday.com##.ad-r
 sports.qq.com##[data-matchtype]
 subhd.com##a[target*="blank"]>img[src$=".gif"][width]
+szhk.com##div[id*="_banner"],div[class*="banner_"]
 tech.ifeng.com##[class^="adv"]
 tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_WW"],[id^="Baidu_PIC"]
 ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
@@ -223,7 +227,6 @@ www.bilibili.com##.bilibili-player-promote-wrap
 www.biquzi.com##iframe[src*="html/click"]
 www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
-www.cnbeta.com##.article-global
 www.cr173.com/soft/*.html##.m-black-bg
 www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap
 www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des
@@ -236,7 +239,7 @@ www.greenxf.com/*.html##a[class][href="#"]
 www.haha.mx##.fl.sidebar>div[class][style],.waterfall-column iframe
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iqiyi.com/*.html##.rightPCAdv$B
-www.ithome.com###con>div:not([id]):not([class])
+www.ithome.com###con>div:not([id]):not([class]),.AdblockBanner
 www.kuwo.cn##.tuiguang
 www.lbldy.com##%#center{min-height:0!important}
 www.lbldy.com##.ad-pc,.listad
@@ -389,6 +392,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||css.ykimg.com/youku/dist/css/find/revision/g_*.css$pass
 @@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
 @@||www.css-js.com/*/compressor.css$pass
+@@||wp-content/cache/minify/*.css$pass
 !-白名单放行end
 
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
