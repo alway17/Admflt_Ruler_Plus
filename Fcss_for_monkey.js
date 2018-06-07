@@ -37,7 +37,7 @@
     }
     var WhiteList = getMainHost(),
         //浮动过滤域名白名单
-        FloatWhiteDomain = "youku.com|weibo.com|pptv.com|le.com|mgtv.com|iqiyi.com|xianliao.me".split('|'),
+        FloatWhiteDomain = "youku.com|weibo.com|pptv.com|le.com|mgtv.com|iqiyi.com|xianliao.me|bilibili.com".split('|'),
         AdvCss = "",
         FloatCss = "",
         FloatCssList = "";
