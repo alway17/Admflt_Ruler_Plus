@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-06
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-08
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -86,7 +86,9 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.999hdhd.com/js/js.js
 |http://www.gaoqingkong.com/wp-content/themes/*/bar.js
 |http://www.mingxing.com/*/js/_$script
+|http://www.minixiazai.com/others/$script
 |http://www.rarbt.com/*bds_*.js
+|http://www.uzzf.com/skin/know/downinfo-$script
 |http://www.yuledaily.com/hbimg/wapc.js
 |http://yyygwz.com/$image
 ||.0x55.com
@@ -130,6 +132,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||ifengimg.com/*/scripts/*tui*$script
 ||jb51.net/*/arcts.js
 ||jb51.net/*/beitou.js
+||jb51.net/good/ssoft.js
 ||jia.com/js/zixun/$script
 ||jjygym.com$third-party
 ||jph.itiexue.net
@@ -404,3 +407,4 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 !------[其他规则begin]
 !!------↓全局性测试规则
 |http://*_*@*.exe$block
+|http://*@*_*.exe$block
