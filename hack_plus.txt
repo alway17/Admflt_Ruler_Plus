@@ -170,7 +170,7 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[block]---↑
 
 !======[ABP css]---↓
-163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"]
+.163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main
 3dmgame.com##%[node-type^="ad"]{clip: rect(1px,1px,1px,1px)
 4399.com###addiv,#defaultbglink,.a-d
 4399.com##%body{background-image:none!important}
@@ -298,9 +298,10 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||jx.2012net.com$s@fuckyou();@@
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
-||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
 ||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
+||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
 ||ttrar.com/statics/pos_js/*.js$S@( )*?document.write.+?(a href|iframe|script).+?\).?@@img
+||video.eastday.com/*new_gethot.js$s@if(playNoAdRight())@if(1)@
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.65yw.com$S@<frame .*?\.html[^>]>@@
