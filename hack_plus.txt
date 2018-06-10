@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-08
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-10
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -40,10 +40,12 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[block]---↓
 |http://*.*/^.html?id=*
 |http://*.19869.com$third-party
+|http://*.360buyimg.com/*.html?ad_ids=*
 |http://*.aili.com$third-party
 |http://*.cpm*.com
 |http://*.hao61.net/$script
 |http://*.hexun.com/zt/articleAd/$script
+|http://*.ifengimg.com/*.html?clickTag=*
 |http://*.il8r.com/$third-party
 |http://*.supfree.net/otop.js
 |http://*.supfree.net/www$script
@@ -396,6 +398,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
 @@||www.css-js.com/*/compressor.css$pass
 @@||wp-content/cache/minify/*.css$pass
+@@||jquery.fancybox*css$pass
 !-白名单放行end
 
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i

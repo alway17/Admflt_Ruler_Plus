@@ -31,7 +31,7 @@
             }
         }
     }
-    function __fkcss(str) {
+    function Fuck_css(str) {
             var t = document.createProcessingInstruction("xml-stylesheet", 'type="text/css" href="data:text/css,' + encodeURIComponent(str) + '"');
             return document.insertBefore(t, document.documentElement);
     }
@@ -75,5 +75,5 @@
         AdvCss = AdvCss + AdvArraw[x] + ",";
     }
     var __Has_Plus_Hide = __Has_Plus_Hide || false;
-    __fkcss(AdvCss + FloatCssList + '{display:none!important;max-width:0!important;max-height:0!important;overflow:hidden!important;pointer-events:none!important;position:absolute;left:-102030px}');
+    Fuck_css(AdvCss + FloatCssList + '{display:none!important;max-width:0!important;max-height:0!important;overflow:hidden!important;pointer-events:none!important;position:absolute;left:-102030px}');
 })();
