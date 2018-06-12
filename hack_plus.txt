@@ -1,19 +1,19 @@
 [ADM]
-
-
-
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-10
+!-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-12
-!-----| 防程序更新BUG干扰行：<head></head><body></body>
-!======[adm add socks]-----↑
-!======[adm add socks]-----↓
-!======[block]---↓
-!======[wlist]---↑
+
 !======[wlist]---↓
+S:api.geetest.com
+S:api.weibo.com
+S:incapsula.consoleom
+S:ins-ssl.admflt.com
+S:jd.hk
 163.com#@#.post_header
 @@|http://ins.admflt.com/*$pass
 @@|https://su.baidu.com/console/website/$pass
+@@||www.3987.com/*.html
 @@||99ddd.com/*.7z
 @@||99ddd.com/*.exe
 @@||99ddd.com/*.rar
@@ -28,15 +28,16 @@
 @@||player.pptv.com/flashplayer/pid/*/baiduduanshipin.swf$pass
 @@||static.yxdown.com/pc/index/js/jquery.lazyload.js$pass
 @@||wkinfo.com.cn$pass
-@@||www.3987.com/*.html
 @@||www.hdsky.net/ad/down.png
-S:api.geetest.com
-S:api.weibo.com
-S:incapsula.consoleom
-S:ins-ssl.admflt.com
-S:jd.hk
 news.xinhuanet.com#@#.domPC
 www.gaoqingkong.com#@#.widget.box.row
+!======[wlist]---↑
+
+!======[adm add socks]-----↓
+||mt2t.5xlm.com:91/adm-add-socks
+!======[adm add socks]-----↑
+
+!======[block]---↓
 |http://*.*/^.html?id=*
 |http://*.19869.com$third-party
 |http://*.360buyimg.com/*.html?ad_ids=*
@@ -143,7 +144,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mbai.cn$third-party
 ||mgtv.com/mediafiles/wiad
 ||mini.eastday.com/*detail*$script
-||mt2t.5xlm.com:91/adm-add-socks
 ||ppoi.org/*key*
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
@@ -172,9 +172,8 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[block]---↑
 
 !======[ABP css]---↓
-bbs.pcbeta.com##%style[type="text/css"]+div{height:259px!important}
-.csdn.net##.advert
 .163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main
+.csdn.net##.advert
 3dmgame.com##%[node-type^="ad"]{clip: rect(1px,1px,1px,1px)
 4399.com###addiv,#defaultbglink,.a-d
 4399.com##%body{background-image:none!important}
@@ -184,6 +183,7 @@ bbs.pcbeta.com##%style[type="text/css"]+div{height:259px!important}
 7k7k.com###player-ad,#J-loop-flash,.loop-flash
 91.com##.banner-gg,.side-bs,.top_a,.advs[class*="advs-"],[class^="ad"],iframe.iframe-pic-box
 aa^^y.com###buffer,.qr_code_pc
+bbs.pcbeta.com##%style[type="text/css"]+div{height:259px!important}
 bbs.tiexue.net##%.foucs.border{margin-top:50px}
 bt-film.co*##[id^="ad"]
 btime.com##[adview-id]
@@ -343,8 +343,6 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |http://pb2.*$script
 |http://bd1.*$script
 |http://bd2.*$script
-|http://*/2e4d96dca598a574*.js
-|https://*/2e4d96dca598a574*.js
 !Baidu-src-js
 ||baidu_ad.js
 ||idm-su.baidu.com
@@ -364,7 +362,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"]
 |https://*/variety.tc.qq.com/
 ||vd*.qq.com/proxyhttp$s@"ad"*}}",@@
 |https://livew*.qq.com/livemsg?$S@<!\[CDATA\[.*?\]\]>@@
--!======[v.qq.com]---↑
+!======[v.qq.com]---↑
 
 !======[v.youku.com]---↓
 ||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
@@ -384,29 +382,30 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 !------[全局处理浮动窗+隐藏类规则屏蔽增强begin]
 !------v3.2.2.0312+增强了隐藏规则，隐藏屏蔽增强测试：http://www.3gsc.com.cn/
 !-白名单放行begin
-||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 @@||115.com/*$pass
 @@||58cdn.com.cn/*.css$pass
 @@||alicdn.com/static-*/login/*/login/css/main*.css$pass
 @@||bdstatic.com/static/searchresult/pkg/*.css$pass
 @@||cdn.120askimages.com/ask/css/topfloat.css$pass
 @@||console.cloud.tencent.com/*$pass
+@@||css.ykimg.com/youku/dist/css/find/revision/g_*.css$pass
+@@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
+@@||down.51cto.com/css/newcss/module.css$pass
 @@||image.xinmin.cn/*common.css$pass
 @@||img.dy001.cn/templates/default/css/*.css$pass
+@@||jquery.fancybox*css$pass
 @@||qiniu.staticfile.org/static/styles/*.css$pass
 @@||res*.ynet.com/*header.css$pass
 @@||s.itiexue.net/??css$pass
 @@||static.geetest.com/static/*.css$pass
+@@||wp-content/cache/minify/*.css$pass
 @@||www.css-js.com/*.css
+@@||www.css-js.com/*/compressor.css$pass
 @@||www.downos.com/skin/*/style/css/*.css$pass
+@@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
-@@||down.51cto.com/css/newcss/module.css$pass
-@@||css.ykimg.com/youku/dist/css/find/revision/g_*.css$pass
-@@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
-@@||www.css-js.com/*/compressor.css$pass
-@@||wp-content/cache/minify/*.css$pass
-@@||jquery.fancybox*css$pass
+||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 !-白名单放行end
 
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
