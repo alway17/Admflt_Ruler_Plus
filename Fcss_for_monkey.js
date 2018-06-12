@@ -55,7 +55,7 @@
         //'img[alt="ad"],img[alt="adv"],img[alt="ads"]',
         'div[id^="_"][style="width: 100%;"]>iframe,iframe[src*="pos.baidu.com"],a[href*="i/?cid="],iframe[src*="/ads?"],iframe[src*="v.php?id="],iframe[src*="s.php?id="],[id^="BAIDU_"],iframe[src*="/ad/"],iframe[src*="adurl"][src*="type="],[node-type^="ad"]',
             //下载站
-        'a[href*="@"][href$="exe"],.wrap-ad,div[class*="xzbox-ad"],div[class*="xzbox-gg"]',
+        'a[href*="ads_id="],a[href*="@"][href$="exe"],.wrap-ad,div[class*="xzbox-ad"],div[class*="xzbox-gg"]',
         'div[class*="_adv_"],div[class*="-adv-"],div[class*="_ad_"]',
         '[class*="banner_ad"],[class*="banner_ad"],[class*="banner-ad"],[id^="adBox"],[id^="AdBox"],[id^="ADbox"],[id^="ad-box"]',
         '[class*="ad_header"],[class*="ad_footer"],[class*="ad_text"],[id^="ad_header"],[id^="ad_footer"],[id^="ad_text"],[class*="ad-header"],[class*="ad-footer"],[class*="ad-text"],[id^="ad-header"],[id^="ad-footer"],[id^="ad-text"]',

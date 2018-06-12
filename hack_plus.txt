@@ -157,6 +157,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.gucheng.com/*/common.js
 ||www.gyingyuan.com/jiexi/$image
 ||www.ixiumei.com/otherhtml/$script
+||www.newsres.cn/temp/tempad
 ||www.qqtn.com/js/downinfo-*.js
 ||www.xdowns.com/template/tshouyou/js/jietu.js
 ||www.zzlxs.net/ap
@@ -259,6 +260,7 @@ www.utubon.com##div[class*="text"][id^="text"]
 www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units
 www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 www.webqianduan.cn##.adW
+www.wpdaxue.com##.sbad
 www.xianliao.me##[class^="ads_"]
 www.youtube.com##.video-ads,#player-ads
 www.yxdown.com/*.html##div[id*="adv"],iframe
@@ -278,6 +280,7 @@ zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"]
 cupid.iqiyi.com/show2?a=qc_$f@302:s@^http:\/\/.{450,}@http://admup.admflt.com/null.html@
 js.ykimg.com/youku/dist/js/page/find/revision/index_*.js$s@$focusH5Ad.show()@$focusH5Ad.remove()@
 media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/block.m3u8@
+subhd.com$s@</head>@<script>sessionStorage.setItem("hassession", 1);</script></head>@
 tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerror="javascript:this.parentNode.parentNode.style.display='none';">@
 tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
