@@ -1,19 +1,19 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-10
-!-----| 防程序更新BUG干扰行：<head></head><body></body>
+
+
+
 
 !------[TMP临时区begin]------!
-
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-12
+!-----| 防程序更新BUG干扰行：<head></head><body></body>
+!======[adm add socks]-----↑
+!======[adm add socks]-----↓
+!======[block]---↓
+!======[wlist]---↑
 !======[wlist]---↓
-S:api.geetest.com
-S:api.weibo.com
-S:incapsula.consoleom
-S:ins-ssl.admflt.com
-S:jd.hk
 163.com#@#.post_header
 @@|http://ins.admflt.com/*$pass
 @@|https://su.baidu.com/console/website/$pass
-@@||www.3987.com/*.html
 @@||99ddd.com/*.7z
 @@||99ddd.com/*.exe
 @@||99ddd.com/*.rar
@@ -28,16 +28,15 @@ S:jd.hk
 @@||player.pptv.com/flashplayer/pid/*/baiduduanshipin.swf$pass
 @@||static.yxdown.com/pc/index/js/jquery.lazyload.js$pass
 @@||wkinfo.com.cn$pass
+@@||www.3987.com/*.html
 @@||www.hdsky.net/ad/down.png
+S:api.geetest.com
+S:api.weibo.com
+S:incapsula.consoleom
+S:ins-ssl.admflt.com
+S:jd.hk
 news.xinhuanet.com#@#.domPC
 www.gaoqingkong.com#@#.widget.box.row
-!======[wlist]---↑
-
-!======[adm add socks]-----↓
-||mt2t.5xlm.com:91/adm-add-socks
-!======[adm add socks]-----↑
-
-!======[block]---↓
 |http://*.*/^.html?id=*
 |http://*.19869.com$third-party
 |http://*.360buyimg.com/*.html?ad_ids=*
@@ -132,6 +131,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||huaduu.com$third-party
 ||ifeng.com/showcode?adids=*
 ||ifengimg.com/*/scripts/*tui*$script
+||img.aolusb.com/forever/$script
 ||jb51.net/*/arcts.js
 ||jb51.net/*/beitou.js
 ||jb51.net/good/ssoft.js
@@ -143,6 +143,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mbai.cn$third-party
 ||mgtv.com/mediafiles/wiad
 ||mini.eastday.com/*detail*$script
+||mt2t.5xlm.com:91/adm-add-socks
 ||ppoi.org/*key*
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
@@ -171,6 +172,8 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[block]---↑
 
 !======[ABP css]---↓
+bbs.pcbeta.com##%style[type="text/css"]+div{height:259px!important}
+.csdn.net##.advert
 .163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main
 3dmgame.com##%[node-type^="ad"]{clip: rect(1px,1px,1px,1px)
 4399.com###addiv,#defaultbglink,.a-d
@@ -202,6 +205,7 @@ jb51.net##li.da-download
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
 mgtv.com/b/###a_box
+myzaker.com##a[href*="ads_id="],[id^="dsp_id"]
 news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend
 nipic.com##[class*="advertCloseBtn"]
 outlook.live##._n_h
