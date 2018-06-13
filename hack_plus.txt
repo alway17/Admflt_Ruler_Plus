@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-10
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-13
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -51,9 +51,13 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*.supfree.net/www$script
 |http://*.xiacaidd.com$third-party
 |http://*/*?^=ads_
+|http://*/2^0x2^0.js
 |http://*/960x^00.js
 |http://*/PC_ad$script
 |http://*/ad/*ad$script
+|http://*/banner*.js
+|http://*/cpm*.js
+|http://*/cpv*.js
 |http://*/ecom-ad/
 |http://*/flashcgi?action=flashlist$block
 |http://*/footBanner_new.js$script
@@ -86,6 +90,9 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.1kkk.com/wxh
 |http://www.4399.com/loadimg/loading.htm
 |http://www.999hdhd.com/js/js.js
+|http://www.fjlqqc.com/common/api/*/al?u=*
+|http://www.fjlqqc.com/common/api/*/slot-code/publisher/*
+|http://www.fjlqqc.com/static/sl/$script
 |http://www.gaoqingkong.com/wp-content/themes/*/bar.js
 |http://www.mingxing.com/*/js/_$script
 |http://www.minixiazai.com/others/$script
@@ -93,12 +100,16 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.uzzf.com/skin/know/downinfo-$script
 |http://www.yuledaily.com/hbimg/wapc.js
 |http://yyygwz.com/$image
+|https://*/banner*.js
+|https://*/cpm*.js
+|https://*/cpv*.js
 ||.0x55.com
 ||.com/vs.php?id=
 ||/521fl/pc.js
 ||/521fl/tj.js
 ||/api/ad.ashx
 ||/caches/poster_js/$script
+||/code/adview_
 ||/ggg/tj.js
 ||/projectpoi
 ||2345.com/duoteimg/dtnew_recom_img/duoteself/$script

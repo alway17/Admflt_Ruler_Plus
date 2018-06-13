@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Global hidecss plus
 // @namespace    https://weibo.com/emcupid
-// @version      1.1
+// @version      1.3
 // @description  Fcss - Fuck css for monkey
 // @author       emCupid
 // @run-at       document-start
