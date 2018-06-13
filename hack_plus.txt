@@ -65,6 +65,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/footBanner_new.js$script
 |http://*/js/*cpc$script
 |http://*/js/topad.js$script
+|http://*/r/mr_$script
 |http://*/s?z=*
 |http://*/site_ad/$script
 |http://*/ssp.js$script
@@ -130,6 +131,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||AdModel/$script
 ||AdSystem/$script
 ||ad.caiba520.win
+||admarket.21cn.com
 ||admaster.com.cn
 ||ads-union.jd.com
 ||adsfile.qq.com/$script
@@ -142,10 +144,13 @@ www.gaoqingkong.com#@#.widget.box.row
 ||app.video.baidu.com/xda
 ||bd-film.co*/cms-sidebar$script
 ||bdstatic.com/*/admLoader/$script
+||c.v4dwkcv.com/js/rr/$script
 ||chucity.com
 ||code.zantainet.com/$script
 ||coinhive.min.js
 ||data.vod.itc.cn/*prod=ad*
+||deliver.ifeng.com/getcode?
+||deliver.ifeng.com/showcode?
 ||dfpcitv
 ||dingding*.com$third-party
 ||dydab.com$third-party
@@ -154,9 +159,14 @@ www.gaoqingkong.com#@#.widget.box.row
 ||gg.dsxdn.com/2cto/$script
 ||googletagservices.com
 ||guangzizai.com$script
+||hao6v.com/d/f.js
+||hao6v.com/d/f^.js
 ||huaduu.com$third-party
 ||ifeng.com/showcode?adids=*
 ||ifengimg.com/*/scripts/*tui*$script
+||ifengimg.com/autoflash/$script
+||ifengimg.com/iis/iis_v*.js
+||images.sohu.com/cs/jsfile/js/c.js
 ||img.aolusb.com/forever/$script
 ||jb51.net/*/arcts.js
 ||jb51.net/*/beitou.js
@@ -164,21 +174,23 @@ www.gaoqingkong.com#@#.widget.box.row
 ||jia.com/js/zixun/$script
 ||jjygym.com$third-party
 ||jph.itiexue.net
+||js.tv.itc.cn/site/play/*/menu_ad_*$script
 ||kfkfl.cn/vs.php?id=*
 ||letvimg.com/*gugwl/*.swf$object
 ||mbai.cn$third-party
 ||mgtv.com/mediafiles/wiad
 ||mini.eastday.com/*detail*$script
-||p.tanx.com/ex?i=
 ||ppoi.org/*key*
-||sina.com.cn/*sinaads.js
+||sina.com.cn/*sinaads*js
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
 ||statics/js/xzq*.js
 ||stats.chinaz.com/zx_g/$script
+||tanx.com/ex?i=
 ||temaidi.com/*.js*pid=*$script
 ||tongji/tj.php
 ||vamaker.com$third-party
+||webapi.acfun.cn/appSpreadContents/danmuad/
 ||www.cr173.com/jsBI/js/info.js
 ||www.douyu.com/lapi/sign/phonegameapi/getinfo
 ||www.douyu.com/lapi/sign/signapi/getinfo
@@ -201,6 +213,7 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[ABP css]---↓
 .163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main
 .csdn.net##.advert
+.ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
 4399.com###addiv,#defaultbglink,.a-d
 51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
@@ -252,6 +265,7 @@ v.qq.com/x/##.tvip_layer,.mask_layer
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
+weibo.com##div[ad-data]
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
 www.65yw.com##.tui__header
@@ -329,6 +343,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |http://static.ali213.net/js/data/zad/$s@http*"@"@
 |http://www.zimuku.net/$s@</head>@<script>isAdEnabled=1;document.write=null</script></head>@
 |https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a href|iframe|script).+?\).?$@@img
+|https://btso.pw/$s@<div type="text/data-position"*</div>@@
 ||*/videos/other/*.f4v$f@302:s@^http.*?(\d|\.)+/(.)*videos/other/.*?\.f4v@http://data.video.qiyi.com/v.f4v@
 ||aikan-tv.com/*url=*$S@<frame .*?\.html[^>]>@@
 ||aikan-tv.com/*url=*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
