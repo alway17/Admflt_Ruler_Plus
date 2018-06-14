@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-13
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-14
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -212,7 +212,7 @@ www.gaoqingkong.com#@#.widget.box.row
 
 !======[ABP css]---↓
 .163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main
-.csdn.net##.advert
+.csdn.net##.advert,.mediav_ad
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
 4399.com###addiv,#defaultbglink,.a-d
@@ -265,7 +265,7 @@ v.qq.com/x/##.tvip_layer,.mask_layer
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
-weibo.com##div[ad-data]
+weibo.com##div[ad-data],[feedtype="ad"]
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
 www.65yw.com##.tui__header
@@ -299,9 +299,9 @@ www.utubon.com##div[class*="text"][id^="text"]
 www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units
 www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 www.webqianduan.cn##.adW
-www.wpdaxue.com##.sbad
+www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],.sbad
 www.xianliao.me##[class^="ads_"]
-www.youtube.com##.video-ads,#player-ads
+www.youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer
 www.yxdown.com/*.html##div[id*="adv"],iframe
 www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display:block!important"]
 www.zimuku.cn##.page-header.prel,li.li[style]
