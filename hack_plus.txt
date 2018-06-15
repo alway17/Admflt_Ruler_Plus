@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-14
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-15
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -95,6 +95,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.1kkk.com/wxh
 |http://www.4399.com/loadimg/loading.htm
 |http://www.999hdhd.com/js/js.js
+|http://www.bxkxw.com/*show_poster*
 |http://www.fjlqqc.com/common/api/*/al?u=*
 |http://www.fjlqqc.com/common/api/*/slot-code/publisher/*
 |http://www.fjlqqc.com/static/sl/$script
@@ -161,6 +162,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||guangzizai.com$script
 ||hao6v.com/d/f.js
 ||hao6v.com/d/f^.js
+||hoopchina.com.cn/*-ad.js
+||hoopchina.com.cn/*-v^.html
 ||huaduu.com$third-party
 ||ifeng.com/showcode?adids=*
 ||ifengimg.com/*/scripts/*tui*$script
@@ -179,9 +182,9 @@ www.gaoqingkong.com#@#.widget.box.row
 ||letvimg.com/*gugwl/*.swf$object
 ||mbai.cn$third-party
 ||mgtv.com/mediafiles/wiad
-||mini.eastday.com/*detail*$script
 ||ppoi.org/*key*
 ||sina.com.cn/*sinaads*js
+||sports.eastday.com/ad_async.html
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
 ||statics/js/xzq*.js
@@ -213,6 +216,7 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[ABP css]---↓
 .163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main
 .csdn.net##.advert,.mediav_ad
+.eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"]
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
 4399.com###addiv,#defaultbglink,.a-d
@@ -221,6 +225,7 @@ www.gaoqingkong.com#@#.widget.box.row
 7k7k.com###player-ad,#J-loop-flash,.loop-flash
 91.com##.banner-gg,.side-bs,.top_a,.advs[class*="advs-"],[class^="ad"],iframe.iframe-pic-box
 aa^^y.com###buffer,.qr_code_pc
+bbs.hupu.com##[class*="hp-ad"]
 bbs.pcbeta.com##.asdad+div
 bt-film.co*##[id^="ad"]
 btime.com##[adview-id]
@@ -250,8 +255,7 @@ qianzhan.com##.advBox,.footApp
 qichamao.com##.side-ad1
 qiushibaike.com##.shopwindow
 sina.com.cn##[class*="-ad"][class*="ad_"]
-sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner
-sports.eastday.com##.ad-r
+sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
 sports.qq.com##[data-matchtype]
 subhd.com##a[target*="blank"]>img[src$=".gif"][width]
 szhk.com##div[id*="_banner"],div[class*="banner_"]
@@ -356,7 +360,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
 ||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
 ||ttrar.com/statics/pos_js/*.js$S@( )*?document.write.+?(a href|iframe|script).+?\).?@@img
-||video.eastday.com/*new_gethot.js$s@if(playNoAdRight())@if(1)@
+||video.eastday.com/*new_gethot.js$s@(playNoAdRight())@(1)@
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.65yw.com$S@<frame .*?\.html[^>]>@@
@@ -402,7 +406,8 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 cpro.baidustatic.com/cpro/*/noexpire/*.min.css$f@302:s@@@
 ||/cpro/*/noexpire/*.min.css$S@^.*$@*{display:none!important}@s
 ||baidu.com/s?*$S@(#container (\.(?!noback)\w{5,}).*?){.*?}@${1}{display:none}@sig
-baidu.com###content_left > [data-click*="rsv_srcid"]
+||baidu.com/s?*$S@<script id="ecomScript">.*?</script>@@sig
+||baidu.com###content_left > [data-click*="rsv_srcid"]
 !======[cpro.baidu.com]---↑
 
 !======[v.qq.com]---↓
