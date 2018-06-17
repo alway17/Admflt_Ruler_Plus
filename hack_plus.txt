@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-15
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-17
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -90,6 +90,9 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://static.yxdown.com/cj/$script
 |http://static.yxdown.com/pc/news/js/$script
 |http://tanx.sjzcmw.com$script
+|http://temp.163.com/special/*_content_cb.js
+|http://temp.163.com/special/*_pop_content/
+|http://temp.163.com/special/*_pop_js.js
 |http://u-x.jd.com/static/$script
 |http://www.163nvren.com/daima.js
 |http://www.1kkk.com/wxh
@@ -214,11 +217,12 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[block]---↑
 
 !======[ABP css]---↓
-.163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main
+.163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main,[onclick^="fcBox"]
 .csdn.net##.advert,.mediav_ad
 .eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"]
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
+.youku.com###bt-banner
 4399.com###addiv,#defaultbglink,.a-d
 51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
 72du.com##.tipb
