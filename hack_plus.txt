@@ -146,10 +146,14 @@ www.gaoqingkong.com#@#.widget.box.row
 ||api.47ks.com/cp*ad.js
 ||api.message.le.com/v1/messages?
 ||app.video.baidu.com/xda
+||bashare.cn
 ||bd-film.co*/cms-sidebar$script
 ||bdstatic.com/*/admLoader/$script
+||beacon.sina.com.cn
+||bshare.cn
 ||c.v4dwkcv.com/js/rr/$script
 ||chucity.com
+||cnzz.com
 ||code.zantainet.com/$script
 ||coinhive.min.js
 ||data.vod.itc.cn/*prod=ad*
@@ -159,6 +163,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||dingding*.com$third-party
 ||dydab.com$third-party
 ||g.alicdn.com/*odv.min.js
+||g.mediav.com/s
 ||ge95.com:8008/?aspx=
 ||gg.dsxdn.com/2cto/$script
 ||googletagservices.com
@@ -173,6 +178,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||ifengimg.com/autoflash/$script
 ||ifengimg.com/iis/iis_v*.js
 ||images.sohu.com/cs/jsfile/js/c.js
+||img*.126.net/ntesrich/*ad*$script
 ||img.aolusb.com/forever/$script
 ||jb51.net/*/arcts.js
 ||jb51.net/*/beitou.js
@@ -185,16 +191,23 @@ www.gaoqingkong.com#@#.widget.box.row
 ||letvimg.com/*gugwl/*.swf$object
 ||mbai.cn$third-party
 ||mgtv.com/mediafiles/wiad
+||nsclick.baidu.com
+||pic.x.soso.com
+||pingma.qq.com
 ||ppoi.org/*key*
+||s.pcapps.qq.com
+||sax.sina.cn
 ||sina.com.cn/*sinaads*js
 ||sports.eastday.com/ad_async.html
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
 ||statics/js/xzq*.js
 ||stats.chinaz.com/zx_g/$script
+||tajs.qq.com
 ||tanx.com/ex?i=
 ||temaidi.com/*.js*pid=*$script
 ||tongji/tj.php
+||umeng.com
 ||vamaker.com$third-party
 ||webapi.acfun.cn/appSpreadContents/danmuad/
 ||www.cr173.com/jsBI/js/info.js
@@ -219,7 +232,6 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[ABP css]---↓
 .163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main,[onclick^="fcBox"]
 .csdn.net##.advert,.mediav_ad
-.eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"]
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
 .youku.com###bt-banner
@@ -238,6 +250,7 @@ cnbeta.com##[class="cbv810"],[class*="left"][class*="00"],[class*="right"][class
 cri.cn##.ad-item
 dayoo.com##.ad-area
 dl.3dmgame.com##[class^="youdao"]
+eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"]
 eastmoney.com##.lyad
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
 guokr.com##[class*="-advert"]
@@ -353,12 +366,16 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a href|iframe|script).+?\).?$@@img
 |https://btso.pw/$s@<div type="text/data-position"*</div>@@
 ||*/videos/other/*.f4v$f@302:s@^http.*?(\d|\.)+/(.)*videos/other/.*?\.f4v@http://data.video.qiyi.com/v.f4v@
+||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
+||.eastday.com/*detail*.js$s@show_ad_dynamic@fuck_ad@
 ||aikan-tv.com/*url=*$S@<frame .*?\.html[^>]>@@
 ||aikan-tv.com/*url=*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
+||alicdn.com/player/ykplayer/*/youku-player.min.js$s@this.bufferTime=t@this.bufferTime=0@
 ||api.svip.baiyug.cn/*?url=*$S@$@<style>#a1{margin-top:-23px}</style>@s
 ||dl.3dmgame.com$S@<script>img\d+?.+?/script>@@
 ||gaoqing.la$s@</head>@<script>document.write=null;</script></head>@
 ||jx.2012net.com$s@fuckyou();@@
+||policy.com
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
 ||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
@@ -387,18 +404,33 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 !======[H webs]---↑
 
 !======[cpro.baidu.com]---↓
-||pos.baidu.com/ocnm
 !||v.baidu.com/kan/*format=json*$S@"off":\d@"off":1@
 !||bdstatic.com/browse_static/v3/common/pkg/common_video_*.js$S@=(\w\.off(?![\w]))@=1@
 !Baidu-union
+|http://bd1.*$script
+|http://bd2.*$script
+|http://bdad.$script
 |http://bdjs.*
 |http://bdjs1.*
 |http://bdjs2.*
-|http://bdad.$script
 |http://pb1.*$script
 |http://pb2.*$script
-|http://bd1.*$script
-|http://bd2.*$script
+||a.baidu.com
+||adm.baidu.com
+||bar.baidu.com
+||cb.baidu.com
+||cbjs.baidu.com
+||dl.client.baidu.com
+||dzl.baidu.com
+||eiv.baidu.com
+||gimg.baidu.com
+||mobads-logs.baidu.com
+||mobads.baidu.com
+||pos.baidu.com
+||push.zhanzhang.baidu.com
+||sobar.baidu.com
+||toolbar.baidu.com
+||utility.baidu.com
 !Baidu-src-js
 ||baidu_ad.js
 ||idm-su.baidu.com
