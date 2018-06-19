@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-17
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-20
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -201,6 +201,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||sports.eastday.com/ad_async.html
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
+||static.mediav.com/js/mvf$script
 ||statics/js/xzq*.js
 ||stats.chinaz.com/zx_g/$script
 ||tajs.qq.com
@@ -296,6 +297,7 @@ www.biquzi.com##iframe[src*="html/click"]
 www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
 www.cr173.com/soft/*.html##.m-black-bg
+www.crsky.com##.banner-leader
 www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap
 www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des
 www.duote.com##div[class*="-banner"],div[class*="-ad"]
@@ -311,13 +313,15 @@ www.ithome.com###con>div:not([id]):not([class]),.AdblockBanner
 www.kuwo.cn##.tuiguang
 www.lbldy.com##.ad-pc,.listad
 www.mgtv.com##.m-focus-ad
+www.orsoon.com##.down-sect2,#other-link
 www.ouhua.info##img[src*="/ad2015/"]
+www.pc6.com##.ad-download
 www.qqtn.com##[class*="-ban"],iframe
 www.rarbt.com##div[style*="980"]
 www.takefoto.cn##.news-ad,.advert
 www.ttmeiju.com##img[alt$=".jpg"]
 www.utubon.com##div[class*="text"][id^="text"]
-www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units
+www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units,.cell[align]
 www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 www.webqianduan.cn##.adW
 www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],.sbad
@@ -356,14 +360,14 @@ subhd.com$s@</head>@<script>sessionStorage.setItem("hassession", 1);</script></h
 tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerror="javascript:this.parentNode.parentNode.style.display='none';">@
 tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
-|http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a href|iframe|script).+?\).?$@@img
+|http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
 |http://*btkitty$s@<head>@<head><script>window.opoen=null</script>@
 |http://data.video.qiyi.com/videos/other/$S@http:\/\/.*?f4v@http://data.video.qiyi.com/v.f4v@
 |http://q.z.vip.totv.72du.com/$S@showTime\(\d{1,2}\);@showTime(0);@
 |http://static.ali213.net/js/data/zad/$s@http*"@"@
 |http://www.zimuku.net/$s@</head>@<script>isAdEnabled=1;document.write=null</script></head>@
-|https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a href|iframe|script).+?\).?$@@img
+|https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |https://btso.pw/$s@<div type="text/data-position"*</div>@@
 ||*/videos/other/*.f4v$f@302:s@^http.*?(\d|\.)+/(.)*videos/other/.*?\.f4v@http://data.video.qiyi.com/v.f4v@
 ||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
@@ -380,13 +384,14 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
 ||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
 ||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
-||ttrar.com/statics/pos_js/*.js$S@( )*?document.write.+?(a href|iframe|script).+?\).?@@img
+||ttrar.com/statics/pos_js/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||video.eastday.com/*new_gethot.js$s@(playNoAdRight())@(1)@
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.65yw.com$S@<frame .*?\.html[^>]>@@
 ||www.65yw.com$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.igeek.com.cn/static/css/articlen/style.css$S@(\.ad_box[^{]*{)[^}]*@${1}display:none@
+||www.laozuo.org/wp-content/themes/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
 ||www.zimuku.cn$s@<head>@<head><script>window.open=null</script>@
 !======[replace]---↑
