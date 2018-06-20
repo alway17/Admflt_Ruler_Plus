@@ -420,7 +420,6 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |http://bdjs2.*
 |http://pb1.*$script
 |http://pb2.*$script
-||a.baidu.com
 ||adm.baidu.com
 ||bar.baidu.com
 ||cb.baidu.com
