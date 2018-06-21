@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-20
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-21
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -83,6 +83,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://eap.enorth.com.cn/js/$script
 |http://ent.jxnews.com.cn/js/a_cont.js
 |http://honey.hunantv.com/*/anuncio.js
+|http://img.hexun.com/*appDplus.js
 |http://s.0594529.com
 |http://sports.eastday.com/jscss/*/da.js
 |http://static.nanrenwo.net/*/poster.js$script
@@ -94,6 +95,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://temp.163.com/special/*_pop_content/
 |http://temp.163.com/special/*_pop_js.js
 |http://u-x.jd.com/static/$script
+|http://v.163.com/*ADManager.swf
 |http://www.163nvren.com/daima.js
 |http://www.1kkk.com/wxh
 |http://www.4399.com/loadimg/loading.htm
@@ -107,6 +109,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.minixiazai.com/others/$script
 |http://www.pcbeta.com/data/cache/jquery.js
 |http://www.rarbt.com/*bds_*.js
+|http://www.sjzcmw.com/mypck.js
 |http://www.uzzf.com/skin/know/downinfo-$script
 |http://www.yuledaily.com/hbimg/wapc.js
 |http://yyygwz.com/$image
@@ -135,6 +138,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||AdModel/$script
 ||AdSystem/$script
 ||ad.caiba520.win
+||adimg*.weibo.com
 ||admarket.21cn.com
 ||admaster.com.cn
 ||ads-union.jd.com
@@ -254,6 +258,7 @@ dl.3dmgame.com##[class^="youdao"]
 eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"]
 eastmoney.com##.lyad
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
+google.com##.ads-ad
 guokr.com##[class*="-advert"]
 hexun.com###newsPopWin
 i.qq.com##.icon_adv_logo,[id^="adImg"]
@@ -287,7 +292,7 @@ v.qq.com/x/##.tvip_layer,.mask_layer
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
-weibo.com##div[ad-data],[feedtype="ad"]
+weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"]
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
 www.65yw.com##.tui__header
@@ -302,6 +307,7 @@ www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wr
 www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des
 www.duote.com##div[class*="-banner"],div[class*="-ad"]
 www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
+www.epinv.com##.huadong,.epinv_f,.footbar,.danger
 www.fawan.com##[id^="ynetG"]
 www.fun.tv##.play-banner-ad,[class^="dialog-"][id^="dialog-"],.banner-ad,[class$="-ad"]
 www.gaoqingkong.com###cgVshow
@@ -377,6 +383,8 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||alicdn.com/player/ykplayer/*/youku-player.min.js$s@this.bufferTime=t@this.bufferTime=0@
 ||api.svip.baiyug.cn/*?url=*$S@$@<style>#a1{margin-top:-23px}</style>@s
 ||dl.3dmgame.com$S@<script>img\d+?.+?/script>@@
+||epinv.com/dl/*.html$s@</body>@<script>getDownloadUrl()</script></body>@
+||epinv.com/wp-content/themes/ep/js/jquery.qrcode.min.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||gaoqing.la$s@</head>@<script>document.write=null;</script></head>@
 ||jx.2012net.com$s@fuckyou();@@
 ||policy.com
