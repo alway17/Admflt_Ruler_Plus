@@ -53,7 +53,7 @@
     FloatWhiteDomain.indexOf(WhiteList) == -1 ? FloatCssList = FloatCss + "emCupid" : FloatCssList = "emCupid";
     var AdvArraw = new Array(
         //'img[alt="ad"],img[alt="adv"],img[alt="ads"]',
-        'a[target="_blank"][style*="2147483647"][style*="opacity"],div[id^="_"][style*="2147483647"],div[id^="_"][style="width: 100%;"]>iframe,iframe[src*="pos.baidu.com"],a[href*="i/?cid="],iframe[src*="/ads?"],iframe[src*="v.php?id="],iframe[src*="s.php?id="],[id^="BAIDU_"],iframe[src*="/ad/"],iframe[src*="adurl"][src*="type="],[node-type^="ad"]',
+        'a[href*="click.aliyun.com"],a[target="_blank"][style*="2147483647"][style*="opacity"],div[id^="_"][style*="2147483647"],div[id^="_"][style="width: 100%;"]>iframe,iframe[src*="pos.baidu.com"],a[href*="i/?cid="],iframe[src*="/ads?"],iframe[src*="v.php?id="],iframe[src*="s.php?id="],[id^="BAIDU_"],iframe[src*="/ad/"],iframe[src*="adurl"][src*="type="],[node-type^="ad"]',
             //下载站
         'a[href*="ads_id="],a[href*="@"][href$="exe"],.wrap-ad,div[class*="xzbox-ad"],div[class*="xzbox-gg"]',
         'div[class*="_adv_"],div[class*="-adv-"],div[class*="_ad_"]',

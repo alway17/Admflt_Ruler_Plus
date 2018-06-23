@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-21
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-22
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -154,7 +154,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||bd-film.co*/cms-sidebar$script
 ||bdstatic.com/*/admLoader/$script
 ||beacon.sina.com.cn
-||bshare.cn
 ||c.v4dwkcv.com/js/rr/$script
 ||chucity.com
 ||cnzz.com
@@ -212,7 +211,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||tanx.com/ex?i=
 ||temaidi.com/*.js*pid=*$script
 ||tongji/tj.php
-||umeng.com
 ||vamaker.com$third-party
 ||webapi.acfun.cn/appSpreadContents/danmuad/
 ||www.cr173.com/jsBI/js/info.js
@@ -455,7 +453,7 @@ cpro.baidustatic.com/cpro/*/noexpire/*.min.css$f@302:s@@@
 ||/cpro/*/noexpire/*.min.css$S@^.*$@*{display:none!important}@s
 ||baidu.com/s?*$S@(#container (\.(?!noback)\w{5,}).*?){.*?}@${1}{display:none}@sig
 ||baidu.com/s?*$S@<script id="ecomScript">.*?</script>@@sig
-||baidu.com###content_left > [data-click*="rsv_srcid"]
+baidu.com###content_left > [data-click*="rsv_srcid"]
 !======[cpro.baidu.com]---↑
 
 !======[v.qq.com]---↓
