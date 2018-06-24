@@ -461,6 +461,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||sobar.baidu.com
 ||toolbar.baidu.com
 ||utility.baidu.com
+||znsv.baidu.com
 !Baidu-src-js
 ||baidu_ad.js
 ||idm-su.baidu.com
