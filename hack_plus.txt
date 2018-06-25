@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-24
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-25
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -60,6 +60,8 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/960x^00.js
 |http://*/PC_ad$script
 |http://*/ad/*ad$script
+|http://*/adms.php?*id*=*
+|http://*/ads.php?*id*=*
 |http://*/banner*.js
 |http://*/cpm*.js
 |http://*/cpv*.js
@@ -67,6 +69,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/flashcgi?action=flashlist$block
 |http://*/footBanner_new.js$script
 |http://*/js/*cpc$script
+|http://*/js/ashow.js
 |http://*/js/topad.js$script
 |http://*/r/mr_$script
 |http://*/s?z=*
@@ -81,6 +84,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*980x70$image
 |http://*980x^0.js$script
 |http://*index960.js$script
+|http://adshows.21cn.com/washow?*
 |http://ams.fx678.com
 |http://cpc.*.*/
 |http://eap.enorth.com.cn/js/$script
@@ -88,6 +92,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://honey.hunantv.com/*/anuncio.js
 |http://img.hexun.com/*appDplus.js
 |http://s.0594529.com
+|http://s.thsi.cn/*/cmsad/$script
 |http://sports.eastday.com/jscss/*/da.js
 |http://static.497.com/pc/js/*_g*.js
 |http://static.497.com/pc/js/*g_*.js
@@ -117,6 +122,8 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.pcbeta.com/data/cache/jquery.js
 |http://www.rarbt.com/*bds_*.js
 |http://www.sjzcmw.com/mypck.js
+|http://www.southmoney.com/*/index*.js
+|http://www.southmoney.com/page/pc/*$script
 |http://www.uzzf.com/skin/know/downinfo-$script
 |http://www.xiazaiba.com/data/ads/$script
 |http://www.xiazaiba.com/data/xzb_haha.js
@@ -176,6 +183,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||dfpcitv
 ||dingding*.com$third-party
 ||dydab.com$third-party
+||e.hnr.cn/choose/view/%7B*%7D.js
+||e.hnr.cn/choose/view/{*}.js
 ||g.alicdn.com/*odv.min.js
 ||g.cn.miaozhen.com
 ||g.mediav.com/s
@@ -220,7 +229,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||static.luna.58.com/js/mad.js
 ||static.mediav.com/js/mvf$script
 ||statics/js/xzq*.js
-||stats.chinaz.com/zx_g/$script
+||stats.chinaz.com/^^_g/$script
 ||tajs.qq.com
 ||tanx.com/ex?i=
 ||temaidi.com/*.js*pid=*$script
@@ -255,7 +264,7 @@ www.gaoqingkong.com#@#.widget.box.row
 .csdn.net##.advert,.mediav_ad
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
-.youku.com###bt-banner
+.youku.com###bt-banner,[class*="adplayer"]
 4399.com###addiv,#defaultbglink,.a-d
 51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
 72du.com##.tipb
@@ -312,6 +321,7 @@ video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
 weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"]
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
+www.4aqq.com##div[style]>a[href*="?"][target="_blank"]
 www.65yw.com##.tui__header
 www.admin5.com##.logo_textAd,.logoAd,.headerAd,.footerAd,.adr,.infoAd
 www.aihami.com##.conText>div[style*="overflow"][style*="hidden"],.adDingT,.ad640x90,ad300x90,.h250
@@ -427,11 +437,6 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |http:/*/fans/ad.php|
 !91ad_cn_CN.php$s@<![CDATA[*]]>@<![CDATA[http://ssl.admflt.com/doc/block/null.mp4]]>@
 !91ad_cn_CN.php$S@\d{2}:\d{2}:\d{2}@00:00:01@
-!-
-!www.qylsp7.com##[class="ads"],.ads-player
-!-
-!||www.ttt886.com/js/layout.js$S@makhtml\(.*?\)@makehtml("header,footer")@
-!||www.ttt886.com/js/indextop.js
 !======[H webs]---↑
 
 !======[cpro.baidu.com]---↓
@@ -450,6 +455,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||bar.baidu.com
 ||cb.baidu.com
 ||cbjs.baidu.com
+||crs.baidu.com/t.js
 ||dl.client.baidu.com
 ||dzl.baidu.com
 ||eiv.baidu.com
@@ -486,6 +492,8 @@ baidu.com###content_left > [data-click*="rsv_srcid"]
 
 !======[v.youku.com]---↓
 ||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
+||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
+!||ott.cibntv.net/youku/*.mp4*&ctype=$f@302:s@^https?:\/\/.*?ctype=\d*.*?$@https://ssl.admflt.com/doc/block/null.mp4@
 !======[v.youku.com]---↑
 
 !------[TMP临时区  end]------!
