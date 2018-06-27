@@ -1,5 +1,6 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-25
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-27
+!-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !------[TMP临时区begin]------!
@@ -60,9 +61,11 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/960x^00.js
 |http://*/PC_ad$script
 |http://*/ad/*ad$script
+|http://*/ad?s=
 |http://*/adms.php?*id*=*
 |http://*/ads.php?*id*=*
 |http://*/banner*.js
+|http://*/c/js/$script
 |http://*/cpm*.js
 |http://*/cpv*.js
 |http://*/ecom-ad/
@@ -257,6 +260,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||yyrtv.com/*=Advs
 ||zlongad.com/*ads?
 ||zlongad.com/ad/
+||zmzjstu.com/*ad-*
+||zmzjstu.com/g^/$script
 !======[block]---↑
 
 !======[ABP css]---↓
@@ -363,8 +368,8 @@ www.xianliao.me##[class^="ads_"]
 www.youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer
 www.yxdown.com/*.html##div[id*="adv"],iframe
 www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display:block!important"]
-www.zimuku.cn##.page-header.prel,li.li[style]
-www.zimuzu.tv###help,[class^="ads_"]
+www.zimuku.cn##.page-header.prel,li.li[style],#myModal
+www.zimuzu.tv##div[style]>a[rel="nofollow"]
 wzshipin.com##img[width="1200"],.boxg
 xinhuanet.com##[id^="YCADS"]
 youtube.com###masthead-ad,#player-ads
