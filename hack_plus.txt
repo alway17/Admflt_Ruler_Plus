@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-27
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-28
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -60,6 +60,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/2^0x2^0.js
 |http://*/960x^00.js
 |http://*/PC_ad$script
+|http://*/ad/*.js
 |http://*/ad/*ad$script
 |http://*/ad?s=
 |http://*/adms.php?*id*=*
@@ -94,6 +95,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://ent.jxnews.com.cn/js/a_cont.js
 |http://honey.hunantv.com/*/anuncio.js
 |http://img.hexun.com/*appDplus.js
+|http://life.southmoney.com/page/inc/*.js
 |http://s.0594529.com
 |http://s.thsi.cn/*/cmsad/$script
 |http://sports.eastday.com/jscss/*/da.js
@@ -168,7 +170,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||alimama.com/ex?a=
 ||api.*/balance?*&secret
 ||api.47ks.com/cp*ad.js
-||api.message.le.com/v1/messages?
 ||app.video.baidu.com/xda
 ||bashare.cn
 ||bd-film.co*/cms-sidebar$script
@@ -269,13 +270,13 @@ www.gaoqingkong.com#@#.widget.box.row
 .csdn.net##.advert,.mediav_ad
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
-.youku.com###bt-banner,[class*="adplayer"]
 4399.com###addiv,#defaultbglink,.a-d
 51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
 72du.com##.tipb
 7k7k.com###player-ad,#J-loop-flash,.loop-flash
 91.com##.banner-gg,.side-bs,.top_a,.advs[class*="advs-"],[class^="ad"],iframe.iframe-pic-box
 aa^^y.com###buffer,.qr_code_pc
+anhuinews.com##[class^="ad"]
 bbs.hupu.com##[class*="hp-ad"]
 bbs.pcbeta.com##.asdad+div
 bt-film.co*##[id^="ad"]
@@ -288,6 +289,7 @@ dl.3dmgame.com##[class^="youdao"]
 eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"]
 eastmoney.com##.lyad
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
+gitee.com##.float-left-box
 google.com##.ads-ad
 guokr.com##[class*="-advert"]
 hexun.com###newsPopWin
@@ -488,24 +490,38 @@ cpro.baidustatic.com/cpro/*/noexpire/*.min.css$f@302:s@@@
 baidu.com###content_left > [data-click*="rsv_srcid"]
 !======[cpro.baidu.com]---↑
 
+!======[www.le.tv]---↓
+||api.message.le.com/v1/messages?
+||play.videocache.lecloud.com/*/letv-gug/*.mp4
+!======[www.le.tv]---↑
+
 !======[v.qq.com]---↓
-|http://*/variety.tc.qq.com/
-|https://*/variety.tc.qq.com/
+||variety.tc.qq.com
+||vlive.qqvideo.tc.qq.com
+||bla.gtimg.com/qqlive/*.mp4
 ||vd*.qq.com/proxyhttp$s@"ad"*}}",@@
 |https://livew*.qq.com/livemsg?$S@<!\[CDATA\[.*?\]\]>@@
 !======[v.qq.com]---↑
 
 !======[v.youku.com]---↓
-||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
+!||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
+.youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer
+||valp.atm.youku.com/vp*swf,img*
+||ups.youku.com/ups/get.json?vid=*$s@{"P":1,"VAL":@{"P":0,"VAL":@
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
 !||ott.cibntv.net/youku/*.mp4*&ctype=$f@302:s@^https?:\/\/.*?ctype=\d*.*?$@https://ssl.admflt.com/doc/block/null.mp4@
 !======[v.youku.com]---↑
+
+!======[tv.sohu.com]---↓
+||js.tv.itc.cn/gg.seed.js
+||api.my.tv.sohu.com/wm/getads.do
+!======[tv.sohu.com]---↑
 
 !------[TMP临时区  end]------!
 
 !------[前端 CDN 加速服务begin]
 !------↓谷歌字体fonts.googleapis.com/css?family=Ravi+Prakash
-!fonts.googleapis.com$f@302:s@fonts.googleapis.com@fonts.lug.ustc.edu.cn@
+fonts.googleapis.com$f@302:s@fonts.googleapis.com@fonts.lug.ustc.edu.cn@
 !------↓jQuery静态库code.jquery.com/jquery-3.1.1.js
 code.jquery.com$f@302:s@//code.jquery.com/(jquery)-([\d\.]*)((\.min)*\.js)@//cdn.staticfile.org/$1/$2/$1$3@
 !------↓jQueryUI库code.jquery.com/ui/1.12.1/jquery-ui.min.js
