@@ -8,11 +8,8 @@
 !======[wlist]---↓
 S:api.geetest.com
 S:api.weibo.com
-S:incapsula.consoleom
-S:ins-ssl.admflt.com
 S:jd.hk
 163.com#@#.post_header
-@@|http://ins.admflt.com/*$pass
 @@|https://myaccount.google.com/$pass
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
@@ -22,7 +19,6 @@ S:jd.hk
 @@||99ddd.com/*.rar
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
-@@||admup.admflt.com/d/*.txt$pass
 @@||bdstatic.com/*/admLoader/main_$script
 @@||dianping.com
 @@||g1.dfcfw.com/g2/201702/20170216133526.png
@@ -367,14 +363,12 @@ www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[cl
 www.webqianduan.cn##.adW
 www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],.sbad
 www.xianliao.me##[class^="ads_"]
-www.youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer
 www.yxdown.com/*.html##div[id*="adv"],iframe
 www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display:block!important"]
 www.zimuku.cn##.page-header.prel,li.li[style],#myModal
 www.zimuzu.tv##div[style]>a[rel="nofollow"]
 wzshipin.com##img[width="1200"],.boxg
 xinhuanet.com##[id^="YCADS"]
-youtube.com###masthead-ad,#player-ads
 zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"],#bgad,[id^="ad_"]
 |http://*btkitty##.footer+*,.footer>[id*="_"],body>[id*="_"],a[style*="100%"]
 !======[ABP css]---↑
@@ -506,6 +500,8 @@ baidu.com###content_left > [data-click*="rsv_srcid"]
 !======[v.youku.com]---↓
 !||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
 .youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer
+||html.atm.youku.com/html*h5%2Cimg*
+||v2html.atm.youku.com/vhtml*h5,img*
 ||valp.atm.youku.com/vp*swf,img*
 ||ups.youku.com/ups/get.json?vid=*$s@{"P":1,"VAL":@{"P":0,"VAL":@
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
@@ -516,6 +512,14 @@ baidu.com###content_left > [data-click*="rsv_srcid"]
 ||js.tv.itc.cn/gg.seed.js
 ||api.my.tv.sohu.com/wm/getads.do
 !======[tv.sohu.com]---↑
+
+!======[www.youtube.com]---↓
+youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthead-ad,#player-ads
+||www.googleadservices.com
+||youtube.com/get_video_info*ad_id=*
+||youtube.com/api/stats/ads*
+||ads.g.doubleclick.net
+!======[www.youtube.com]---↑
 
 !------[TMP临时区  end]------!
 
