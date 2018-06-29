@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-28
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-06-29
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -55,6 +55,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*//i.php?^=*
 |http://*/2^0x2^0.js
 |http://*/960x^00.js
+|http://*/?sspid=
 |http://*/PC_ad$script
 |http://*/ad/*.js
 |http://*/ad/*ad$script
@@ -87,6 +88,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://adshows.21cn.com/washow?*
 |http://ams.fx678.com
 |http://cpc.*.*/
+|http://da.duowan.com/loc/
 |http://eap.enorth.com.cn/js/$script
 |http://ent.jxnews.com.cn/js/a_cont.js
 |http://honey.hunantv.com/*/anuncio.js
@@ -95,6 +97,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://s.0594529.com
 |http://s.thsi.cn/*/cmsad/$script
 |http://sports.eastday.com/jscss/*/da.js
+|http://sssvd.china.com
 |http://static.497.com/pc/js/*_g*.js
 |http://static.497.com/pc/js/*g_*.js
 |http://static.nanrenwo.net/*/poster.js$script
@@ -177,6 +180,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||cnzz.com
 ||code.zantainet.com/$script
 ||coinhive.min.js
+||d/js/acmsd/thea*.js
 ||data.vod.itc.cn/*prod=ad*
 ||deliver.ifeng.com/getcode?
 ||deliver.ifeng.com/showcode?
@@ -185,10 +189,12 @@ www.gaoqingkong.com#@#.widget.box.row
 ||dydab.com$third-party
 ||e.hnr.cn/choose/view/%7B*%7D.js
 ||e.hnr.cn/choose/view/{*}.js
+||eastday.com/*/html/ad/
 ||g.alicdn.com/*odv.min.js
 ||g.cn.miaozhen.com
 ||g.mediav.com/s
 ||ge95.com:8008/?aspx=
+||gg.cs090.com$script
 ||gg.dsxdn.com/2cto/$script
 ||googletagservices.com
 ||guangzizai.com$script
@@ -217,10 +223,12 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mediav.com/galileo/*.mp4
 ||mgtv.com/mediafiles/wiad
 ||nsclick.baidu.com
+||obs.cfboo.com$script
 ||pg-ad*.nosdn.127.net
 ||pic.x.soso.com
 ||pingma.qq.com
 ||ppoi.org/*key*
+||res.cngoldres.com/libs/jtams/*/jtams.js
 ||s.pcapps.qq.com
 ||sax.sina.cn
 ||sina.com.cn/*sinaads*js
@@ -308,6 +316,7 @@ qichamao.com##.side-ad1
 qiushibaike.com##.shopwindow
 sina.com.cn##[class*="-ad"][class*="ad_"]
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
+sports.eastday.com/video/##.dalink
 sports.qq.com##[data-matchtype]
 subhd.com##a[target*="blank"]>img[src$=".gif"][width]
 szhk.com##div[id*="_banner"],div[class*="banner_"]
@@ -404,6 +413,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |https://btso.pw/$s@<div type="text/data-position"*</div>@@
 ||*/videos/other/*.f4v$f@302:s@^http.*?(\d|\.)+/(.)*videos/other/.*?\.f4v@http://data.video.qiyi.com/v.f4v@
+||.eastday.com/*da_*.js$S@{.*}@{}@
 ||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
 ||.eastday.com/*detail*.js$s@show_ad_dynamic@fuck_ad@
 ||100.pncdn.cn/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
@@ -418,6 +428,9 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||jx.2012net.com$s@fuckyou();@@
 ||policy.com
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
+||sports.eastday.com/jscss/*/theme_video.js$S@(var adtime ?= ?)\d{1,2}@${1}0@
+||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
+||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
 ||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
 ||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
@@ -458,6 +471,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||cbjs.baidu.com
 ||crs.baidu.com/t.js
 ||dl.client.baidu.com
+||dup.baidustatic.com
 ||dzl.baidu.com
 ||eiv.baidu.com
 ||gimg.baidu.com

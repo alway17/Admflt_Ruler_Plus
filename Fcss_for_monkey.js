@@ -37,7 +37,7 @@
     }
     var WhiteList = getMainHost(),
         //浮动过滤域名白名单
-        FloatWhiteDomain = "youku.com|weibo.com|pptv.com|le.com|mgtv.com|iqiyi.com|xianliao.me|bilibili.com".split('|'),
+        FloatWhiteDomain = "youku.com|weibo.com|pptv.com|le.com|mgtv.com|iqiyi.com|xianliao.me|bilibili.com|onedns.net".split('|'),
         AdvCss = "",
         FloatCss = "",
         FloatCssList = "";
@@ -54,9 +54,11 @@
     var AdvArraw = new Array(
         //'img[alt="ad"],img[alt="adv"],img[alt="ads"]',
         'a[href*="click.aliyun.com"],a[target="_blank"][style*="2147483647"][style*="opacity"],div[id^="_"][style*="2147483647"],div[id^="_"][style="width: 100%;"]>iframe,iframe[src*="pos.baidu.com"],a[href*="i/?cid="],iframe[src*="/ads?"],iframe[src*="v.php?id="],iframe[src*="s.php?id="],[id^="BAIDU_"],iframe[src*="/ad/"],iframe[src*="adurl"][src*="type="],[node-type^="ad"]',
-            //下载站
+        //下载站
         'a[href*="ads_id="],a[href*="@"][href$="exe"],.wrap-ad,div[class*="xzbox-ad"],div[class*="xzbox-gg"]',
-        '.ad1,.ad2,.ad3,.ad4,.ad5,.ad6,.ad7,.ad8,.ad9,div[class*="_adv_"],div[class*="-adv-"],div[class*="_ad_"],div[class*="ad-box"]',
+        //论坛
+        '.a_t,.a_p,.a_pr,.a_f,.a_h',
+        '.ad1,.ad2,.ad3,.ad4,.ad5,.ad6,.ad7,.ad8,.ad9,#ad1,#ad2,#ad3,#ad4,#ad5,#ad6,#ad7,#ad8,#ad9,[id^="ad_"],[class*="_adv_"],[id*="_adv_"],[class*="-adv-"],[id*="-adv-"],[class*="_ad_"],[id*="_ad_"],[class*="ad-box"]',
         '[class*="banner_ad"],[class*="banner_ad"],[class*="banner-ad"],[id^="adBox"],[id^="AdBox"],[id^="ADbox"],[id^="ad-box"]',
         '[class*="ad_header"],[class*="ad_footer"],[class*="ad_text"],[id^="ad_header"],[id^="ad_footer"],[id^="ad_text"],[class*="ad-header"],[class*="ad-footer"],[class*="ad-text"],[id^="ad-header"],[id^="ad-footer"],[id^="ad-text"]',
         '[class*="header_ad"],[class*="footer_ad"],[class*="text_ad"],[id^="header_ad"],[id^="footer_ad"],[id^="text_ad"],[class*="header-ad"],[class*="footer-ad"],[class*="text-ad"],[id^="header-ad"],[id^="footer-ad"],[id^="text-ad"]',
