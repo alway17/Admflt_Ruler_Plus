@@ -440,14 +440,10 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||jx.2012net.com$s@fuckyou();@@
 ||policy.com
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
-||sports.eastday.com/jscss/*/theme_video.js$S@(var adtime ?= ?)\d{1,2}@${1}0@
-||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
-||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
 ||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
 ||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
 ||ttrar.com/statics/pos_js/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
-||video.eastday.com/*new_gethot.js$s@(playNoAdRight())@(1)@
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.65yw.com$S@<frame .*?\.html[^>]>@@
@@ -559,6 +555,13 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 ||da.mgtv.com/*/player|$S@^.*$@@s
 !======[www.mgtv.com]---↑
 
+!======[video.eastday.com]---↓
+||sports.eastday.com/jscss/*/theme_video.js$S@(var adtime ?= ?)\d{1,2}@${1}0@
+||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
+||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
+||video.eastday.com/*new_gethot.js$s@(playNoAdRight())@(1)@
+!======[video.eastday.com]---↑
+
 !======[v.17173.com]---↓
 ||17173im.alllget.com/main/s$S@"t":"\d{1,2}"@"t":"0"@
 ||v.17173.com/advideo/$m@res:block/null.mp4
@@ -602,6 +605,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
+||ynet.com/*.html$s@</body>@<script>unHackcss("navBar")</script></body>@
 !-白名单放行end
 
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
