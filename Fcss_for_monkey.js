@@ -5,8 +5,10 @@
 // @description  Fcss - Fuck css for monkey
 // @author       emCupid
 // @run-at       document-start
+// @downloadURL  https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/Fcss_for_monkey.js
+// @updateURL    https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/Fcss_for_monkey.js
 // @match        *://*/*
-// @exclude      *://*.example.com/*
+// @exclude      *://*.ctfile.com/*
 // ==/UserScript==
 
 (function() {
