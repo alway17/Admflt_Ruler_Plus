@@ -317,7 +317,7 @@ item.btime.com#@##subLayout
 jb51.net##li.da-download
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
-mgtv.com/b/###a_box
+mgtv.com/b/###a_box,[class^="plugins_"]
 myzaker.com##a[href*="ads_id="],[id^="dsp_id"]
 news.mydrivers.com##.news_bt+div[style]
 news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend
@@ -605,7 +605,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
-||ynet.com/*.html$s@</body>@<script>unHackcss("navBar")</script></body>@
+||ynet.com/*.html$s@</body>@<script>unHackcss('#navBar')</script></body>@
 !-白名单放行end
 
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
