@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-04
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-05
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -95,6 +95,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://da.duowan.com/loc/
 |http://eap.enorth.com.cn/js/$script
 |http://ent.jxnews.com.cn/js/a_cont.js
+|http://g.doyo.cn/js/$script
 |http://honey.hunantv.com/*/anuncio.js
 |http://hxjs.tool.hexun.com/forex/hx_pageMediaControl.js
 |http://img.hexun.com/*appDplus.js
@@ -193,6 +194,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||bmp.ali213.net/JS/$script
 ||c.v4dwkcv.com/js/rr/$script
 ||chucity.com
+||cn.miaozhen.com
 ||cnzz.com
 ||code.zantainet.com/$script
 ||coinhive.min.js
@@ -319,7 +321,7 @@ eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_
 eastmoney.com##.lyad
 gamersky.com##.ad_r
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
-gitee.com##.float-left-box
+gitee.com##.float-left-box,body>style+[class*="widget"]
 google.com##.ads-ad
 guokr.com##[class*="-advert"]
 hexun.com###newsPopWin
@@ -496,6 +498,7 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||cb.baidu.com
 ||cbjs.baidu.com
 ||click.hm.baidu.com
+||cpro.baidustatic.com
 ||crs.baidu.com/t.js
 ||dl.client.baidu.com
 ||dup.baidustatic.com
@@ -624,7 +627,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
-||ynet.com/*.html$s@</body>@<script>unHackcss('#navBar')</script></body>@
+||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
 !-白名单放行end
 
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
