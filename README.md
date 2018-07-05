@@ -16,7 +16,7 @@
 * 全局元素广告屏蔽JS
 * 本想用外部样式表来插入，可有些网站实在是鸡贼，会删除style等元素，故采用JS生成xml-stylesheet的方式
 * 对IE也做了兼容，虽然这玩意儿可能没多少人用了
-* 提供两个函数用于白名单，unHackcss.F('css选择器')用于解除浮动元素屏蔽，unHackcss.A('css选择器')用于解除全局元素屏蔽，使用方法例：|http://xxxx.com$s@&lt;/body&gt;@&lt;script&gt;unHackcss.F('#navbar')&lt;/script&gt;&lt;/body&gt;@
+* 提供两个函数用于白名单，unHackcss.F('css选择器')用于解除浮动元素屏蔽，unHackcss.A('css选择器')用于解除全局元素屏蔽，使用方法例：||xxxx.com$s@&lt;/body&gt;@&lt;script&gt;unHackcss.F('#navbar')&lt;/script&gt;&lt;/body&gt;@
 
 ## Fcss_for_monkey.js
 * 全局元素广告屏蔽JS for 油猴
