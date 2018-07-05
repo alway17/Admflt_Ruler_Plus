@@ -1,15 +1,14 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-05
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-06
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
-
-!------[TMP临时区begin]------!
 
 !======[wlist]---↓
 S:api.geetest.com
 S:api.weibo.com
 S:jd.hk
 163.com#@#.post_header
+@@|http://*attachment*/ad/$image
 @@|https://myaccount.google.com/$pass
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
@@ -54,9 +53,10 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/*?^=ads_
 |http://*//i.php?^=*
 |http://*/2^0x2^0.js
-|http://*/960x^00.js
+|http://*/9^0x^00.js
 |http://*/?sspid=
 |http://*/PC_ad$script
+|http://*/ad/$image
 |http://*/ad/*.aspx*id=
 |http://*/ad/*.js
 |http://*/ad/*ad$script
@@ -68,6 +68,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/c/js/$script
 |http://*/cpm*.js
 |http://*/cpv*.js
+|http://*/dc?i=*
 |http://*/ecom-ad/
 |http://*/flashcgi?action=flashlist$block
 |http://*/footBanner_new.js$script
@@ -82,6 +83,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ssp/$script
 |http://*/tongji.html
 |http://*/tui/*ad$script
+|http://*/w/a/imp-cb$script
 |http://*/x.asp?pid=*
 |http://*710x2^0.js$script
 |http://*980x70$image
@@ -124,10 +126,12 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.ali213.net/js/ALi_Site.js
 |http://www.btbtdy.com/templets/btdy/js/*ad*.js
 |http://www.bxkxw.com/*show_poster*
+|http://www.carnoc.com/noticejs/
 |http://www.fjlqqc.com/common/api/*/al?u=*
 |http://www.fjlqqc.com/common/api/*/slot-code/publisher/*
 |http://www.fjlqqc.com/static/sl/$script
 |http://www.gaoqingkong.com/wp-content/themes/*/bar.js
+|http://www.ifeng.com/ssi-incs/*_ad_*.html
 |http://www.mingxing.com/*/js/_$script
 |http://www.minixiazai.com/others/$script
 |http://www.pcbeta.com/data/cache/jquery.js
@@ -158,7 +162,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/code/adview_
 ||/ggg/tj.js
 ||/projectpoi
-||/w/a/imp-cbtt.js
 ||17173cdn.com/*/ad17173*.js
 ||17173cdn.com/*/vda/$script
 ||2345.com/duoteimg/dtnew_recom_img/duoteself/$script
@@ -237,6 +240,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||jia.com/js/zixun/$script
 ||jjygym.com$third-party
 ||jph.itiexue.net
+||js.taoguba.com.cn/res/libs/tgbxc.js
 ||js.tv.itc.cn/site/play/*/menu_ad_*$script
 ||kfkfl.cn/vs.php?id=*
 ||letvimg.com/*gugwl/*.swf$object
@@ -249,6 +253,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||p2pmid.baofeng.com
 ||pg-ad*.nosdn.127.net
 ||pic.x.soso.com
+||pic^.zhimg.com/*adx^.$image
 ||pingma.qq.com
 ||ppoi.org/*key*
 ||res.cngoldres.com/libs/jtams/*/jtams.js
@@ -261,12 +266,14 @@ www.gaoqingkong.com#@#.widget.box.row
 ||static.mediav.com/js/mvf$script
 ||statics/js/xzq*.js
 ||stats.chinaz.com/^^_g/$script
+||taboola.com/*loader.js
 ||tajs.qq.com
 ||tanx.com/ex?i=
 ||temaidi.com/*.js*pid=*$script
 ||tj.ali213.net$script
 ||tongji/tj.php
 ||union.baofeng.com
+||unpkg.zhimg.com/za-js-sdk@2.9.2/dist/zap.js
 ||vamaker.com$third-party
 ||webapi.acfun.cn/appSpreadContents/danmuad/
 ||www.cncrk.com/*/js/rjbz.js
@@ -312,7 +319,7 @@ bbs.pcbeta.com##.asdad+div
 bt-film.co*##[id^="ad"]
 btime.com##[adview-id]
 chinaz.com###bottomImg
-cnbeta.com##[class="cbv810"],[class*="left"][class*="00"],[class*="right"][class*="00"],section>[style*="float"][style*="hidden"],.article-global
+cnbeta.com##.cbv,.item.cooperation,[class^="cbv"]
 cri.cn##.ad-item
 dayoo.com##.ad-area
 dl.3dmgame.com##[class^="youdao"]
@@ -360,6 +367,7 @@ v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="
 v.youku.com/pad_show/##.hy_limit
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
 weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"]
+wemedia.ifeng.com##.h_top_box,.yc_con_r a iframe
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
 www.4aqq.com##div[style]>a[href*="?"][target="_blank"]
@@ -372,7 +380,7 @@ www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
 www.cr173.com/soft/*.html##.m-black-bg
 www.crsky.com##.banner-leader
-www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap
+www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap,#sup-post-a
 www.douban.com/note/##.ui-overlay-mask
 www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des
 www.duote.com##div[class*="-banner"],div[class*="-ad"]
@@ -409,6 +417,7 @@ www.zimuzu.tv##div[style]>a[rel="nofollow"]
 wzshipin.com##img[width="1200"],.boxg
 xinhuanet.com##[id^="YCADS"]
 yahoo.com##[id*="-Ad"]
+zhihu.com##.Card.Banner,[data-info*="ad_id"]
 zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"],#bgad,[id^="ad_"]
 |http://*btkitty##.footer+*,.footer>[id*="_"],body>[id*="_"],a[style*="100%"]
 !======[ABP css]---↑
@@ -462,6 +471,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
 ||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
 ||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
+||thsi.cn/cb?*adv*.js$S@^.*@@s
 ||ttrar.com/statics/pos_js/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
@@ -495,6 +505,7 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 |http://pb2.*$script
 ||adm.baidu.com
 ||bar.baidu.com
+||bdstatic.com/*tam-ogel/$script
 ||cb.baidu.com
 ||cbjs.baidu.com
 ||click.hm.baidu.com
@@ -504,12 +515,16 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||dup.baidustatic.com
 ||dzl.baidu.com
 ||eiv.baidu.com
+||entry.baidu.com
 ||gimg.baidu.com
+||gss^.bdstatic.com$script
+||hm.baidu.com/hm.js
 ||mobads-logs.baidu.com
 ||mobads.baidu.com
 ||pos.baidu.com
 ||push.zhanzhang.baidu.com
 ||sobar.baidu.com
+||su.bdimg.com/static/dspui/js/ue.js
 ||toolbar.baidu.com
 ||utility.baidu.com
 ||znsv.baidu.com
@@ -523,6 +538,7 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 |https://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
 cpro.baidustatic.com/cpro/*/noexpire/*.min.css$f@302:s@@@
 ||/cpro/*/noexpire/*.min.css$S@^.*$@*{display:none!important}@s
+||baidu.com/s?$S@("#"\+t\.id\+"{).*?}@${1}display:none!important}@sg
 ||baidu.com/s?*$S@(#container (\.(?!noback)\w{5,}).*?){.*?}@${1}{display:none}@sig
 ||baidu.com/s?*$S@<script id="ecomScript">.*?</script>@@sig
 baidu.com###content_left > [data-click*="rsv_srcid"]
@@ -577,6 +593,17 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 ||da.mgtv.com/*/player|$S@^.*$@@s
 !======[www.mgtv.com]---↑
 
+!======[www.fun.tv]---↓
+||adm.funshion.com
+|http://static.funshion.com/*open_adview
+!======[www.fun.tv]---↑
+
+!======[www.wasu.cn]---↓
+||delivery*.wasu.cn/d/js/1.0?pos=
+||delivery.wasu.cn/d/frontJs/*?pos=$S@: ?\d{1,2}@:0@
+wasu.cn##[class*="ads_"],[class*="_ads"]
+!======[www.wasu.cn]---↑
+
 !======[video.eastday.com]---↓
 ||sports.eastday.com/jscss/*/theme_video.js$S@(var adtime ?= ?)\d{1,2}@${1}0@
 ||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
@@ -588,8 +615,6 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 ||17173im.alllget.com/main/s$S@"t":"\d{1,2}"@"t":"0"@
 ||v.17173.com/advideo/$m@res:block/null.mp4
 !======[v.17173.com]---↑
-
-!------[TMP临时区  end]------!
 
 !------[前端 CDN 加速服务begin]
 !------↓谷歌字体fonts.googleapis.com/css?family=Ravi+Prakash
