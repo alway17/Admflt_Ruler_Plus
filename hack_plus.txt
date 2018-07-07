@@ -594,6 +594,9 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 ||ups.youku.com/ups/get.json?vid=*$s@{"P":1,"VAL":@{"P":0,"VAL":@
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
 !||ott.cibntv.net/youku/*.mp4*&ctype=$f@302:s@^https?:\/\/.*?ctype=\d*.*?$@https://ssl.admflt.com/doc/block/null.mp4@
+!---> h5-1080p
+||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@r+=" disable"@r+=""@
+||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@<span class="vip-label">@<span style="display:none">@
 !======[v.youku.com]---↑
 
 !======[tv.sohu.com]---↓
