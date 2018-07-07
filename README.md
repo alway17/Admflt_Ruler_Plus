@@ -23,9 +23,10 @@
 * 排除请自行设置添加“用户排除”
 
 ## 其他
-GitHub和码云同步
+GitHub和码云同步，coding备份
 * https://github.com/emCupid/Admflt_Ruler_Plus
 * https://gitee.com/emCupid/Admflt_Ruler_Plus
+* https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git
 
 emmm....买包烟咯
 
