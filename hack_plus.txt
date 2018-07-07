@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-07
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-08
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -58,6 +58,10 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/?sspid=
 |http://*/Ad.swf
 |http://*/PC_ad$script
+|http://*/^.php?id=*
+|http://*/^.php?s=*
+|http://*/^.php?uid=*
+|http://*/aaaa/$script
 |http://*/ad/$image
 |http://*/ad/*.aspx*id=
 |http://*/ad/*.js
@@ -76,8 +80,10 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ecom-ad/
 |http://*/flashcgi?action=flashlist$block
 |http://*/footBanner_new.js$script
+|http://*/html/click/$document
 |http://*/js/*cpc$script
 |http://*/js/ashow.js
+|http://*/js/p/vcs.js
 |http://*/js/topad.js$script
 |http://*/r/mr_$script
 |http://*/s?z=*
@@ -95,8 +101,10 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*advert.js
 |http://*index960.js$script
 |http://*tempAd.js
+|http://225bt.com/js/config.js
 |http://ad.*.com/
 |http://adshows.21cn.com/washow?*
+|http://adx.*.*/
 |http://ams.fx678.com
 |http://cpc.*.*/
 |http://da.duowan.com/loc/
@@ -183,6 +191,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||71.am/*AdManager
 ||AdModel/$script
 ||AdSystem/$script
+||a.alimama.cn
 ||ad.caiba520.win
 ||adimg*.weibo.com
 ||adm.dxpmedia.com
@@ -195,6 +204,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||adxvip.com
 ||afp.alicdn.com
 ||afpmm.alicdn.com
+||alimama.alicdn.com
 ||alimama.com/ex?a=
 ||api.*/balance?*&secret
 ||api.47ks.com/cp*ad.js
@@ -253,6 +263,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||jia.com/js/zixun/$script
 ||jjygym.com$third-party
 ||jph.itiexue.net
+||js.niuxgame77.com
 ||js.taoguba.com.cn/res/libs/tgbxc.js
 ||js.tv.itc.cn/site/play/*/menu_ad_*$script
 ||kfkfl.cn/vs.php?id=*
@@ -414,6 +425,7 @@ www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iqiyi.com/*.html##.rightPCAdv$B
 www.ithome.com###con>div:not([id]):not([class]),.AdblockBanner
 www.kuwo.cn##.tuiguang
+www.landiannews.com##a[rel="external nofollow"]
 www.lbldy.com##.ad-pc,.listad
 www.mgtv.com##.m-focus-ad
 www.orsoon.com##.down-sect2,#other-link
@@ -432,7 +444,7 @@ www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],
 www.xianliao.me##[class^="ads_"]
 www.yxdown.com/*.html##div[id*="adv"],iframe
 www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display:block!important"]
-www.zimuku.cn##.page-header.prel,li.li[style],#myModal
+www.zimuku.cn##.page-header.prel,li.li[style]
 www.zimuzu.tv##div[style]>a[rel="nofollow"]
 wzshipin.com##img[width="1200"],.boxg
 xinhuanet.com##[id^="YCADS"]
@@ -663,6 +675,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||58cdn.com.cn/*.css$pass
 @@||alicdn.com/static-*/login/*/login/css/main*.css$pass
 @@||bdstatic.com/static/searchresult/pkg/*.css$pass
+@@||bootstrap.min.css$pass
 @@||cdn.120askimages.com/ask/css/topfloat.css$pass
 @@||changyan.*/v*src/start.min.js$pass
 @@||console.cloud.tencent.com/*$pass
@@ -676,6 +689,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||res*.ynet.com/*header.css$pass
 @@||s.itiexue.net/??css$pass
 @@||static.geetest.com/static/*.css$pass
+@@||static.zongheng.com/*/style/basic.css$pass
 @@||wp-content/cache/minify/*.css$pass
 @@||www.css-js.com/*.css
 @@||www.css-js.com/*/compressor.css$pass
@@ -683,7 +697,6 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
-@@||static.zongheng.com/*/style/basic.css$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
