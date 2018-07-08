@@ -495,6 +495,7 @@ subhd.com$s@</head>@<script>sessionStorage.setItem("hassession", 1);</script></h
 tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerror="javascript:this.parentNode.parentNode.style.display='none';">@
 tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
+|http://*.*.*/?s=*$f@302:s@^http:\/\/.*?/\?\w=\d*$@http://119.29.29.29/404@
 |http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
 |http://*/dc?i=*$f@302:s@^https?:\/\/.*@http://119.29.29.29/404@
@@ -724,6 +725,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
+||www.zhuihd.com$s@</body>@<script>unHackcss.F('.theiaStickySidebar')</script></body>@
 !-白名单放行end
 
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
