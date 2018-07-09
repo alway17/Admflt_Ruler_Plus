@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-09
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-10
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -430,7 +430,7 @@ www.cr173.com/soft/*.html##.m-black-bg
 www.crsky.com##.banner-leader
 www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap,#sup-post-a
 www.douban.com/note/##.ui-overlay-mask
-www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des
+www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"]
 www.duote.com##div[class*="-banner"],div[class*="-ad"]
 www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
 www.epinv.com##.huadong,.epinv_f,.footbar,.danger
@@ -727,9 +727,10 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
 ||www.zhuihd.com$s@</body>@<script>unHackcss.F('.theiaStickySidebar')</script></body>@
 !-白名单放行end
-
-|http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
-|https://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=https://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
+|http://$S@<!--.*(<html.*?>|<head.*?>|<body.*?).*?-->@@i
+|http://$S@(<!doctype[^>]+?>|(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
+|https://$S@<!--.*(<html.*?>|<head.*?>|<body.*?).*?-->@@i
+|https://$S@(<!doctype[^>]+?>|(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=https://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
 |http://$S@(z-index(:| )*\d{9,10})@max-width:0!important;visibility:hidden!important;hackcss:@
 ||*/*.css|$S@z-index(:| )*(9){4,5}\d@max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
 !------[全局处理浮动窗+隐藏类规则屏蔽增强end]
