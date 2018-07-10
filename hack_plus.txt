@@ -70,6 +70,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ad/*.js
 |http://*/ad/*ad$script
 |http://*/ad?^=
+|http://*/adjs/$script
 |http://*/adms.php?*id*=*
 |http://*/adpic/$image
 |http://*/ads.php?*id*=*
@@ -173,6 +174,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/ad/*.js
 |https://*/ad/*ad$script
 |https://*/ad?^=
+|https://*/adjs/$script
 |https://*/ads.php?*id*=*
 |https://*/banner*.js
 |https://*/cpm*.js
@@ -200,6 +202,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||2mdn.net/ads/
 ||3dwwwgame.com/ep/
 ||3dwwwgame.com/p/
+||42xz.com/
 ||52pk.com/*/webThunderDetect.js
 ||52pk.com/*/yingsu.js
 ||71.am/*AdManager
@@ -245,6 +248,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||deliver.ifeng.com/showcode?
 ||dfpcitv
 ||dingding*.com$third-party
+||down.admin5.com/z/$script
 ||dydab.com$third-party
 ||e.hnr.cn/choose/view/%7B*%7D.js
 ||e.hnr.cn/choose/view/{*}.js
@@ -318,6 +322,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||unpkg.zhimg.com/za-js-sdk@2.9.2/dist/zap.js
 ||vamaker.com$third-party
 ||webapi.acfun.cn/appSpreadContents/danmuad/
+||www.17ziti.com/z/$script
 ||www.cncrk.com/*/js/rjbz.js
 ||www.cr173.com/jsBI/js/info.js
 ||www.douyu.com/lapi/sign/phonegameapi/getinfo
@@ -326,9 +331,13 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.gyingyuan.com/jiexi/$image
 ||www.iqshw.com/d/js/m/thea*.js
 ||www.ixiumei.com/otherhtml/$script
+||www.jisuxz.com/*/b*.js
+||www.jz5u.com/count
+||www.jz5u.com/new/down2.js
 ||www.newsres.cn/temp/tempad
 ||www.people.com.cn/adv/
 ||www.qqtn.com/js/downinfo-*.js
+||www.ucbug.com/new201^/$script
 ||www.xdowns.com/template/tshouyou/js/jietu.js
 ||www.xpgod.com/statics/skin_js/xpgod/*.js
 ||www.zzlxs.net/ap
@@ -382,7 +391,7 @@ i.qq.com##.icon_adv_logo,[id^="adImg"]
 ifeng.com##[id^="optimusPrimeContentId"]
 iqiyi.com##.vipFloatbgCls,.J_play-underFrame
 item.btime.com#@##subLayout
-jb51.net##li.da-download
+jb51.net##li.da-download,[style*="width:1080px"]
 kankan.com##.banner[id^="cm"]
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
@@ -449,6 +458,7 @@ www.mgtv.com##.m-focus-ad
 www.orsoon.com##.down-sect2,#other-link
 www.ouhua.info##img[src*="/ad2015/"]
 www.pc6.com##.ad-download
+www.pcsoft.com.cn##div[style*="position:fixed"]>a
 www.qqtn.com##[class*="-ban"],iframe
 www.rarbt.com##div[style*="980"]
 www.tadu.com##a[target="_blank"][style*="display:block"]
@@ -459,7 +469,9 @@ www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,
 www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 www.webqianduan.cn##.adW
 www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],.sbad
+www.xdowns.com###tips.tips
 www.xianliao.me##[class^="ads_"]
+www.xiazaiba.com##[class^="adv-"]
 www.yxdown.com/*.html##div[id*="adv"],iframe
 www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display:block!important"]
 www.zimuku.cn##.page-header.prel,li.li[style]
@@ -499,6 +511,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
 |http://*/dc?i=*$f@302:s@^https?:\/\/.*@http://119.29.29.29/404@
+|http://*/js/*.js$f@302:s@^http:\/\/.*?/js/\d{1,4}\.js@http://119.29.29.29/404/ad.js@
 |http://*/js/ad*.js$f@302:s@^http:\/\/.*\/js\/ad\d{1,3}\.js@http://119.29.29.29/404/ad.js@
 |http://*btkitty$S@<div class="footer"[^>]*?>.*</div>@@s
 |http://*btkitty$s@<head>@<head><script>window.opoen=null</script>@
@@ -515,6 +528,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||.eastday.com/*da_*.js$S@{.*}@{}@
 ||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
 ||.eastday.com/*detail*.js$s@show_ad_dynamic@fuck_ad@
+||/statics/pos_js/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||100.pncdn.cn/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||aikan-tv.com/*url=*$S@<frame .*?\.html[^>]>@@
 ||aikan-tv.com/*url=*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
@@ -531,15 +545,17 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
 ||static.ali213.net/js/data/zad/$S@https?:.*?",@",@ig
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
+||static.mediav.com/js/mvf*.js$S@^.*@@s
 ||statics/pos_js/jquery.gotop.js$S@(ViaJs|Loader)\(.*?\)@noAD()@
 ||statics/v3/js/global.js$S@(ViaJs|Loader|xzq_show)\(.*?\)@noAD()@
 ||thsi.cn/cb?*adv*.js$S@^.*@@s
-||ttrar.com/statics/pos_js/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.65yw.com$S@<frame .*?\.html[^>]>@@
 ||www.65yw.com$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
+||www.greenxf.com/js/maim.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.igeek.com.cn/static/css/articlen/style.css$S@(\.ad_box[^{]*{)[^}]*@${1}display:none@
+||www.jz5u.com/js/t*.js$S@^.*@@s
 ||www.laozuo.org/wp-content/themes/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
 ||www.zimuku.cn$s@<head>@<head><script>window.open=null</script>@
@@ -728,9 +744,9 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.zhuihd.com$s@</body>@<script>unHackcss.F('.theiaStickySidebar')</script></body>@
 !-白名单放行end
 |http://$S@<!--.*(<html.*?>|<head.*?>|<body.*?).*?-->@@i
-|http://$S@(<!doctype[^>]+?>|(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=http://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
+|http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script>${2}@i
 |https://$S@<!--.*(<html.*?>|<head.*?>|<body.*?).*?-->@@i
-|https://$S@(<!doctype[^>]+?>|(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>)([\s]{1,2}|)@${1}${2}<script async src=https://ssl.admflt.com/doc/fcss.min.js></script>${2}@i
+|https://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss.min.js></script>${2}@i
 |http://$S@(z-index(:| )*\d{9,10})@max-width:0!important;visibility:hidden!important;hackcss:@
 ||*/*.css|$S@z-index(:| )*(9){4,5}\d@max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
 !------[全局处理浮动窗+隐藏类规则屏蔽增强end]
