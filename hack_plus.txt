@@ -1,5 +1,5 @@
 [ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-10
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-11
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -87,6 +87,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/html/click/$document
 |http://*/js/*cpc$script
 |http://*/js/ashow.js
+|http://*/js/ds.js
 |http://*/js/p/vcs.js
 |http://*/js/topad.js$script
 |http://*/r/mr_$script
@@ -111,6 +112,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://adx.*.*/
 |http://ams.fx678.com
 |http://cpc.*.*/
+|http://d.xtianqi.com.cn/game/kuai8/*.js
 |http://da.duowan.com/loc/
 |http://eap.enorth.com.cn/js/$script
 |http://ent.jxnews.com.cn/js/a_cont.js
@@ -179,6 +181,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/banner*.js
 |https://*/cpm*.js
 |https://*/cpv*.js
+|https://*/js/ds.js
 |https://*/s?z=*
 ||*.google*/*ads*.js
 ||*ad*.googlesyndication.com/$script
@@ -249,12 +252,14 @@ www.gaoqingkong.com#@#.widget.box.row
 ||dfpcitv
 ||dingding*.com$third-party
 ||down.admin5.com/z/$script
+||dsp.ali213.net
 ||dydab.com$third-party
 ||e.hnr.cn/choose/view/%7B*%7D.js
 ||e.hnr.cn/choose/view/{*}.js
 ||eastday.com/*/html/ad/
 ||g.alicdn.com/*odv.min.js
 ||g.cn.miaozhen.com
+||g.doyo.cn/js/dygg*.js
 ||g.mediav.com/s
 ||ge95.com:8008/?aspx=
 ||gg.cs090.com$script
@@ -309,12 +314,14 @@ www.gaoqingkong.com#@#.widget.box.row
 ||ssajax.cn/*info/*global$script
 ||static.luna.58.com/js/mad.js
 ||static.mediav.com/js/mvf$script
+||static.segmentfault.com/sponsor/
 ||statics/js/xzq*.js
 ||stats.chinaz.com/^^_g/$script
 ||taboola.com/*loader.js
 ||tajs.qq.com
 ||tanx.com/ex?i=
 ||temaidi.com/*.js*pid=*$script
+||tiexue.net/ajax/getcityforip.ashx
 ||tj.ali213.net$script
 ||tongji/tj.php
 ||u.x.jd.com/static/js/auto.js
@@ -325,6 +332,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.17ziti.com/z/$script
 ||www.cncrk.com/*/js/rjbz.js
 ||www.cr173.com/jsBI/js/info.js
+||www.cr173.com/show/$script
+||www.danji6.com/xingg/$script
 ||www.douyu.com/lapi/sign/phonegameapi/getinfo
 ||www.douyu.com/lapi/sign/signapi/getinfo
 ||www.gucheng.com/*/common.js
@@ -354,7 +363,8 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[block]---↑
 
 !======[ABP css]---↓
-.163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main,[onclick^="fcBox"],.post_end_ad
+.163.com##[class^="ad-"],[class^="ad_"],[class*="-ad-"],div[adtype],.post_adtop_main,[onclick^="fcBox"],.post_end_ad,.post_content_endad
+.cr173.com##.m-black-bg,#full_downad
 .csdn.net##.advert,.mediav_ad
 .faloo.com##[class^="ad_"]
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
@@ -381,7 +391,7 @@ dl.3dmgame.com##[class^="youdao"]
 down.52pk.com##a[onclick*="hmt.push"]
 eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"]
 eastmoney.com##.lyad
-gamersky.com##.ad_r
+gamersky.com##.ad_r,.ngg_down,[class$="_ad"]
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
 gitee.com##.float-left-box,body>style+[class*="widget"]
 google.com##.ads-ad
@@ -435,7 +445,6 @@ www.bilibili.com##.bilibili-player-promote-wrap,#v_top_gg
 www.biquzi.com##iframe[src*="html/click"]
 www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
-www.cr173.com/soft/*.html##.m-black-bg
 www.crsky.com##.banner-leader
 www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap,#sup-post-a
 www.douban.com/note/##.ui-overlay-mask
@@ -473,6 +482,7 @@ www.xdowns.com###tips.tips
 www.xianliao.me##[class^="ads_"]
 www.xiazaiba.com##[class^="adv-"]
 www.yxdown.com/*.html##div[id*="adv"],iframe
+www.yy.com##.bg-link,#sideNotice
 www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display:block!important"]
 www.zimuku.cn##.page-header.prel,li.li[style]
 www.zimuzu.tv##div[style]>a[rel="nofollow"]
@@ -511,7 +521,6 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
 |http://*/dc?i=*$f@302:s@^https?:\/\/.*@http://119.29.29.29/404@
-|http://*/js/*.js$f@302:s@^http:\/\/.*?/js/\d{1,4}\.js@http://119.29.29.29/404/ad.js@
 |http://*/js/ad*.js$f@302:s@^http:\/\/.*\/js\/ad\d{1,3}\.js@http://119.29.29.29/404/ad.js@
 |http://*btkitty$S@<div class="footer"[^>]*?>.*</div>@@s
 |http://*btkitty$s@<head>@<head><script>window.opoen=null</script>@
@@ -535,13 +544,13 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||alicdn.com/player/ykplayer/*/youku-player.min.js$s@this.bufferTime=t@this.bufferTime=0@
 ||api.svip.baiyug.cn/*?url=*$S@$@<style>#a1{margin-top:-23px}</style>@s
 ||dl.3dmgame.com$S@<script>img\d+?.+?/script>@@
+||down.gamersky.com$s@</body>@<script>unHackcss.A('[itemprop="downloadUrl"]')</script></body>@
 ||epinv.com/dl/*.html$s@</body>@<script>getDownloadUrl()</script></body>@
 ||epinv.com/wp-content/themes/ep/js/jquery.qrcode.min.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||g.163.com/*ad_info*$S@(".*?":) ?".*?"@${1}""@
 ||gaoqing.la$s@</head>@<script>document.write=null;</script></head>@
 ||jx.2012net.com$s@fuckyou();@@
 ||manhuatai.com/springcss/style.js$s@__ad.@document.@
-||policy.com
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
 ||static.ali213.net/js/data/zad/$S@https?:.*?",@",@ig
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
@@ -557,6 +566,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||www.igeek.com.cn/static/css/articlen/style.css$S@(\.ad_box[^{]*{)[^}]*@${1}display:none@
 ||www.jz5u.com/js/t*.js$S@^.*@@s
 ||www.laozuo.org/wp-content/themes/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
+||www.yy.com$s@</head>@<script>inHackcss.S('#banner-fg','background:none')</script></head>@
 ||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
 ||www.zimuku.cn$s@<head>@<head><script>window.open=null</script>@
 !======[replace]---↑
