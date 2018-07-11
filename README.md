@@ -1,9 +1,17 @@
 # 使用说明
-* 将fcss.min.js拷贝到配置文件夹下的doc文件夹里（如果使用for monkey就不必了或建一个空的fcss.min.js在doc文件夹里）
-* 将block文件夹下载并拷贝到配置文件夹下的doc文件夹里
-* 更多帮助见：[阿呆喵使用帮助](http://doc.admflt.com/)
+* ~~将fcss.min.js拷贝到配置文件夹下的doc文件夹里（如果使用for monkey就不必了或建一个空的fcss.min.js在doc文件夹里）~~
+* ~~将block文件夹下载并拷贝到配置文件夹下的doc文件夹里~~
+* 下载ADM-DAT.zip不用解压，打开阿呆喵面板导入数据。
+* 添加hack_plus.txt订阅（三个选其一）
+* https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/hack_plus.txt
+* https://gitee.com/emCupid/Admflt_Ruler_Plus/raw/master/hack_plus.txt
+* https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git/raw/master/hack_plus.txt
+* 添加Baidu_AD_JS.txt订阅（三个选其一）
+* https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/Baidu_AD_JS.txt
+* https://gitee.com/emCupid/Admflt_Ruler_Plus/raw/master/Baidu_AD_JS.txt
+* https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git/raw/master/Baidu_AD_JS.txt
 
-## hack_plus.tx
+## hack_plus.txt
 * 此规则由本人自用规则（ADM）而来，开放给有兴趣同学，其他程序可能会不兼容
 * 不介意其他程序可以稍改语法拿去使用，共同学习，请注明来源
 * 类似以前的骚规则，只不过从阿呆喵退休后基本自用，更新看时间和心情
