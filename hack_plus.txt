@@ -1,5 +1,4 @@
-[ADM]
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-11
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-12
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -95,6 +94,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/site_ad/$script
 |http://*/ssp.js$script
 |http://*/ssp.php?id=
+|http://*/ssp/
 |http://*/ssp/$script
 |http://*/tongji.html
 |http://*/tui/*ad$script
@@ -121,6 +121,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://hxjs.tool.hexun.com/forex/hx_pageMediaControl.js
 |http://img.hexun.com/*appDplus.js
 |http://ja^.gamersky.com/gs.*.js
+|http://jsinc.baa.bitautotech.com/c/c.js
 |http://life.southmoney.com/page/inc/*.js
 |http://p.54new.com/da/$script
 |http://s.0594529.com
@@ -183,6 +184,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/cpv*.js
 |https://*/js/ds.js
 |https://*/s?z=*
+|https://*/ssp/
 ||*.google*/*ads*.js
 ||*ad*.googlesyndication.com/$script
 ||.0x55.com
@@ -228,6 +230,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||alimama.com/ex?a=
 ||api.*/balance?*&secret
 ||api.47ks.com/cp*ad.js
+||api.zol.com/index.php?c=Ad_
 ||app.video.baidu.com/xda
 ||avideos.php
 ||bashare.cn
@@ -341,6 +344,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.danji6.com/xingg/$script
 ||www.douyu.com/lapi/sign/phonegameapi/getinfo
 ||www.douyu.com/lapi/sign/signapi/getinfo
+||www.fengup.com/images/themes/mleft.js
 ||www.gucheng.com/*/common.js
 ||www.gyingyuan.com/jiexi/$image
 ||www.iqshw.com/d/js/m/thea*.js
@@ -389,7 +393,7 @@ brtn.cn,btime.com##[adview-id],[id^="adview"],[id^="cpm-"]
 bt-film.co*##[id^="ad"]
 chinaz.com###bottomImg
 cnbeta.com##.cbv,.item.cooperation,[class^="cbv"]
-cnfol.com##[data-revive-zoneid],[id^="as_"]
+cnfol.com##[data-revive-zoneid],[id^="as_"],[class*="Ad"]
 cri.cn##.ad-item
 dayoo.com##.ad-area
 dl.3dmgame.com##[class^="youdao"]
@@ -417,7 +421,7 @@ news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend
 nipic.com##[class*="advertCloseBtn"]
 outlook.live##._n_h
 q.z.vip.totv.72du.com##.secs strong
-qianzhan.com##.advBox,.footApp
+qianzhan.com##.advBox,.footApp,.shop-tj
 qichamao.com##.side-ad1
 qidian.com##[id^="banner"],div[id^="j-"]:not([class*="content"]),div[id^="j_"].hidden,.operation-wrap,[id$="-ops"],[id$="-op"]
 qiushibaike.com##.shopwindow
@@ -756,6 +760,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
+@@https://g.alicdn.com/tb/??item-detail/$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
