@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-12
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-13
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -35,6 +35,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mt2t.5xlm.com:91/adm-add-socks
 ||j.qiqivv.com:6060/
 ||j.qiqivv.com:4433/
+||6vhao.kkcaicai.com:8080/960X90.js
 !======[adm add socks]-----↑
 
 !======[block]---↓
@@ -69,6 +70,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ad/*.js
 |http://*/ad/*ad$script
 |http://*/ad?^=
+|http://*/adfile/*.js
 |http://*/adjs/$script
 |http://*/adms.php?*id*=*
 |http://*/adpic/$image
@@ -79,6 +81,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/c/js/$script
 |http://*/cpm*.js
 |http://*/cpv*.js
+|http://*/d/960.js
 |http://*/dc?i=*
 |http://*/ecom-ad/
 |http://*/flashcgi?action=flashlist$block
@@ -177,6 +180,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/ad/*.js
 |https://*/ad/*ad$script
 |https://*/ad?^=
+|https://*/adfile/*.js
 |https://*/adjs/$script
 |https://*/ads.php?*id*=*
 |https://*/banner*.js
@@ -240,6 +244,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||bmp.ali213.net/JS/$script
 ||c.v4dwkcv.com/js/rr/$script
 ||cdn.jsdelivr.net/opensug/*/opensug.js
+||cdn.tudown.com/script/down.js
 ||chucity.com
 ||clientsolutions.cn/*?ad
 ||cn.miaozhen.com
@@ -252,6 +257,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||ctfile.com/iajax_guest.php?item=file_act&action=premium
 ||ctfile.com/premium_inpage.php
 ||d/js/acmsd/*.js
+||data.9xiazaiqi.com/api/shownums
 ||data.vod.itc.cn/*prod=ad*
 ||deliver.ifeng.com/getcode?
 ||deliver.ifeng.com/showcode?
@@ -345,6 +351,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.douyu.com/lapi/sign/phonegameapi/getinfo
 ||www.douyu.com/lapi/sign/signapi/getinfo
 ||www.fengup.com/images/themes/mleft.js
+||www.fxxz.com/skin/know/$script
 ||www.gucheng.com/*/common.js
 ||www.gyingyuan.com/jiexi/$image
 ||www.iqshw.com/d/js/m/thea*.js
@@ -356,6 +363,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.people.com.cn/adv/
 ||www.qqtn.com/js/downinfo-*.js
 ||www.ucbug.com/new201^/$script
+||www.xdowns.com/js/lefttuijian.js
 ||www.xdowns.com/template/tshouyou/js/jietu.js
 ||www.xpgod.com/statics/skin_js/xpgod/*.js
 ||www.zzlxs.net/ap
@@ -420,6 +428,7 @@ news.mydrivers.com##.news_bt+div[style]
 news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend
 nipic.com##[class*="advertCloseBtn"]
 outlook.live##._n_h
+pan.baidu.com##.ad-platform-tips
 q.z.vip.totv.72du.com##.secs strong
 qianzhan.com##.advBox,.footApp,.shop-tj,a[href*="www.qianzhan.com/go/"]
 qichamao.com##.side-ad1
@@ -466,6 +475,7 @@ www.fun.tv##.play-banner-ad,[class^="dialog-"][id^="dialog-"],.banner-ad,[class$
 www.gaoqingkong.com###cgVshow
 www.greenxf.com/*.html##a[class][href="#"]
 www.haha.mx##.fl.sidebar>div[class][style],.waterfall-column iframe
+www.haote.com##[class$="banner"],.flashbox.f_list,.bigmainIn
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iqiyi.com/*.html##.rightPCAdv$B
 www.ithome.com###con>div:not([id]):not([class]),.AdblockBanner
@@ -475,6 +485,7 @@ www.lbldy.com##.ad-pc,.listad
 www.mgtv.com##.m-focus-ad
 www.orsoon.com##.down-sect2,#other-link
 www.ouhua.info##img[src*="/ad2015/"]
+www.panda.tv##.index-slider-video-container>a
 www.pc6.com##.ad-download
 www.pcsoft.com.cn##div[style*="position:fixed"]>a
 www.qqtn.com##[class*="-ban"],iframe
@@ -525,7 +536,6 @@ media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/blo
 subhd.com$s@</head>@<script>sessionStorage.setItem("hassession", 1);</script></head>@
 tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerror="javascript:this.parentNode.parentNode.style.display='none';">@
 tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
-www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |http://*.*.*/?s=*$f@302:s@^http:\/\/.*?/\?\w=\d*$@http://119.29.29.29/404@
 |http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
@@ -543,6 +553,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 |https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |https://*btkitty$S@<div class="footer"[^>]*?>.*</div>@@s
 |https://btso.pw/$s@<div type="text/data-position"*</div>@@
+|https://www.panda.tv/|$s@</head>@<script>inHackcss.S('.index-slider-video-container','background:none')</script></head>@
 ||.eastday.com/*da_*.js$S@{.*}@{}@
 ||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
 ||.eastday.com/*detail*.js$s@show_ad_dynamic@fuck_ad@
@@ -578,6 +589,7 @@ www.dilidili.*$S@(<article class="popUp")[^>]*>@${1} style="display:none">@
 ||www.igeek.com.cn/static/css/articlen/style.css$S@(\.ad_box[^{]*{)[^}]*@${1}display:none@
 ||www.jz5u.com/js/t*.js$S@^.*@@s
 ||www.laozuo.org/wp-content/themes/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
+||www.pc0359.cn/style/js/main.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.yy.com$s@</head>@<script>inHackcss.S('#banner-fg','background:none')</script></head>@
 ||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
 ||www.zimuku.cn$s@<head>@<head><script>window.open=null</script>@
@@ -634,12 +646,12 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||baidu_ad.js
 ||idm-su.baidu.com
 ||cir-smart.baidu.com
-/cpro/*/noexpire/*.min.js$f@302:s@@@
-||/cpro/*/noexpire/*.min.js$S@^.*$@location.href='about:blank';@s
+/cpro/*/noexpire/*.js$f@302:s@@@
+||/cpro/*/noexpire/*.js$S@^.*$@location.href='about:blank';@s
 |http://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
 |https://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
-cpro.baidustatic.com/cpro/*/noexpire/*.min.css$f@302:s@@@
-||/cpro/*/noexpire/*.min.css$S@^.*$@*{display:none!important}@s
+cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
+||/cpro/*/noexpire/*.css$S@^.*$@*{display:none!important}@s
 ||baidu.com/s?$S@("#"\+t\.id\+"{).*?}@${1}display:none!important}@sg
 ||baidu.com/s?*$S@(#container (\.(?!noback)\w{5,}).*?){.*?}@${1}{display:none}@sig
 ||baidu.com/s?*$S@<script id="ecomScript">.*?</script>@@sig
@@ -663,6 +675,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 !======[v.youku.com]---↓
 !||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
 .youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer
+player.youku.com##.outsitepanel
 ||html.atm.youku.com/html*h5%2Cimg*
 ||v2html.atm.youku.com/vhtml*h5,img*
 ||valp.atm.youku.com/vp*swf,img*
