@@ -1,12 +1,8 @@
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-13
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-15
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !======[wlist]---↓
-S:api.geetest.com
-S:api.weibo.com
-S:jd.hk
-163.com#@#.post_header
 @@|http://*attachment*/ad/$image
 @@|https://myaccount.google.com/$pass
 @@|https://notifications.google.com/$pass
@@ -18,8 +14,12 @@ S:jd.hk
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
 @@||bdstatic.com/*/admLoader/main_$script
+@@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||dianping.com
+@@||g.alicdn.com/ali-mod/??$pass
+@@||g.alicdn.com/vip/$pass
 @@||g1.dfcfw.com/g2/201702/20170216133526.png
+@@||jquery.pjax*.js$pass
 @@||mc.zzidc.com$pass
 @@||mmstat.com/yt/*$pass
 @@||player.pptv.com/flashplayer/pid/*/baiduduanshipin.swf$pass
@@ -27,6 +27,10 @@ S:jd.hk
 @@||wkinfo.com.cn$pass
 @@||www.3987.com/*.html
 @@||www.hdsky.net/ad/down.png
+S:api.geetest.com
+S:api.weibo.com
+S:jd.hk
+S:passport.aliyun.com
 news.xinhuanet.com#@#.domPC
 www.gaoqingkong.com#@#.widget.box.row
 !======[wlist]---↑
@@ -39,6 +43,7 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[adm add socks]-----↑
 
 !======[block]---↓
+||irs01.com
 |http://*.*/^.html?id=*
 |http://*.19869.com$third-party
 |http://*.360buyimg.com/*.html?ad_ids=*
@@ -387,6 +392,7 @@ www.gaoqingkong.com#@#.widget.box.row
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
 17173.com##[class*="Ad17173"],[id^="adLink"],[class*="ad17173"]:not(.game-hot)
+3g.163.com##[id^="ssp-"]
 4399.com###addiv,#defaultbglink,.a-d
 51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
 72du.com##.tipb
@@ -416,6 +422,7 @@ guokr.com##[class*="-advert"]
 hexun.com###newsPopWin
 i.qq.com##.icon_adv_logo,[id^="adImg"]
 ifeng.com##[id^="optimusPrimeContentId"]
+image.baidu.com##.text-link-ads,.fcImgli
 iqiyi.com##.vipFloatbgCls,.J_play-underFrame
 item.btime.com#@##subLayout
 jb51.net##li.da-download,[style*="width:1080px"]
@@ -512,6 +519,7 @@ yahoo.com##[id*="-Ad"]
 zhihu.com##.Card.Banner,[data-info*="ad_id"]
 zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"],#bgad,[id^="ad_"],.today-hot-layer
 |http://*btkitty,|https://*btkitty##body>[id*="_"],a[style*="100%"]
+|http://www.chinaz.com/|##a[target="_blank"][rel*="nofollow"],.goTop
 !======[ABP css]---↑
 
 !======[Admflt ABP css]---↓
@@ -548,6 +556,7 @@ tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 |http://*top_ad.js$S@^.*@@s
 |http://img.tingroom.com/file/*.js$S@^( )*?document.write.+?(a href.*?target|iframe|script).+?\).?@@img
 |http://q.z.vip.totv.72du.com/$S@showTime\(\d{1,2}\);@showTime(0);@
+|http://www.greenxf.com/js/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://www.tingchina.com/js/*.js$S@^( )*?document.write.+?(a href.*?target|iframe|script).+?\).?@@img
 |http://www.zimuku.net/$s@</head>@<script>isAdEnabled=1;document.write=null</script></head>@
 |https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
@@ -679,7 +688,7 @@ player.youku.com##.outsitepanel
 ||html.atm.youku.com/html*h5%2Cimg*
 ||v2html.atm.youku.com/vhtml*h5,img*
 ||valp.atm.youku.com/vp*swf,img*
-||ups.youku.com/ups/get.json?vid=*$s@{"P":1,"VAL"@{"P":0,"VAL"@
+||ups.youku.com/ups/get.json?vid=*$s@{"P":1,@{"P":0,@
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
 !||ott.cibntv.net/youku/*.mp4*&ctype=$f@302:s@^https?:\/\/.*?ctype=\d*.*?$@https://ssl.admflt.com/doc/block/null.mp4@
 !---> h5-1080p
@@ -701,8 +710,8 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
-||cupid.iqiyi.com/show2?e=*$S@:"(https?://.*?\.jpg|https?://.*?\.swf|https?://.*?\.f4v)@:"@
-||*/videos/other/*.f4v$m@res:block/null.mp4
+||cupid.iqiyi.com/show2?e=*$S@:"(https?://.*?\.jpg|https?://.*?\.mp4|https?://.*?\.f4v)@:" @
+||*/videos/other/*.f4v|$m@res:block/null.mp4
 ||cupid.iqiyi.com/show2?a=qc_$S@^.*$@@s
 |http://qiyu.iqiyi.com/p13n20?
 !||dispatcher.video.qiyi.com/dispn/player/preloader.swf
