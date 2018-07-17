@@ -23,7 +23,7 @@
 ## fcss.min.js
 * 全局元素广告屏蔽JS
 * 本想用外部样式表来插入，可有些网站实在是鸡贼，会删除style等元素，故采用JS生成xml-stylesheet的方式
-* 对IE也做了兼容，虽然这玩意儿可能没多少人用了
+* 支持IE，但并未对其进行大量测试，请用现代浏览器。
 * 提供两个函数用于白名单，unHackcss.F('css选择器')用于解除浮动元素屏蔽，unHackcss.A('css选择器')用于解除全局元素屏蔽，使用方法例：||xxxx.com$s@&lt;/body&gt;@&lt;script&gt;unHackcss.F('#navbar')&lt;/script&gt;&lt;/body&gt;@
 
 ## 其他

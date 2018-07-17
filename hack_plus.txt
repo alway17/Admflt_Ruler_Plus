@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-17
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-17
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -476,6 +476,7 @@ www.bilibili.com##.bilibili-player-promote-wrap,#v_top_gg
 www.biquzi.com##iframe[src*="html/click"]
 www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
+www.cnprint.org##.top-post-ads
 www.crsky.com##.banner-leader
 www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap,#sup-post-a
 www.douban.com/note/##.ui-overlay-mask
