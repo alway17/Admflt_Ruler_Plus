@@ -23,6 +23,7 @@
 @@||mc.zzidc.com$pass
 @@||mmstat.com/yt/*$pass
 @@||player.pptv.com/flashplayer/pid/*/baiduduanshipin.swf$pass
+@@||static.x-boy.cn$pass
 @@||static.yxdown.com/pc/index/js/jquery.lazyload.js$pass
 @@||wkinfo.com.cn$pass
 @@||www.3987.com/*.html
