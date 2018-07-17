@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-15
+!-----| ADM不特别规则[ emCupid ] LastUpdate:2018-07-17
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -31,6 +31,8 @@ S:api.geetest.com
 S:api.weibo.com
 S:jd.hk
 S:passport.aliyun.com
+S:static.x-boy.cn
+bbs.zol.com.cn#@##bookContent
 news.xinhuanet.com#@#.domPC
 www.gaoqingkong.com#@#.widget.box.row
 !======[wlist]---↑
@@ -43,7 +45,6 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[adm add socks]-----↑
 
 !======[block]---↓
-||irs01.com
 |http://*.*/^.html?id=*
 |http://*.19869.com$third-party
 |http://*.360buyimg.com/*.html?ad_ids=*
@@ -93,6 +94,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/footBanner_new.js$script
 |http://*/html/click/$document
 |http://*/js/*cpc$script
+|http://*/js/ads^.js$domain=~tmearn.com
 |http://*/js/ashow.js
 |http://*/js/ds.js
 |http://*/js/p/vcs.js
@@ -191,6 +193,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/banner*.js
 |https://*/cpm*.js
 |https://*/cpv*.js
+|https://*/js/ads^.js$domain=~tmearn.com
 |https://*/js/ds.js
 |https://*/s?z=*
 |https://*/ssp/
@@ -220,6 +223,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||52pk.com/*/webThunderDetect.js
 ||52pk.com/*/yingsu.js
 ||71.am/*AdManager
+||7down.com/misc/static/down*.html
 ||AdModel/$script
 ||AdSystem/$script
 ||a.alimama.cn
@@ -297,6 +301,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||images.sohu.com/cs/jsfile/js/c.js
 ||img*.126.net/ntesrich/*ad*$script
 ||img.aolusb.com/forever/$script
+||irs01.com
 ||irs01.com/?p=
 ||j.qiqivv.com
 ||jb51.net/*/arcts.js
@@ -314,6 +319,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mbai.cn$third-party
 ||mediav.com/ad/
 ||mediav.com/galileo/*.mp4
+||mellowads.com
 ||mgtv.com/mediafiles/wiad
 ||mydisplay.ctfile.com/popjump.php?r=
 ||obs.cfboo.com$script
@@ -566,6 +572,7 @@ tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 ||.eastday.com/*da_*.js$S@{.*}@{}@
 ||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
 ||.eastday.com/*detail*.js$s@show_ad_dynamic@fuck_ad@
+||/statics/mystyle/js/*.js$f@302:s@^https?:\/\/.*\/\d+\.js@http://119.29.29.29/404/ad.js@
 ||/statics/pos_js/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||100.pncdn.cn/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||aikan-tv.com/*url=*$S@<frame .*?\.html[^>]>@@
