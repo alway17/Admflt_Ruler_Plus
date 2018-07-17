@@ -531,7 +531,6 @@ zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"],
 !======[ABP css]---↑
 
 !======[Admflt ABP css]---↓
-3dmgame.com##%[node-type^="ad"]{clip: rect(1px,1px,1px,1px)
 4399.com##%body{background-image:none!important}
 51cto.com##%.top_bg{height:85px!important}
 bbs.pcbeta.com##%style[type="text/css"]+div{height:auto!important}
@@ -599,6 +598,7 @@ tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 ||thsi.cn/cb?*adv*.js$S@^.*@@s
 ||tieba.baidu.com/$S@('asyncHTML':) ?'.*?',@${1}'',@
 ||tieba.baidu.com/p$S@(<style>.?div\..*?) ?{.*?</style>@${1}{display:none}</style>@isg
+||tieba.baidu.com/p$s@</body>@<script>unHackcss.F('#bdshare_tb')</script></body>@
 ||www.19fa.com/jx/index*$S@<frame .*?\.html[^>]>@@
 ||www.19fa.com/jx/index*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.65yw.com$S@<frame .*?\.html[^>]>@@
@@ -798,15 +798,15 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
 ||www.zhuihd.com$s@</body>@<script>unHackcss.F('.theiaStickySidebar')</script></body>@
 !-白名单放行end
-|http://$S@<!--.*(<html.*?>|<head.*?>|<body.*?).*?-->@@i
-|http://$S@(^<!DOCTYPE[^>]+?>|(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script>${2}@im
-|https://$S@<!--.*(<html.*?>|<head.*?>|<body.*?).*?-->@@i
-|https://$S@(^<!DOCTYPE[^>]+?>|(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss.min.js></script>${2}@im
+|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
+|http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script>${2}@im
+|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
+|https://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss.min.js></script>${2}@im
 |http://$S@(z-index(:| )*\d{9,10})@max-width:0!important;visibility:hidden!important;hackcss:@
 ||*/*.css|$S@z-index(:| )*(9){4,5}\d@max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
 !------[全局处理浮动窗+隐藏类规则屏蔽增强end]
 
 !------[其他规则begin]
-!!------↓全局性测试规则
+!------↓下载器屏蔽访问
 |http://*_*@*.exe$block
 |http://*@*_*.exe$block
