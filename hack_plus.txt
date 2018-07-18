@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-17
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-18
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -106,9 +106,9 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ssp.js$script
 |http://*/ssp.php?id=
 |http://*/ssp/
-|http://*/ssp/$script
 |http://*/tongji.html
 |http://*/tui/*ad$script
+|http://*/unionjs/*.js
 |http://*/w/a/imp-cb$script
 |http://*/x.asp?pid=*
 |http://*710x2^0.js$script
@@ -138,6 +138,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://s.0594529.com
 |http://s.thsi.cn/*/cmsad/$script
 |http://sports.eastday.com/jscss/*/da.js
+|http://ssp.$script
 |http://sssvd.china.com
 |http://static.497.com/pc/js/*_g*.js
 |http://static.497.com/pc/js/*g_*.js
@@ -198,6 +199,8 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/js/ds.js
 |https://*/s?z=*
 |https://*/ssp/
+|https://*/unionjs/*.js
+|https://ssp.$script
 ||*.google*/*ads*.js
 ||*ad*.googlesyndication.com/$script
 ||.0x55.com
@@ -494,6 +497,7 @@ www.haote.com##[class$="banner"],.flashbox.f_list,.bigmainIn
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iqiyi.com/*.html##.rightPCAdv$B
 www.ithome.com###con>div:not([id]):not([class]),.AdblockBanner
+www.kafan.cn/edu/,www.kafan.cn/jc.php##.container[style],[id^="content"][style],#categories-4[style],a[rel="nofollow"][style],h6
 www.kuwo.cn##.tuiguang
 www.landiannews.com##a[rel="external nofollow"]
 www.lbldy.com##.ad-pc,.listad
@@ -794,13 +798,14 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@|https://g.alicdn.com/tb/??item-detail/$pass
 @@|https://g.alicdn.com/aliww/$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
-||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
+||blog.sina.com.cn/s/$s@</body>@<script>unHackcss.A('#sina_keyword_ad_area2')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
 ||www.zhuihd.com$s@</body>@<script>unHackcss.F('.theiaStickySidebar')</script></body>@
+||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
 !-白名单放行end
-|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
+!|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script>${2}@im
-|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
+!|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |https://$S@((?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss.min.js></script>${2}@im
 |http://$S@(z-index(:| )*\d{9,10})@max-width:0!important;visibility:hidden!important;hackcss:@
 ||*/*.css|$S@z-index(:| )*(9){4,5}\d@max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
