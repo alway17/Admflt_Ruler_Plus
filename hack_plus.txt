@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-18
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-19
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -28,6 +28,7 @@
 @@||wkinfo.com.cn$pass
 @@||www.3987.com/*.html
 @@||www.hdsky.net/ad/down.png
+S:akamaihd.net
 S:api.geetest.com
 S:api.weibo.com
 S:jd.hk
@@ -392,6 +393,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||zlongad.com/ad/
 ||zmzjstu.com/*ad-*
 ||zmzjstu.com/g^/$script
+||www.laonanren.com/js/mn.js
 !======[block]---↑
 
 !======[ABP css]---↓
