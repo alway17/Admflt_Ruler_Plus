@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-19
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-20
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -94,6 +94,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ecom-ad/
 |http://*/flashcgi?action=flashlist$block
 |http://*/footBanner_new.js$script
+|http://*/gg/xx*.js
 |http://*/html/click/$document
 |http://*/js/*cpc$script
 |http://*/js/ads^.js$domain=~tmearn.com
@@ -196,6 +197,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/banner*.js
 |https://*/cpm*.js
 |https://*/cpv*.js
+|https://*/gg/xx*.js
 |https://*/js/ads^.js$domain=~tmearn.com
 |https://*/js/ds.js
 |https://*/s?z=*
@@ -375,6 +377,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.jisuxz.com/*/b*.js
 ||www.jz5u.com/count
 ||www.jz5u.com/new/down2.js
+||www.laonanren.com/js/mn.js
 ||www.newsres.cn/temp/tempad
 ||www.people.com.cn/adv/
 ||www.qqtn.com/js/downinfo-*.js
@@ -393,7 +396,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||zlongad.com/ad/
 ||zmzjstu.com/*ad-*
 ||zmzjstu.com/g^/$script
-||www.laonanren.com/js/mn.js
 !======[block]---↑
 
 !======[ABP css]---↓
@@ -561,6 +563,7 @@ tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 |http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
 |http://*/dc?i=*$f@302:s@^https?:\/\/.*@http://119.29.29.29/404@
+|http://*/gg/$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script|img|font).+?\);?@@img
 |http://*/js/ad*.js$f@302:s@^http:\/\/.*\/js\/ad\d{1,3}\.js@http://119.29.29.29/404/ad.js@
 |http://*btkitty$S@<div class="footer"[^>]*?>.*</div>@@s
 |http://*btkitty$s@<head>@<head><script>window.opoen=null</script>@
@@ -573,6 +576,7 @@ tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 |http://www.tingchina.com/js/*.js$S@^( )*?document.write.+?(a href.*?target|iframe|script).+?\).?@@img
 |http://www.zimuku.net/$s@</head>@<script>isAdEnabled=1;document.write=null</script></head>@
 |https://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
+|https://*/gg/$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script|img|font).+?\);?@@img
 |https://*btkitty$S@<div class="footer"[^>]*?>.*</div>@@s
 |https://btso.pw/$s@<div type="text/data-position"*</div>@@
 |https://www.panda.tv/|$s@</head>@<script>inHackcss.S('.index-slider-video-container','background:none')</script></head>@
