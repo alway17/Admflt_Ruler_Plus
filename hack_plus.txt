@@ -709,7 +709,10 @@ player.youku.com##.outsitepanel
 ||valp.atm.youku.com/vp*swf,img*
 ||ups.youku.com/ups/get.json?vid=*$s@{"P":1,@{"P":0,@
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
-!||ott.cibntv.net/youku/*.mp4*&ctype=$f@302:s@^https?:\/\/.*?ctype=\d*.*?$@https://ssl.admflt.com/doc/block/null.mp4@
+|http://lvip.youku.com/*api/player/adText
+||valc.atm.youku.com/vc$S@"P":[^0]@"P":0@
+||valc.atm.youku.com/vc$f@s@p=[^0]@p=0@
+||ups.youku.com/ups/get.json$s@"vip":false@"vip":true@
 !---> h5-1080p
 ||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@r+=" disable"@r+=""@
 ||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@<span class="vip-label">@<span style="display:none">@
