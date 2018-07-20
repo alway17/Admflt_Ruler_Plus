@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-20
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-21
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -43,7 +43,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mt2t.5xlm.com:91/adm-add-socks
 ||j.qiqivv.com:6060/
 ||j.qiqivv.com:4433/
-||6vhao.kkcaicai.com:8080/960X90.js
+||kkcaicai.com:8080/
 !======[adm add socks]-----↑
 
 !======[block]---↓
@@ -64,6 +64,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/*@*!$script
 |http://*//i.php?^=*
 |http://*/2^0x2^0.js
+|http://*/960X^0.js
 |http://*/9^0x^00.js
 |http://*/?sspid=
 |http://*/Ad.swf
@@ -77,11 +78,13 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ad/*.aspx*id=
 |http://*/ad/*.js
 |http://*/ad/*ad$script
+|http://*/ad3^0x3^0.js
 |http://*/ad?^=
 |http://*/adfile/*.js
 |http://*/adjs/$script
 |http://*/adms.php?*id*=*
 |http://*/adpic/$image
+|http://*/ads.php
 |http://*/ads.php?*id*=*
 |http://*/advert/*
 |http://*/advs/$script
@@ -110,6 +113,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ssp/
 |http://*/tongji.html
 |http://*/tui/*ad$script
+|http://*/union/*.js
 |http://*/unionjs/*.js
 |http://*/w/a/imp-cb$script
 |http://*/x.asp?pid=*
@@ -183,6 +187,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.yuledaily.com/hbimg/wapc.js
 |http://yyygwz.com/$image
 |https://*/*@*!$script
+|https://*/960X^0.js
 |https://*/^.php?^=
 |https://*/^.php?id=*
 |https://*/^.php?s=*
@@ -190,9 +195,11 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/ad/*.aspx*id=
 |https://*/ad/*.js
 |https://*/ad/*ad$script
+|https://*/ad3^0x3^0.js
 |https://*/ad?^=
 |https://*/adfile/*.js
 |https://*/adjs/$script
+|https://*/ads.php
 |https://*/ads.php?*id*=*
 |https://*/banner*.js
 |https://*/cpm*.js
@@ -202,6 +209,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/js/ds.js
 |https://*/s?z=*
 |https://*/ssp/
+|https://*/union/*.js
 |https://*/unionjs/*.js
 |https://ssp.$script
 ||*.google*/*ads*.js
@@ -260,6 +268,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||bmp.ali213.net/JS/$script
 ||c.v4dwkcv.com/js/rr/$script
 ||cdn.jsdelivr.net/opensug/*/opensug.js
+||cdn.tudown.com/script
 ||cdn.tudown.com/script/down.js
 ||chucity.com
 ||clientsolutions.cn/*?ad
@@ -347,6 +356,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||static.luna.58.com/js/mad.js
 ||static.mediav.com/js/mvf$script
 ||static.segmentfault.com/sponsor/
+||static.xitongzhijia.net/theme/*/js/total
 ||statics/js/xzq*.js
 ||stats.chinaz.com/^^_g/$script
 ||taboola.com/*loader.js
@@ -362,6 +372,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||vamaker.com$third-party
 ||webapi.acfun.cn/appSpreadContents/danmuad/
 ||www.17ziti.com/z/$script
+||www.btdx8.com/tmp/tall.js
 ||www.cncrk.com/*/js/rjbz.js
 ||www.cr173.com/jsBI/js/info.js
 ||www.cr173.com/show/$script
@@ -507,6 +518,7 @@ www.landiannews.com##a[rel="external nofollow"]
 www.lbldy.com##.ad-pc,.listad
 www.mgtv.com##.m-focus-ad
 www.orsoon.com##.down-sect2,#other-link
+www.oschina.net##.float_adbox,[data-traceid*="_ad"]
 www.ouhua.info##img[src*="/ad2015/"]
 www.panda.tv##.index-slider-video-container>a
 www.pc6.com##.ad-download
@@ -583,6 +595,8 @@ tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 ||.eastday.com/*da_*.js$S@{.*}@{}@
 ||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
 ||.eastday.com/*detail*.js$s@show_ad_dynamic@fuck_ad@
+||.googlesyndication.com/pagead/$S@^.*@@s
+||.googlesyndication.com/pagead/$S@^.*@@s
 ||/statics/mystyle/js/*.js$f@302:s@^https?:\/\/.*\/\d+\.js@http://119.29.29.29/404/ad.js@
 ||/statics/pos_js/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||100.pncdn.cn/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
