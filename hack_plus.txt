@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-21
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-22
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -105,6 +105,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/js/ds.js
 |http://*/js/p/vcs.js
 |http://*/js/topad.js$script
+|http://*/myad/
 |http://*/r/mr_$script
 |http://*/s?z=*
 |http://*/site_ad/$script
@@ -207,6 +208,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/gg/xx*.js
 |https://*/js/ads^.js$domain=~tmearn.com
 |https://*/js/ds.js
+|https://*/myad/
 |https://*/s?z=*
 |https://*/ssp/
 |https://*/union/*.js
@@ -225,6 +227,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/api/ad.ashx
 ||/caches/poster_js/$script
 ||/code/adview_
+||/count.php
 ||/ggg/tj.js
 ||/projectpoi
 ||119.29.29.29/404
@@ -243,6 +246,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||AdSystem/$script
 ||a.alimama.cn
 ||ad.caiba520.win
+||ad_js.php
 ||adimg*.weibo.com
 ||adm.dxpmedia.com
 ||admarket.21cn.com
@@ -478,8 +482,7 @@ szhk.com##div[id*="_banner"],div[class*="banner_"]
 tech.ifeng.com##[class^="adv"]
 tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_WW"],[id^="Baidu_PIC"]
 ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
-tv.sohu.com/*.html###miaozhenad
-tv.sohu.com/*.shtml###miaozhenad
+tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
 user.qzone.qq.com##li.f-single-biz,#top_tips_container
 v.qq.com/x/##.tvip_layer,.mask_layer
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
@@ -501,8 +504,9 @@ www.chinanews.com##.hotlist_top_right,#news_top_advert
 www.cnprint.org##.top-post-ads
 www.crsky.com##.banner-leader
 www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap,#sup-post-a
+www.demaxiya.com##body>a[style]
 www.douban.com/note/##.ui-overlay-mask
-www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"]
+www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[data-target="promote"]
 www.duote.com##div[class*="-banner"],div[class*="-ad"]
 www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
 www.epinv.com##.huadong,.epinv_f,.footbar,.danger
@@ -573,7 +577,6 @@ js.ykimg.com/youku/dist/js/page/find/revision/index_*.js$s@$focusH5Ad.show()@$fo
 media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/block.m3u8@
 subhd.com$s@</head>@<script>sessionStorage.setItem("hassession", 1);</script></head>@
 tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerror="javascript:this.parentNode.parentNode.style.display='none';">@
-tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 |http://*.*.*/?s=*$f@302:s@^http:\/\/.*?/\?\w=\d*$@http://119.29.29.29/404@
 |http://*.zimuku.*/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
@@ -736,6 +739,7 @@ player.youku.com##.outsitepanel
 !======[v.youku.com]---↑
 
 !======[tv.sohu.com]---↓
+tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 ||js.tv.itc.cn/gg.seed.js
 ||api.my.tv.sohu.com/wm/getads.do
 ||v.aty.sohu.com/v?prot=vast
@@ -779,6 +783,12 @@ wasu.cn##[class*="ads_"],[class*="_ads"]
 ||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
 ||video.eastday.com/*new_gethot.js$s@(playNoAdRight())@(1)@
 !======[video.eastday.com]---↑
+
+!======[video.duowan.com]---??
+||pub.dwstatic.com/common/newsPopup/
+||a.v.duowan.com/
+||gt.duowan.com/
+!======[video.duowan.com]---??
 
 !======[v.17173.com]---↓
 ||17173im.alllget.com/main/s$S@"t":"\d{1,2}"@"t":"0"@
