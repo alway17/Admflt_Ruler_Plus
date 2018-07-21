@@ -298,6 +298,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||g.alicdn.com/*odv.min.js
 ||g.cn.miaozhen.com
 ||g.doyo.cn/js/dygg*.js
+||g.fastapi.net
 ||g.mediav.com/s
 ||ge95.com:8008/?aspx=
 ||gg.cs090.com$script
@@ -329,6 +330,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||jph.itiexue.net
 ||js.niuxgame77.com
 ||js.taoguba.com.cn/res/libs/tgbxc.js
+||js.tv.itc.cn/base/core/gg_
 ||js.tv.itc.cn/site/play/*/menu_ad_*$script
 ||kfkfl.cn/vs.php?id=*
 ||letvimg.com/*gugwl/*.swf$object
@@ -341,6 +343,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||obs.cfboo.com$script
 ||p2pmid.baofeng.com
 ||pg-ad*.nosdn.127.net
+||pic.fastapi.net
 ||pic.x.soso.com
 ||pic^.zhimg.com/*adx^.$image
 ||pingma.qq.com
