@@ -735,6 +735,8 @@ player.youku.com##.outsitepanel
 !======[tv.sohu.com]---↓
 ||js.tv.itc.cn/gg.seed.js
 ||api.my.tv.sohu.com/wm/getads.do
+||v.aty.sohu.com/v?prot=vast
+||js.tv.itc.cn/player/h5playe$s@on("playError"@on("Error"@
 !======[tv.sohu.com]---↑
 
 !======[www.youtube.com]---↓
