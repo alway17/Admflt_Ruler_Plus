@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-22
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-23
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -222,13 +222,16 @@ www.gaoqingkong.com#@#.widget.box.row
 ||.gtimg.com/*crystal$script
 ||.gtimg.com/*tips/tips.js
 ||.icast.cn/adtypes/$script
+||/1000^^0.gif
 ||/521fl/pc.js
 ||/521fl/tj.js
 ||/api/ad.ashx
 ||/caches/poster_js/$script
 ||/code/adview_
 ||/count.php
+||/floatAd.js
 ||/ggg/tj.js
+||/nativeads.js
 ||/projectpoi
 ||119.29.29.29/404
 ||17173cdn.com/*/ad17173*.js
@@ -323,7 +326,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||img*.126.net/ntesrich/*ad*$script
 ||img.aolusb.com/forever/$script
 ||irs01.com
-||irs01.com/?p=
 ||j.qiqivv.com
 ||jb51.net/*/arcts.js
 ||jb51.net/*/beitou.js
@@ -704,7 +706,7 @@ cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
 ||baidu.com/s?*$S@(#container (\.(?!noback)\w{5,}).*?){.*?}@${1}{display:none}@sig
 ||baidu.com/s?*$S@<script id="ecomScript">.*?</script>@@sig
 ||baidu.com/baidu?*$S@<script id="ecomScript">.*?</script>@@sig
-baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos]
+baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos]$B
 !======[cpro.baidu.com]---↑
 
 !======[www.le.tv]---↓
