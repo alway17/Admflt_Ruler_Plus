@@ -233,6 +233,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/ggg/tj.js
 ||/nativeads.js
 ||/projectpoi
+||101.37.26.251
 ||119.29.29.29/404
 ||17173cdn.com/*/ad17173*.js
 ||17173cdn.com/*/vda/$script
@@ -680,7 +681,7 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||eiv.baidu.com
 ||entry.baidu.com
 ||gimg.baidu.com
-||gss^.bdstatic.com$script
+||gss^.bdstatic.com$script,domain=~news.baidu.com
 ||hm.baidu.com/hm.js
 ||mobads-logs.baidu.com
 ||mobads.baidu.com
@@ -707,8 +708,7 @@ cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
 ||baidu.com/s?*$S@<script id="ecomScript">.*?</script>@@sig
 ||baidu.com/baidu?*$S@<script id="ecomScript">.*?</script>@@sig
 baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos]
-||baidu.com/s?$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos]','display:none!important')</script>@
-||baidu.com/baidu?$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos]','display:none!important')</script>@
+||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos]','display:none!important')</script>@
 !======[cpro.baidu.com]---↑
 
 !======[www.le.tv]---↓
@@ -726,7 +726,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 
 !======[v.youku.com]---↓
 !||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
-.youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer
+.youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#__btn_
 player.youku.com##.outsitepanel
 ||html.atm.youku.com/html*h5%2Cimg*
 ||v2html.atm.youku.com/vhtml*h5,img*
