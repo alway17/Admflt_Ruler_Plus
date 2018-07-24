@@ -8,6 +8,8 @@
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
 @@|https://www.gstatic.com/*Account*$pass
+@@|http://*/^.php?^=*search
+@@|https://*/^.php?^=*search
 @@||99ddd.com/*.7z
 @@||99ddd.com/*.exe
 @@||99ddd.com/*.rar
@@ -533,6 +535,7 @@ www.pc6.com##.ad-download
 www.pcsoft.com.cn##div[style*="position:fixed"]>a
 www.qqtn.com##[class*="-ban"],iframe
 www.rarbt.com##div[style*="980"]
+www.smzy.com##[class^="ad_"]
 www.tadu.com##a[target="_blank"][style*="display:block"]
 www.takefoto.cn##.news-ad,.advert
 www.ttmeiju.com##img[alt$=".jpg"]
