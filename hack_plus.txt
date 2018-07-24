@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-23
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-24
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -62,7 +62,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*.xiacaidd.com$third-party
 |http://*/*?^=ads_
 |http://*/*@*!$script
-|http://*//i.php?^=*
+|http://*/i.php?^=*
 |http://*/2^0x2^0.js
 |http://*/960X^0.js
 |http://*/9^0x^00.js
@@ -71,7 +71,6 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/PC_ad$script
 |http://*/^.php?^=
 |http://*/^.php?id=*
-|http://*/^.php?s=*
 |http://*/^.php?uid=*
 |http://*/aaaa/$script
 |http://*/ad/$image
@@ -85,7 +84,6 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/adms.php?*id*=*
 |http://*/adpic/$image
 |http://*/ads.php
-|http://*/ads.php?*id*=*
 |http://*/advert/*
 |http://*/advs/$script
 |http://*/banner*.js
@@ -845,7 +843,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.zhuihd.com$s@</body>@<script>unHackcss.F('.theiaStickySidebar')</script></body>@
 ||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1180189799,"hash":"","length":7885,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1912775799,"hash":"","length":7898,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
