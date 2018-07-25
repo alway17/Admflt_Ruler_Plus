@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-25
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-26
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -274,6 +274,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||bdstatic.com/*/admLoader/$script
 ||beacon.sina.com.cn
 ||bmp.ali213.net/JS/$script
+||bw.scupio.com
 ||c.v4dwkcv.com/js/rr/$script
 ||cdn.jsdelivr.net/opensug/*/opensug.js
 ||cdn.tudown.com/script
@@ -288,6 +289,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||cryptonight-asmjs.min.js
 ||ctfile.com/ad_display.php
 ||ctfile.com/iajax_guest.php?item=file_act&action=premium
+||ctfile.com/iz.php?i
 ||ctfile.com/premium_inpage.php
 ||ctsywy.com
 ||d/js/acmsd/*.js
@@ -310,13 +312,16 @@ www.gaoqingkong.com#@#.widget.box.row
 ||g.doyo.cn/js/dygg*.js
 ||g.fastapi.net
 ||g.mediav.com/s
+||g^.tagtic.cn/$script
 ||ge95.com:8008/?aspx=
 ||gg.cs090.com$script
 ||gg.dsxdn.com/2cto/$script
+||gg.uuu9.com/js/$script
 ||googletagservices.com
 ||guangzizai.com$script
 ||hao6v.com/d/f.js
 ||hao6v.com/d/f^.js
+||hauchi.com.tw
 ||hoopchina.com.cn/*-ad.js
 ||hoopchina.com.cn/*-v^.html
 ||houyi.baofeng.net
@@ -338,10 +343,12 @@ www.gaoqingkong.com#@#.widget.box.row
 ||jjygym.com$third-party
 ||jointreport-switch.com
 ||jph.itiexue.net
+||js.feitian001.com
 ||js.niuxgame77.com
 ||js.taoguba.com.cn/res/libs/tgbxc.js
 ||js.tv.itc.cn/base/core/gg_
 ||js.tv.itc.cn/site/play/*/menu_ad_*$script
+||kengdie.com/statics/js/view.js
 ||kfkfl.cn/vs.php?id=*
 ||kwiago.com
 ||letvimg.com/*gugwl/*.swf$object
@@ -403,6 +410,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.jisuxz.com/*/b*.js
 ||www.jz5u.com/count
 ||www.jz5u.com/new/down2.js
+||www.ktkkt.com/js/tvb/
 ||www.laonanren.com/js/mn.js
 ||www.newsres.cn/temp/tempad
 ||www.omanhua.com/scripts/show/^00^.js
@@ -436,12 +444,14 @@ www.gaoqingkong.com#@#.widget.box.row
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
 17173.com##[class*="Ad17173"],[id^="adLink"],[class*="ad17173"]:not(.game-hot)
+178.com##[class*="global-ad"]
 3g.163.com##[id^="ssp-"]
 4399.com###addiv,#defaultbglink,.a-d
 51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
 72du.com##.tipb
 7k7k.com###player-ad,#J-loop-flash,.loop-flash
 91.com##.banner-gg,.side-bs,.top_a,.advs[class*="advs-"],[class^="ad"],iframe.iframe-pic-box
+9game.cn##.guide-app-fix
 aa^^y.com###buffer,.qr_code_pc
 anhuinews.com##[class^="ad"]
 baofeng.com##[data-ads]
@@ -453,6 +463,7 @@ chinaz.com###bottomImg
 cnbeta.com##.cbv,.item.cooperation,[class^="cbv"],.cbimage-fixed
 cnfol.com##[data-revive-zoneid],[id^="as_"],[class*="Ad"]
 cri.cn##.ad-item
+ctfile.com,pipipan.com##.modal-backdrop.fade
 dayoo.com##.ad-area
 dl.3dmgame.com##[class^="youdao"]
 dmzj.com##.user_show
@@ -498,6 +509,7 @@ tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_
 ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
 tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
 user.qzone.qq.com##li.f-single-biz,#top_tips_container
+uuu9.com###uuu9_tips,#top,.top2box
 v.qq.com/x/##.tvip_layer,.mask_layer
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
