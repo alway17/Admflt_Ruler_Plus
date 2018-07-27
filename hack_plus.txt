@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-26
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-27
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -554,6 +554,7 @@ www.lbldy.com##.ad-pc,.listad
 www.mgtv.com##.m-focus-ad
 www.omanhua.com##[class*="uzmh-"]
 www.orsoon.com##.down-sect2,#other-link
+www.orsoon.com##.recover
 www.oschina.net##.float_adbox,[data-traceid*="_ad"]
 www.ouhua.info##img[src*="/ad2015/"]
 www.panda.tv##.index-slider-video-container>a
@@ -561,6 +562,7 @@ www.pc6.com##.ad-download
 www.pcsoft.com.cn##div[style*="position:fixed"]>a
 www.qqtn.com##[class*="-ban"],iframe
 www.rarbt.com##div[style*="980"]
+www.right.com.cn##.hdc.cl>h2
 www.smzy.com##[class^="ad_"]
 www.tadu.com##a[target="_blank"][style*="display:block"]
 www.takefoto.cn##.news-ad,.advert
