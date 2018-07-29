@@ -62,6 +62,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*.supfree.net/otop.js
 |http://*.supfree.net/www$script
 |http://*.xiacaidd.com$third-party
+|http://*/*960x^0.$image
 |http://*/*?^=ads_
 |http://*/*@*!$script
 |http://*/2^0x2^0.js
@@ -85,6 +86,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/adms.php?*id*=*
 |http://*/adpic/$image
 |http://*/ads.php
+|http://*/ads/$script
 |http://*/advert/*
 |http://*/advs/$script
 |http://*/banner*.js
@@ -885,7 +887,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
 ||.uzzf.com/*.html$s@</body>@<script>unHackcss.F('.down_dizhi')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3312212902,"hash":"","length":8377,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1851434054,"hash":"","length":8416,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
