@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-29
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-07-30
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -349,6 +349,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||js.taoguba.com.cn/res/libs/tgbxc.js
 ||js.tv.itc.cn/base/core/gg_
 ||js.tv.itc.cn/site/play/*/menu_ad_*$script
+||js.users.51.la
 ||kengdie.com/statics/js/view.js
 ||kfkfl.cn/vs.php?id=*
 ||kwiago.com
@@ -394,6 +395,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||unpkg.zhimg.com/za-js-sdk@2.9.2/dist/zap.js
 ||vamaker.com$third-party
 ||webapi.acfun.cn/appSpreadContents/danmuad/
+||wm.makeding.com/redirect
+||www.05sun.com/js/05sun.js
 ||www.17ziti.com/z/$script
 ||www.btdx8.com/tmp/tall.js
 ||www.cncrk.com/*/js/rjbz.js
@@ -495,6 +498,7 @@ news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend
 nipic.com##[class*="advertCloseBtn"]
 outlook.live##._n_h
 pan.baidu.com##.ad-platform-tips
+pconline.com.cn##iframe[id^="ad"],a[id^="ad"],[class^="ivy"]
 q.z.vip.totv.72du.com##.secs strong
 qianzhan.com##.advBox,.footApp,.shop-tj,a[href*="www.qianzhan.com/go/"]
 qichamao.com##.side-ad1
@@ -641,6 +645,7 @@ tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerro
 ||/statics/mystyle/js/*.js$f@302:s@^https?:\/\/.*\/\d+\.js@http://119.29.29.29/404/ad.js@
 ||/statics/pos_js/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||100.pncdn.cn/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
+||adm.72zx.com$S@^.*@@s
 ||aikan-tv.com/*url=*$S@<frame .*?\.html[^>]>@@
 ||aikan-tv.com/*url=*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||alicdn.com/player/ykplayer/*/youku-player.min.js$s@this.bufferTime=t@this.bufferTime=0@
@@ -863,13 +868,11 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||jquery.fancybox*css$pass
 @@||qiniu.staticfile.org/static/styles/*.css$pass
 @@||res*.ynet.com/*header.css$pass
-@@||s.itiexue.net/??css$pass
 @@||static.geetest.com/static/*.css$pass
 @@||static.zongheng.com/*/style/basic.css$pass
 @@||wp-content/cache/minify/*.css$pass
 @@||www.css-js.com/*.css
 @@||www.css-js.com/*/compressor.css$pass
-@@||www.downos.com/skin/*/style/css/*.css$pass
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
@@ -882,7 +885,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
 ||.uzzf.com/*.html$s@</body>@<script>unHackcss.F('.down_dizhi')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":906227544,"hash":"","length":7969,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3312212902,"hash":"","length":8377,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
