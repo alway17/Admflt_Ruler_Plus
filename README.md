@@ -1,15 +1,14 @@
 # 使用说明
-* ~~将fcss.min.js拷贝到配置文件夹下的doc文件夹里（如果使用for monkey就不必了或建一个空的fcss.min.js在doc文件夹里）~~
 * ~~将block文件夹下载并拷贝到配置文件夹下的doc文件夹里~~
 * 下载ADM-DAT.zip不用解压，打开阿呆喵面板导入数据。
 * 添加hack_plus.txt订阅（三个选其一）
 * https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/hack_plus.txt
 * https://gitee.com/emCupid/Admflt_Ruler_Plus/raw/master/hack_plus.txt
 * https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git/raw/master/hack_plus.txt
-* 添加Baidu_AD_JS.txt订阅（三个选其一）
-* https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/Baidu_AD_JS.txt
-* https://gitee.com/emCupid/Admflt_Ruler_Plus/raw/master/Baidu_AD_JS.txt
-* https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git/raw/master/Baidu_AD_JS.txt
+* ~~添加Baidu_AD_JS.txt订阅（三个选其一）~~
+* ~~https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/Baidu_AD_JS.txt~~
+* ~~https://gitee.com/emCupid/Admflt_Ruler_Plus/raw/master/Baidu_AD_JS.txt~~
+* ~~https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git/raw/master/Baidu_AD_JS.txt~~
 
 ## hack_plus.txt
 * 此规则由本人自用规则（ADM）而来，开放给有兴趣同学，其他程序可能会不兼容
@@ -19,6 +18,7 @@
 ## Baidu_AD_JS.txt
 * 屏蔽百度推广JS，由于可以自定义域名，而JS的文件也随机，普通方式抓规则量太大，用了特殊手段抓插入的JS，达到屏蔽作用。
 * 如有其他更好的方法请告知。
+* 2018-07-31 此项为可选订阅，已用其他方法达到屏蔽作用。
 
 ## fcss.min.js
 * 全局元素广告屏蔽JS
