@@ -358,6 +358,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||js.tv.itc.cn/base/core/gg_
 ||js.tv.itc.cn/site/play/*/menu_ad_*$script
 ||js.users.51.la
+||jspassport.ssl.qhimg.com
 ||kengdie.com/statics/js/view.js
 ||kfkfl.cn/vs.php?id=*
 ||kwiago.com
@@ -368,6 +369,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mediav.com/galileo/*.mp4
 ||mellowads.com
 ||mgtv.com/mediafiles/wiad
+||mop.com/assets/js/c_detail_
 ||mydisplay.ctfile.com/popjump.php?r=
 ||obs.cfboo.com$script
 ||p2pmid.baofeng.com
@@ -456,6 +458,7 @@ www.gaoqingkong.com#@#.widget.box.row
 .faloo.com##[class^="ad_"]
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"]
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float
+126.com,yeah.net,mail.163.com##.gWel-bottom,li[role="complementary"],div[id$="FooterDiv"],div[id$="AdDiv"],[id*="-ad-"],#mainCnt,[id*="_popup_"],.nui-block-hasClose,#loginExt
 17173.com##[class*="Ad17173"],[id^="adLink"],[class*="ad17173"]:not(.game-hot)
 178.com##[class*="global-ad"]
 21ic.com##.topbanner,.bigbanner,[class^="banner"],[class^="ad_"],[class*="_ad"],iframe[src*="/s?m"]
@@ -474,6 +477,7 @@ bbs.pcbeta.com##.asdad+div
 brtn.cn,btime.com##[adview-id],[id^="adview"],[id^="cpm-"]
 bt-film.co*##[id^="ad"]
 chinaz.com###bottomImg
+cn.investing.com##.midHeader
 cnbeta.com##.cbv,.item.cooperation,[class^="cbv"],.cbimage-fixed
 cnfol.com##[data-revive-zoneid],[id^="as_"],[class*="Ad"]
 cri.cn##.ad-item
@@ -501,6 +505,7 @@ kuwo.cn##.tuiguang,[class*="Ad"]
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
 mgtv.com/b/###a_box,[class^="plugins_"],[class^="nodes_"]
+mop.com##.header[style],[class^="dsp"]
 myzaker.com##a[href*="ads_id="],[id^="dsp_id"]
 news.mydrivers.com##.news_bt+div[style]
 news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend
@@ -896,7 +901,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||.uzzf.com/*.html$s@</body>@<script>unHackcss.F('.down_dizhi')</script></body>@
 ||mini.eastday.com/*.html$s@</body>@<script>unHackcss.A('[class^="gg_cnt"]')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2031346079,"hash":"","length":8963,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":347024992,"hash":"","length":8909,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
