@@ -1,15 +1,15 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-01
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-02
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !======[wlist]---↓
+@@|http://*/^.php?^=*search
 @@|http://*attachment*/ad/$image
+@@|https://*/^.php?^=*search
 @@|https://myaccount.google.com/$pass
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
 @@|https://www.gstatic.com/*Account*$pass
-@@|http://*/^.php?^=*search
-@@|https://*/^.php?^=*search
 @@||99ddd.com/*.7z
 @@||99ddd.com/*.exe
 @@||99ddd.com/*.rar
@@ -33,9 +33,12 @@
 S:akamaihd.net
 S:api.geetest.com
 S:api.weibo.com
+S:damai.cn
 S:jd.hk
 S:passport.aliyun.com
 S:static.x-boy.cn
+S:upyun.com
+S:webapi.amap.com
 bbs.zol.com.cn#@##bookContent
 news.xinhuanet.com#@#.domPC
 www.gaoqingkong.com#@#.widget.box.row
@@ -276,6 +279,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||api.47ks.com/cp*ad.js
 ||api.zol.com/index.php?c=Ad_
 ||app.video.baidu.com/xda
+||atanx.alicdn.com
+||atanx2.alicdn.com
 ||avideos.php
 ||bashare.cn
 ||bd-film.co*/cms-sidebar$script
@@ -285,6 +290,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||bw.scupio.com
 ||c.v4dwkcv.com/js/rr/$script
 ||cdn.jsdelivr.net/opensug/*/opensug.js
+||cdn.tanx.com/t/tanxssp
 ||cdn.tudown.com/script
 ||cdn.tudown.com/script/down.js
 ||chucity.com
@@ -396,6 +402,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||taboola.com/*loader.js
 ||tajs.qq.com
 ||tanx.com/ex?i=
+||tanxssp.js
 ||temaidi.com/*.js*pid=*$script
 ||tiexue.net/ajax/getcityforip.ashx
 ||tj.ali213.net$script
