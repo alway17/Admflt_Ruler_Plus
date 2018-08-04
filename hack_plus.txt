@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-02
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-04
 !-----| 反馈：http://www.x-boy.cn/2018_1.html
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -226,6 +226,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://ssp.$script
 ||*.google*/*ads*.js
 ||*ad*.googlesyndication.com/$script
+||*adfly.com/show.php
 ||.0x55.com
 ||.52pk.com/www/delivery/
 ||.com/vs.php?id=
@@ -235,6 +236,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/1000^^0.gif
 ||/521fl/pc.js
 ||/521fl/tj.js
+||/a/display.php?r=
 ||/api/ad.ashx
 ||/caches/poster_js/$script
 ||/code/adview_
@@ -289,6 +291,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||bmp.ali213.net/JS/$script
 ||bw.scupio.com
 ||c.v4dwkcv.com/js/rr/$script
+||cdn.clearload.bid/static/js/main.js
 ||cdn.jsdelivr.net/opensug/*/opensug.js
 ||cdn.tanx.com/t/tanxssp
 ||cdn.tudown.com/script
