@@ -279,6 +279,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||adshow.php
 ||adxvip.com
 ||afp.alicdn.com
+||afpeng.alimama.com
 ||afpmm.alicdn.com
 ||alimama.alicdn.com
 ||alimama.com/ex?a=
@@ -354,6 +355,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||images.sohu.com/cs/jsfile/js/c.js
 ||img*.126.net/ntesrich/*ad*$script
 ||img.aolusb.com/forever/$script
+||int.dpool.sina.com.cn/iplookup/iplookup.php
 ||irs01.com
 ||j.qiqivv.com
 ||jb51.net/*/arcts.js
@@ -494,7 +496,7 @@ brtn.cn,btime.com##[adview-id],[id^="adview"],[id^="cpm-"]
 bt-film.co*##[id^="ad"]
 chinaz.com###bottomImg
 cn.investing.com##.midHeader
-cnbeta.com##.cbv,.item.cooperation,[class^="cbv"],.cbimage-fixed
+cnbeta.com##.tks,.cnbeta-side-sponsor,#upcoming_box,.cbv,.item.cooperation,[class^="cbv"],.cbimage-fixed
 cnfol.com##[data-revive-zoneid],[id^="as_"],[class*="Ad"]
 cri.cn##.ad-item
 ctfile.com,pipipan.com##.modal-backdrop.fade
@@ -502,6 +504,7 @@ dayoo.com##.ad-area
 dl.3dmgame.com##[class^="youdao"]
 dmzj.com##.user_show
 down.52pk.com##a[onclick*="hmt.push"]
+e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php"]
 eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"]
 eastmoney.com##.lyad
 gamersky.com##.ad_r,.ngg_down,[class$="_ad"]
@@ -509,6 +512,7 @@ gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
 gitee.com##.float-left-box,body>style+[class*="widget"]
 google.com##.ads-ad
 guokr.com##[class*="-advert"]
+halihali.cc##.tuiguang
 hexun.com###newsPopWin
 i.qq.com##.icon_adv_logo,[id^="adImg"]
 ifeng.com##[id^="optimusPrimeContentId"]
@@ -533,6 +537,7 @@ q.z.vip.totv.72du.com##.secs strong
 qianzhan.com##.advBox,.footApp,.shop-tj,a[href*="www.qianzhan.com/go/"]
 qichamao.com##.side-ad1
 qidian.com##[id^="banner"],div[id^="j-"]:not([class*="content"]),div[id^="j_"].hidden,.operation-wrap,[id$="-ops"],[id$="-op"]
+qihoo.com##[id*="_gg"],[data-ggclick="ad"]
 qiushibaike.com##.shopwindow
 sina.com.cn##[class*="-ad"][class*="ad_"]
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
@@ -691,6 +696,9 @@ tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerro
 ||epinv.com/dl/*.html$s@</body>@<script>getDownloadUrl()</script></body>@
 ||epinv.com/wp-content/themes/ep/js/jquery.qrcode.min.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||g.163.com/*ad_info*$S@(".*?":) ?".*?"@${1}""@
+||g.mediav.com$S@"ads":.?\[.?{.*}.?]@"ads":[{}]@sig
+||g.mediav.com$S@"duration":\d{1,2}@"duration":0@
+||g.mediav.com$S@"http.*?"@""@
 ||gaoqing.la$s@</head>@<script>document.write=null;</script></head>@
 ||jx.2012net.com$s@fuckyou();@@
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
@@ -925,7 +933,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||2018.hellorf.com$s@</body>@<script>unHackcss.A('#__next');inHackcss.S('#__next','display:flex!important')</script></body>@
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":236944468,"hash":"","length":9986,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2057587669,"hash":"","length":10180,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
