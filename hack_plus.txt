@@ -1,5 +1,6 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-07
-!-----| 反馈：http://www.x-boy.cn/2018_1.html
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-10
+!-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
+!-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !======[wlist]---↓
@@ -505,7 +506,7 @@ dl.3dmgame.com##[class^="youdao"]
 dmzj.com##.user_show
 down.52pk.com##a[onclick*="hmt.push"]
 e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php"]
-eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"]
+eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"]
 eastmoney.com##.lyad
 gamersky.com##.ad_r,.ngg_down,[class$="_ad"]
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
@@ -524,7 +525,7 @@ kankan.com##.banner[id^="cm"]
 kuwo.cn##.tuiguang,[class*="Ad"]
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
-mgtv.com/b/###a_box,[class^="plugins_"],[class^="nodes_"]
+mgtv.com/b/###a_box,[class^="plugins_"],[class^="nodes_"],[node-type="guide-app"]
 mop.com##.header[style],[class^="dsp"]
 myzaker.com##a[href*="ads_id="],[id^="dsp_id"]
 news.mydrivers.com##.news_bt+div[style]
@@ -538,7 +539,7 @@ qianzhan.com##.advBox,.footApp,.shop-tj,a[href*="www.qianzhan.com/go/"]
 qichamao.com##.side-ad1
 qidian.com##[id^="banner"],div[id^="j-"]:not([class*="content"]),div[id^="j_"].hidden,.operation-wrap,[id$="-ops"],[id$="-op"]
 qihoo.com##[id*="_gg"],[data-ggclick="ad"]
-qiushibaike.com##.shopwindow
+qiushibaike.com##.shopwindow,#sidebar-remix
 sina.com.cn##[class*="-ad"][class*="ad_"]
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
 sports.eastday.com/video/##.dalink
@@ -614,7 +615,7 @@ www.utubon.com##div[class*="text"][id^="text"]
 www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units,.cell[align]
 www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 www.webqianduan.cn##.adW
-www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],.sbad
+www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],.sbad,.f32tr-below_header,.kill-adblock-container,.wdp-appear
 www.xdowns.com###tips.tips
 www.xianliao.me##[class^="ads_"]
 www.xiazaiba.com##[class^="adv-"]
@@ -693,6 +694,7 @@ tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerro
 ||ctfile.com/i$s@!_popup_ispoped@!userid@
 ||dl.3dmgame.com$S@<script>img\d+?.+?/script>@@
 ||down.gamersky.com$s@</body>@<script>unHackcss.A('[itemprop="downloadUrl"]')</script></body>@
+||eastday.com/*.js$S@getad:.*?},@getad:function(){return ""},@s
 ||epinv.com/dl/*.html$s@</body>@<script>getDownloadUrl()</script></body>@
 ||epinv.com/wp-content/themes/ep/js/jquery.qrcode.min.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||g.163.com/*ad_info*$S@(".*?":) ?".*?"@${1}""@
@@ -923,6 +925,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
 @@|https://g.alicdn.com/tb/??item-detail/$pass
 @@|https://g.alicdn.com/aliww/$pass
+@@||eastday.com/jscss/*.css$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||blog.sina.com.cn/s/$s@</body>@<script>unHackcss.A('#sina_keyword_ad_area2')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
