@@ -102,7 +102,6 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/d/960.js
 |http://*/dc?i=*
 |http://*/ecom-ad/
-|http://*/flashcgi?action=flashlist$block
 |http://*/footBanner_new.js$script
 |http://*/gg/xx*.js
 |http://*/html/click/$document
@@ -398,6 +397,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||pmm.people.com.cn
 ||ppoi.org/*key*
 ||res.cngoldres.com/libs/jtams/*/jtams.js
+||res.suning.cn/*ssa*.js
 ||s.faloo.com/ou/$script
 ||s.pcapps.qq.com
 ||s.union.360.cn
@@ -882,11 +882,18 @@ wasu.cn##[class*="ads_"],[class*="_ads"]
 ||video.eastday.com/*new_gethot.js$s@(playNoAdRight())@(1)@
 !======[video.eastday.com]---↑
 
-!======[video.duowan.com]---??
+!======[video.duowan.com]---↓
 ||pub.dwstatic.com/common/newsPopup/
 ||a.v.duowan.com/
 ||gt.duowan.com/
-!======[video.duowan.com]---??
+!======[video.duowan.com]---↑
+
+!======[www.pptv.com]---↓
+|http://*/flashcgi?action=flashlist$block
+||de.as.pptv.com/ikandelivery/vast/$S@^.*@@s
+||player.aplus.pptv.com/config/v*/pid/$s@"ads":{*},@"ads":"",@
+pptv.com##[id^="afp_"],#video-download-game
+!======[www.pptv.com]---↑
 
 !======[v.17173.com]---↓
 ||17173im.alllget.com/main/s$S@"t":"\d{1,2}"@"t":"0"@
@@ -941,7 +948,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||2018.hellorf.com$s@</body>@<script>unHackcss.A('#__next');inHackcss.S('#__next','display:flex!important')</script></body>@
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1114519803,"hash":"","length":10252,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":639034352,"hash":"","length":10315,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
