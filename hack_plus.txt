@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-10
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-11
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -238,6 +238,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||.com/vs.php?id=
 ||.gtimg.com/*crystal$script
 ||.gtimg.com/*tips/tips.js
+||.hdslb.com/bfs/cm/st/bundle.js
 ||.icast.cn/adtypes/$script
 ||/1000^^0.gif
 ||/521fl/pc.js
@@ -330,6 +331,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||e.hnr.cn/choose/view/%7B*%7D.js
 ||e.hnr.cn/choose/view/{*}.js
 ||eastday.com/*/html/ad/
+||epro.sogou.com
 ||feng.com/frame.php
 ||g.alicdn.com/*odv.min.js
 ||g.cn.miaozhen.com
@@ -506,7 +508,7 @@ dl.3dmgame.com##[class^="youdao"]
 dmzj.com##.user_show
 down.52pk.com##a[onclick*="hmt.push"]
 e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php"]
-eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"]
+eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"]
 eastmoney.com##.lyad
 gamersky.com##.ad_r,.ngg_down,[class$="_ad"]
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
@@ -567,7 +569,7 @@ www.54new.com###imgshow,.topseeds,.downad,.adline,table:not([style]) tr:not([cla
 www.65yw.com##.tui__header
 www.admin5.com##.logo_textAd,.logoAd,.headerAd,.footerAd,.adr,.infoAd,[data-zbj-union-key]
 www.aihami.com##.conText>div[style],.adDingT,.ad640x90,ad300x90,.h250
-www.bilibili.com##.bilibili-player-promote-wrap,#v_top_gg
+www.bilibili.com##.bilibili-player-promote-wrap,#v_top_gg,#slide_ad,#bannerAd,[class*="gg-"],#fixed_app_download
 www.biquzi.com##iframe[src*="html/click"]
 www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
@@ -689,6 +691,7 @@ tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerro
 ||aikan-tv.com/*url=*$S@<frame .*?\.html[^>]>@@
 ||aikan-tv.com/*url=*$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||alicdn.com/player/ykplayer/*/youku-player.min.js$s@this.bufferTime=t@this.bufferTime=0@
+||api.bilibili.com/x/web-show/res/loc?pf=0&id=$f@302:s@id=\d{2,4}@id=1@
 ||api.svip.baiyug.cn/*?url=*$S@$@<style>#a1{margin-top:-23px}</style>@s
 ||comic.kukudm.com/js/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||ctfile.com/i$s@!_popup_ispoped@!userid@
@@ -845,6 +848,8 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 ||youtube.com/get_video_info*ad_id=*
 ||youtube.com/api/stats/ads*
 ||ads.g.doubleclick.net
+||googlesyndication.com/*simgad/
+||www.youtube.com/get_midroll_info
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
