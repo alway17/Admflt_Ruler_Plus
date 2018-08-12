@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-12
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-13
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -809,7 +809,9 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 !======[cpro.baidu.com]---↑
 
 !======[www.le.tv]---↓
-||api.message.le.com/v1/messages?
+||letv.com/*ark=
+||le.com/*ark=
+||api.message.le.com/v^/messages?
 ||play.videocache.lecloud.com/*/letv-gug/*.mp4
 !======[www.le.tv]---↑
 
