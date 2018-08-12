@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-11
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-12
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -188,6 +188,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://www.mingxing.com/*/js/_$script
 |http://www.minixiazai.com/others/$script
 |http://www.pcbeta.com/data/cache/jquery.js
+|http://www.ps123.net/MyFile/*.js
 |http://www.rarbt.com/*bds_*.js
 |http://www.sjzcmw.com/mypck.js
 |http://www.southmoney.com/*/index*.js
@@ -243,12 +244,14 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/521fl/pc.js
 ||/521fl/tj.js
 ||/a/display.php?r=
+||/ads.js
 ||/api/ad.ashx
 ||/caches/poster_js/$script
 ||/code/adview_
 ||/count.php
 ||/floatAd.js
 ||/ggg/tj.js
+||/multiads/
 ||/nativeads.js
 ||/projectpoi
 ||101.37.26.251
@@ -284,6 +287,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||afpmm.alicdn.com
 ||alimama.alicdn.com
 ||alimama.com/ex?a=
+||analytics.chaxiami.com
 ||api.*/balance?*&secret
 ||api.47ks.com/cp*ad.js
 ||api.zol.com/index.php?c=Ad_
@@ -423,6 +427,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||union.baofeng.com
 ||unpkg.zhimg.com/za-js-sdk@2.9.2/dist/zap.js
 ||vamaker.com$third-party
+||webThunderDetect.js
 ||webapi.acfun.cn/appSpreadContents/danmuad/
 ||wm.makeding.com/redirect
 ||www.05sun.com/js/05sun.js
@@ -520,7 +525,6 @@ hexun.com###newsPopWin
 i.qq.com##.icon_adv_logo,[id^="adImg"]
 ifeng.com##[id^="optimusPrimeContentId"]
 image.baidu.com##.text-link-ads,.fcImgli
-iqiyi.com##.vipFloatbgCls,.J_play-underFrame
 item.btime.com#@##subLayout
 jb51.net##li.da-download,[style*="width:1080px"]
 kankan.com##.banner[id^="cm"]
@@ -542,6 +546,7 @@ qichamao.com##.side-ad1
 qidian.com##[id^="banner"],div[id^="j-"]:not([class*="content"]),div[id^="j_"].hidden,.operation-wrap,[id$="-ops"],[id$="-op"]
 qihoo.com##[id*="_gg"],[data-ggclick="ad"]
 qiushibaike.com##.shopwindow,#sidebar-remix
+qiuziti.com##.popularize,.search_wordimg,a[rel="nofollow"][target*="blank"]>img
 sina.com.cn##[class*="-ad"][class*="ad_"]
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
 sports.eastday.com/video/##.dalink
@@ -589,6 +594,7 @@ www.greenxf.com/*.html##a[class][href="#"]
 www.haha.mx##.fl.sidebar>div[class][style],.waterfall-column iframe
 www.haote.com##[class$="banner"],.flashbox.f_list,.bigmainIn
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
+www.iplaysoft.com##a[rel="nofollow"][href*="/go/"],[class*="_white"],li[id^="_"],#sidebar_scroll_bdad,[id^="post"].post>div[style]:not([id]):not([class]),div[style*="width:336px"],#sidebar_scroll>[style],li.widget[style],#section_event,[class*="bdad"]
 www.iqiyi.com/*.html##.rightPCAdv,.pca-img$B
 www.ithome.com###con>div:not([id]):not([class]),.AdblockBanner
 www.kafan.cn/edu/,www.kafan.cn/jc.php##.container[style],[id^="content"][style],#categories-4[style],a[rel="nofollow"][style],h6
@@ -853,6 +859,7 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
+iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box
 ||cupid.iqiyi.com/show2?e=*$S@:"(https?://.*?\.jpg|https?://.*?\.mp4|https?://.*?\.f4v)@:" @
 ||*/videos/other/*.f4v|$m@res:block/null.mp4
 ||cupid.iqiyi.com/show2?a=qc_$S@^.*$@@s
@@ -948,7 +955,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||2018.hellorf.com$s@</body>@<script>unHackcss.A('#__next');inHackcss.S('#__next','display:flex!important')</script></body>@
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":639034352,"hash":"","length":10315,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2262615158,"hash":"","length":10362,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
