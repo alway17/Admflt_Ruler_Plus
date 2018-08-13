@@ -820,8 +820,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 ||vlive.qqvideo.tc.qq.com
 ||bla.gtimg.com/qqlive/*.mp4
 ||l.qq.com/proxyhttp$s@"ad"*}}",@@
-||qq.com/*/m0*ts.m3u8
-||qq.com/*/00_m*.ts?index=0&start=0
+||l.qq.com/*get_video_mark_all$s@"admark"@"noadmark":"","noadmark"@
 |https://livew*.qq.com/livemsg?$S@<!\[CDATA\[.*?\]\]>@@
 !======[v.qq.com]---↑
 
