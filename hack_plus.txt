@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-14
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-17
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -16,6 +16,7 @@
 @@||99ddd.com/*.rar
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
+@@||baidu.com/link?url=$pass
 @@||bdstatic.com/*/admLoader/main_$script
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||dianping.com
@@ -475,6 +476,10 @@ www.gaoqingkong.com#@#.widget.box.row
 ||zlongad.com/ad/
 ||zmzjstu.com/*ad-*
 ||zmzjstu.com/g^/$script
+|http://*300x2^0.js
+|https://*300x2^0.js
+||www.hackhw.com/ckjs/
+||www.52z.com/js/52z.js
 !======[block]---↑
 
 !======[ABP css]---↓
@@ -822,7 +827,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 ||bla.gtimg.com/qqlive/*.mp4
 ||l.qq.com/proxyhttp$s@"ad"*}}",@@
 ||l.qq.com/*get_video_mark_all$s@"admark"@"noadmark":"","noadmark"@
-|https://livew*.qq.com/livemsg?$S@<!\[CDATA\[.*?\]\]>@@
+||l.qq.com/livemsg?$S@<!\[CDATA\[.*?\]\]>@@
 !======[v.qq.com]---↑
 
 !======[v.youku.com]---↓
