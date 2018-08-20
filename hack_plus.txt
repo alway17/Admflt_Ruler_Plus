@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-17
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-21
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -126,6 +126,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/unionjs/*.js
 |http://*/w/a/imp-cb$script
 |http://*/x.asp?pid=*
+|http://*300x2^0.js
 |http://*710x2^0.js$script
 |http://*980x70$image
 |http://*980x^0.js$script
@@ -226,6 +227,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/ssp/
 |https://*/union/*.js
 |https://*/unionjs/*.js
+|https://*300x2^0.js
 |https://*?zoneid=
 |https://adserver.*
 |https://gg.*
@@ -415,6 +417,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||static.mediav.com/js/mvf$script
 ||static.segmentfault.com/sponsor/
 ||static.xitongzhijia.net/theme/*/js/total
+||static.yxdown.com/zt/zt/js/zt.js
 ||statics/js/xzq*.js
 ||stats.chinaz.com/^^_g/$script
 ||taboola.com/*loader.js
@@ -434,6 +437,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||wm.makeding.com/redirect
 ||www.05sun.com/js/05sun.js
 ||www.17ziti.com/z/$script
+||www.52z.com/js/52z.js
 ||www.btdx8.com/tmp/tall.js
 ||www.cncrk.com/*/js/rjbz.js
 ||www.cr173.com/jsBI/js/info.js
@@ -445,6 +449,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.fxxz.com/skin/know/$script
 ||www.gucheng.com/*/common.js
 ||www.gyingyuan.com/jiexi/$image
+||www.hackhw.com/ckjs/
 ||www.iqshw.com/d/js/m/thea*.js
 ||www.ixiumei.com/otherhtml/$script
 ||www.jisuxz.com/*/b*.js
@@ -461,6 +466,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.xdowns.com/js/lefttuijian.js
 ||www.xdowns.com/template/tshouyou/js/jietu.js
 ||www.xpgod.com/statics/skin_js/xpgod/*.js
+||www.yxdown.com/count.js
 ||www.zzlxs.net/ap
 ||www1.elecfans.com
 ||xdssp.mediav.com
@@ -476,10 +482,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||zlongad.com/ad/
 ||zmzjstu.com/*ad-*
 ||zmzjstu.com/g^/$script
-|http://*300x2^0.js
-|https://*300x2^0.js
-||www.hackhw.com/ckjs/
-||www.52z.com/js/52z.js
 !======[block]---↑
 
 !======[ABP css]---↓
@@ -502,6 +504,7 @@ www.gaoqingkong.com#@#.widget.box.row
 91.com##.banner-gg,.side-bs,.top_a,.advs[class*="advs-"],[class^="ad"],iframe.iframe-pic-box
 9game.cn##.guide-app-fix
 aa^^y.com###buffer,.qr_code_pc
+ac.qq.com##[class*="_ad_"],[class*="-ad-"]
 anhuinews.com##[class^="ad"]
 baofeng.com##[data-ads]
 bbs.hupu.com##[class*="hp-ad"]
@@ -831,21 +834,22 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 !======[v.qq.com]---↑
 
 !======[v.youku.com]---↓
+v.youku.com##%li.fn-play-mode{display:block!important}
 !||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
 .youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#__btn_
 player.youku.com##.outsitepanel
 ||html.atm.youku.com/html*h5%2Cimg*
 ||v2html.atm.youku.com/vhtml*h5,img*
 ||valp.atm.youku.com/vp*swf,img*
-||ups.youku.com/ups/get.json?vid=*$s@{"P":1,@{"P":0,@
+||ups.youku.com/ups/get.json?vid=*$S@"P":[^0],@"P":0,@
+||val^.atm.youku.com/v$f@s@p=[^0]@p=0@
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
 |http://lvip.youku.com/*api/player/adText
-||valc.atm.youku.com/vc$S@"P":[^0]@"P":0@
-||valc.atm.youku.com/vc$f@s@p=[^0]@p=0@
-||ups.youku.com/ups/get.json$s@"vip":false@"vip":true@
 !---> h5-1080p
 ||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@r+=" disable"@r+=""@
 ||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@<span class="vip-label">@<span style="display:none">@
+!---> flash-1080p
+||ups.youku.com/ups/get.json$s@"hd3":false@"hd3":true@
 !======[v.youku.com]---↑
 
 !======[tv.sohu.com]---↓
@@ -965,7 +969,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3141446359,"hash":"","length":10267,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3375186560,"hash":"","length":10052,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
