@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-21
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-22
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -35,12 +35,14 @@
 S:akamaihd.net
 S:api.geetest.com
 S:api.weibo.com
+S:cf.aliyun.com
 S:damai.cn
 S:jd.hk
 S:passport.aliyun.com
 S:static.x-boy.cn
 S:upyun.com
 S:webapi.amap.com
+S:ynuf.aliapp.org
 bbs.zol.com.cn#@##bookContent
 news.xinhuanet.com#@#.domPC
 www.gaoqingkong.com#@#.widget.box.row
