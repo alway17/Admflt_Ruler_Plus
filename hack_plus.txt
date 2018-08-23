@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-23
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-24
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -90,6 +90,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ad/?aid=
 |http://*/ad3^0x3^0.js
 |http://*/ad?^=
+|http://*/ad_*.php
 |http://*/adfile/*.js
 |http://*/adjs/$script
 |http://*/adms.php?*id*=*
@@ -148,6 +149,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://da.duowan.com/loc/
 |http://eap.enorth.com.cn/js/$script
 |http://ent.jxnews.com.cn/js/a_cont.js
+|http://g.163.com/*type=popup
 |http://g.doyo.cn/js/$script
 |http://gg.*
 |http://honey.hunantv.com/*/anuncio.js
@@ -216,6 +218,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/ad/?aid=
 |https://*/ad3^0x3^0.js
 |https://*/ad?^=
+|https://*/ad_*.php
 |https://*/adfile/*.js
 |https://*/adjs/$script
 |https://*/ads.php
@@ -235,6 +238,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*300x2^0.js
 |https://*?zoneid=
 |https://adserver.*
+|https://g.163.com/*type=popup
 |https://gg.*
 |https://p.ssl.so.com/p/
 |https://ssp.$script
@@ -253,6 +257,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/521fl/pc.js
 ||/521fl/tj.js
 ||/a/display.php?r=
+||/adimg/$image
 ||/ads.js
 ||/api/ad.ashx
 ||/caches/poster_js/$script
@@ -282,7 +287,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||AdSystem/$script
 ||a.alimama.cn
 ||ad.caiba520.win
-||ad_js.php
 ||adimg*.weibo.com
 ||adm.dxpmedia.com
 ||admarket.21cn.com
@@ -471,6 +475,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.qqtn.com/js/downinfo-*.js
 ||www.ucbug.com/new201^/$script
 ||www.xdowns.com/js/lefttuijian.js
+||www.xdowns.com/js/syad.js
 ||www.xdowns.com/template/tshouyou/js/jietu.js
 ||www.xpgod.com/statics/skin_js/xpgod/*.js
 ||www.zzlxs.net/ap
@@ -640,6 +645,7 @@ www.utubon.com##div[class*="text"][id^="text"]
 www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units,.cell[align]
 www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 www.webqianduan.cn##.adW
+www.wmzhe.com##.downgs
 www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],.sbad,.f32tr-below_header,.kill-adblock-container,.wdp-appear
 www.xdowns.com###tips.tips,[class*="tui"]
 www.xianliao.me##[class^="ads_"]
