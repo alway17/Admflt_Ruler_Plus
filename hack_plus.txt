@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-24
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-08-25
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -7,6 +7,17 @@
 @@|http://*/^.php?^=*search
 @@|http://*attachment*/ad/$image
 @@|https://*/^.php?^=*search
+@@|https://g.alicdn.com/??kissy/$pass
+@@|https://g.alicdn.com/ali-mod/??$pass
+@@|https://g.alicdn.com/alilog/$pass
+@@|https://g.alicdn.com/aliww/$pass
+@@|https://g.alicdn.com/ctr/$pass
+@@|https://g.alicdn.com/kg/$pass
+@@|https://g.alicdn.com/kissy/$pass
+@@|https://g.alicdn.com/tb/??item-detail/$pass
+@@|https://g.alicdn.com/tbc/??$pass
+@@|https://g.alicdn.com/tp/$pass
+@@|https://g.alicdn.com/vip/$pass
 @@|https://myaccount.google.com/$pass
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
@@ -20,8 +31,6 @@
 @@||bdstatic.com/*/admLoader/main_$script
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||dianping.com
-@@||g.alicdn.com/ali-mod/??$pass
-@@||g.alicdn.com/vip/$pass
 @@||g1.dfcfw.com/g2/201702/20170216133526.png
 @@||jquery.pjax*.js$pass
 @@||mc.zzidc.com$pass
@@ -266,6 +275,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/count.php
 ||/floatAd.js
 ||/ggg/tj.js
+||/js/wmz_gg.js
 ||/multiads/
 ||/nativeads.js
 ||/ntesrich/*dlbox.js
@@ -971,8 +981,6 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
-@@|https://g.alicdn.com/tb/??item-detail/$pass
-@@|https://g.alicdn.com/aliww/$pass
 @@||eastday.com/jscss/*.css$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||blog.sina.com.cn/s/$s@</body>@<script>unHackcss.A('#sina_keyword_ad_area2')</script></body>@
