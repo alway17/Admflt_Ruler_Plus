@@ -18,6 +18,7 @@
 @@|https://g.alicdn.com/tbc/??$pass
 @@|https://g.alicdn.com/tp/$pass
 @@|https://g.alicdn.com/vip/$pass
+@@|https://g.alicdn.com/*.css$pass
 @@|https://myaccount.google.com/$pass
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
