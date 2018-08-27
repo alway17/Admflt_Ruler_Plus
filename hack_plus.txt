@@ -7,6 +7,7 @@
 @@|http://*/^.php?^=*search
 @@|http://*attachment*/ad/$image
 @@|https://*/^.php?^=*search
+@@|https://g.alicdn.com/*.css$pass
 @@|https://g.alicdn.com/??kissy/$pass
 @@|https://g.alicdn.com/ali-mod/??$pass
 @@|https://g.alicdn.com/alilog/$pass
@@ -18,7 +19,6 @@
 @@|https://g.alicdn.com/tbc/??$pass
 @@|https://g.alicdn.com/tp/$pass
 @@|https://g.alicdn.com/vip/$pass
-@@|https://g.alicdn.com/*.css$pass
 @@|https://myaccount.google.com/$pass
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
@@ -31,6 +31,7 @@
 @@||baidu.com/link?url=$pass
 @@||bdstatic.com/*/admLoader/main_$script
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
+@@||console*.baidu.com$pass
 @@||dianping.com
 @@||g1.dfcfw.com/g2/201702/20170216133526.png
 @@||jquery.pjax*.js$pass
@@ -290,6 +291,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||3dwwwgame.com/ep/
 ||3dwwwgame.com/p/
 ||42xz.com/
+||51240.com/g/*.js
 ||52pk.com/*/webThunderDetect.js
 ||52pk.com/*/yingsu.js
 ||71.am/*AdManager
@@ -388,6 +390,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||images.sohu.com/cs/jsfile/js/c.js
 ||img*.126.net/ntesrich/*ad*$script
 ||img.aolusb.com/forever/$script
+||img.shaqm.com/*/qls_AdCommon.min.js
 ||int.dpool.sina.com.cn/iplookup/iplookup.php
 ||irs01.com
 ||j.qiqivv.com
@@ -458,6 +461,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||vamaker.com$third-party
 ||webThunderDetect.js
 ||webapi.acfun.cn/appSpreadContents/danmuad/
+||webkaka.com/ad/
+||webkaka.com/click/
 ||wm.makeding.com/redirect
 ||www.05sun.com/js/05sun.js
 ||www.17ziti.com/z/$script
@@ -488,6 +493,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.qqtn.com/js/downinfo-*.js
 ||www.ttrar.com/statics/skin_js/
 ||www.ucbug.com/new201^/$script
+||www.webkaka.com/script/
 ||www.xdowns.com/js/lefttuijian.js
 ||www.xdowns.com/js/syad.js
 ||www.xdowns.com/template/tshouyou/js/jietu.js
@@ -582,6 +588,7 @@ qidian.com##[id^="banner"],div[id^="j-"]:not([class*="content"]),div[id^="j_"].h
 qihoo.com##[id*="_gg"],[data-ggclick="ad"]
 qiushibaike.com##.shopwindow,#sidebar-remix
 qiuziti.com##.popularize,.search_wordimg,a[rel="nofollow"][target*="blank"]>img
+sina.cn##[id*="Ads"],[sax-type="proxy"]
 sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
 sports.eastday.com/video/##.dalink
@@ -598,6 +605,7 @@ v.qq.com/x/##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
+webkaka.com##a[href*="/click/"],table:not([id]):not([class]),span[class*="Ad"],p[class*="Ad"]
 weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"]
 wemedia.ifeng.com##.h_top_box,.yc_con_r a iframe
 www.17ce.com##[class^="add_"]
@@ -997,7 +1005,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3897876214,"hash":"","length":11218,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3628298115,"hash":"","length":11531,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
