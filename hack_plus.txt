@@ -607,7 +607,7 @@ tech.ifeng.com##[class^="adv"]
 tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_WW"],[id^="Baidu_PIC"],.goudan
 ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
 tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
-user.qzone.qq.com##li.f-single-biz,#top_tips_container
+user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"]
 uuu9.com###uuu9_tips,#top,.top2box
 v.qq.com/x/##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
