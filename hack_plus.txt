@@ -632,7 +632,7 @@ www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
 www.cnprint.org##.top-post-ads
 www.crsky.com##.banner-leader
-www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap,#sup-post-a
+www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wrap,#sup-post-a,.top-yideng-link
 www.demaxiya.com##body>a[style]
 www.douban.com/note/##.ui-overlay-mask
 www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[data-target="promote"]
@@ -1015,7 +1015,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1370399127,"hash":"","length":11796,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":293020807,"hash":"","length":12116,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
