@@ -105,6 +105,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/ad/?aid=
 |http://*/ad3^0x3^0.js
 |http://*/ad?^=
+|http://*/ad^.js
 |http://*/ad_*.php
 |http://*/adfile/*.js
 |http://*/adjs/$script
@@ -233,6 +234,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/ad/?aid=
 |https://*/ad3^0x3^0.js
 |https://*/ad?^=
+|https://*/ad^.js
 |https://*/ad_*.php
 |https://*/adfile/*.js
 |https://*/adjs/$script
@@ -288,6 +290,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/projectpoi
 ||101.37.26.251
 ||119.29.29.29/404
+||126.net/advertisement/
+||126.net/ntesrich/*.js
 ||17173cdn.com/*/ad17173*.js
 ||17173cdn.com/*/vda/$script
 ||2345.com/duoteimg/dtnew_recom_img/duoteself/$script
@@ -331,6 +335,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||bd-film.co*/cms-sidebar$script
 ||bdstatic.com/*/admLoader/$script
 ||beacon.sina.com.cn
+||bitcoadz.io/display/items.php
 ||bmp.ali213.net/JS/$script
 ||bw.scupio.com
 ||c.v4dwkcv.com/js/rr/$script
@@ -346,6 +351,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||cnzz.com
 ||code.zantainet.com/$script
 ||coinhive.min.js
+||content-ad.net
 ||cryptonight-asmjs.min.js
 ||ctfile.com/ad_display.php
 ||ctfile.com/iajax_guest.php?item=file_act&action=premium
@@ -436,6 +442,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||pic^.zhimg.com/*adx^.$image
 ||pingma.qq.com
 ||pmm.people.com.cn
+||popme.163.com/js/vedioad*.js
 ||ppoi.org/*key*
 ||rec.letv.com/curve
 ||res.cngoldres.com/libs/jtams/*/jtams.js
@@ -1017,7 +1024,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2226416616,"hash":"","length":12184,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3826357023,"hash":"","length":12247,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
