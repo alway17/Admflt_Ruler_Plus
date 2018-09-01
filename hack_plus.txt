@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-01
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-02
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -33,6 +33,7 @@
 @@||baidu.com/link?url=$pass
 @@||bdstatic.com/*/admLoader/main_$script
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
+@@||cache/editor.js$pass
 @@||console*.baidu.com$pass
 @@||dianping.com
 @@||g1.dfcfw.com/g2/201702/20170216133526.png
@@ -485,6 +486,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.05sun.com/js/05sun.js
 ||www.17ziti.com/z/$script
 ||www.52z.com/js/52z.js
+||www.66ys.tv/d/
 ||www.btdx8.com/tmp/tall.js
 ||www.cncrk.com/*/js/rjbz.js
 ||www.cr173.com/jsBI/js/info.js
@@ -1029,7 +1031,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":905608212,"hash":"","length":12357,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2523948140,"hash":"","length":12399,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
