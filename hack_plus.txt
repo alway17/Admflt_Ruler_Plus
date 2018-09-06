@@ -819,6 +819,7 @@ tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerro
 ||www.yy.com$s@</head>@<script>inHackcss.S('#banner-fg','background:none')</script></head>@
 ||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
 ||www.zimuku.cn$s@<head>@<head><script>window.open=null</script>@
+||yande.re$s@hide-advanced-editing@@
 !======[replace]---↑
 
 !======[H webs]---↓
