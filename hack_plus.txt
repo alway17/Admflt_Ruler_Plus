@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-05
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-06
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -795,6 +795,7 @@ tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerro
 ||show-^.mediav.com$S@"ads":.?\[.?{.*}.?]@"ads":[{}]@sig
 ||show-^.mediav.com$S@"duration":\d{1,2}@"duration":0@
 ||show-^.mediav.com$S@"http.*?"@""@
+||sjs.sinajs.cn/blog*/index.js$S@job.add\("\w*?Ad"\);@@
 ||static.ali213.net/js/data/zad/$S@https?:.*?",@",@ig
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
 ||static.mediav.com/js/mvf*.js$S@^.*@@s
