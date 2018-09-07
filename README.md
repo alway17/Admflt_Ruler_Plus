@@ -32,8 +32,8 @@ GitHub和码云同步，coding备份
 * https://gitee.com/emCupid/Admflt_Ruler_Plus
 * https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git
 
-> emmm....买包烟咯
+> 你的支持是我前进的动力，1角也可
 > 
-> 其实，是订阅的问题，仓库一般是没问题，调用多有可能出错。还有现在最大的问题就是插入调用如fcss.min.js和block文件夹下的文件SSL，虽然本地ADM虚拟地址调用但还是要花一些时间，如果能有一些持续的捐助（上又拍）或赞助服务器就可以把这些文件强制缓存，只要不强制刷新就是memory cache或disk cache，这样可以加快一些速度。
+> 捐助开销：域名、又拍云、啃鸡腿
 
 ![wechat_code](http://wx2.sinaimg.cn/large/6fd368d6ly1fryey8r91vj207u09qabg.jpg)  ![alipay_code](http://wx1.sinaimg.cn/large/6fd368d6ly1fryey8v2jmj207u09qwfz.jpg)

@@ -68,6 +68,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mt2t.5xlm.com:91/adm-add-socks
 ||j.qiqivv.com:6060/
 ||j.qiqivv.com:4433/
+||139.198.6.30:9001/
 !||kkcaicai.com:8080/
 !======[adm add socks]-----↑
 
