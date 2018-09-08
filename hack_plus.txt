@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-07
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-08
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -65,11 +65,12 @@ www.gaoqingkong.com#@#.widget.box.row
 !======[wlist]---↑
 
 !======[adm add socks]-----↓
-||mt2t.5xlm.com:91/adm-add-socks
-||j.qiqivv.com:6060/
-||j.qiqivv.com:4433/
-||139.198.6.30:9001/
 !||kkcaicai.com:8080/
+|http://*:9001/360/
+||139.198.6.30:9001/
+||j.qiqivv.com:4433/
+||j.qiqivv.com:6060/
+||mt2t.5xlm.com:91/adm-add-socks
 !======[adm add socks]-----↑
 
 !======[block]---↓
@@ -480,6 +481,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||tiexue.net/ajax/getcityforip.ashx
 ||tj.ali213.net$script
 ||tongji/tj.php
+||ts.profuture3d.com
 ||u.x.jd.com/static/js/auto.js
 ||union.baofeng.com
 ||unpkg.zhimg.com/za-js-sdk@2.9.2/dist/zap.js
@@ -518,6 +520,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.omanhua.com/scripts/show/a*.js
 ||www.people.com.cn/adv/
 ||www.qqtn.com/js/downinfo-*.js
+||www.qqyewu.com/jss/*.js
 ||www.ttrar.com/statics/skin_js/
 ||www.ucbug.com/new201^/$script
 ||www.webkaka.com/script/
