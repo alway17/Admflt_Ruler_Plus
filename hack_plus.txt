@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-08
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-09
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -713,6 +713,7 @@ www.zyzhan.com##a[href*="AdvertisInfo"]
 wzshipin.com##img[width="1200"],.boxg
 xinhuanet.com##[id^="YCADS"],.Xfuchaung
 yahoo.com##[id*="-Ad"]
+ys.km.com###baiduIvy,#bottom_focus_ivy
 zcool.com##[class*="advertisement"],#cubeAd
 zhihu.com##.Card.Banner,[data-info*="ad_id"]
 zmtiantang.com###myModal
@@ -795,6 +796,7 @@ tiexue.net$S@<span.*?a_d_hint.png.*?\/span>@<img hidden src="about:blank" onerro
 ||g.mediav.com$S@"http.*?"@""@
 ||gaoqing.la$s@</head>@<script>document.write=null;</script></head>@
 ||jx.2012net.com$s@fuckyou();@@
+||km.com/*/play_detail.js$S@num: ?\d{1,2},@num:0,@
 ||q.z.vip.totv.72du.com$S@,[1-9][0]{3}@,1000@
 ||show-^.mediav.com$S@"ads":.?\[.?{.*}.?]@"ads":[{}]@sig
 ||show-^.mediav.com$S@"duration":\d{1,2}@"duration":0@
@@ -1022,6 +1024,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||css.ykimg.com/youku/dist/css/find/revision/g_*.css$pass
 @@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
 @@||down.51cto.com/css/newcss/module.css$pass
+@@||eastday.com/jscss/*.css$pass
 @@||image.xinmin.cn/*common.css$pass
 @@||img.dy001.cn/templates/default/css/*.css$pass
 @@||jquery.fancybox*css$pass
@@ -1030,12 +1033,12 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||static.geetest.com/static/*.css$pass
 @@||static.zongheng.com/*/style/basic.css$pass
 @@||wp-content/cache/minify/*.css$pass
+@@||www.chinacqsb.com/webhtml/css/*.css$pass
 @@||www.css-js.com/*.css
 @@||www.css-js.com/*/compressor.css$pass
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
-@@||eastday.com/jscss/*.css$pass
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||blog.sina.com.cn/s/$s@</body>@<script>unHackcss.A('#sina_keyword_ad_area2')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
@@ -1047,7 +1050,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2661723408,"hash":"","length":13075,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2694452670,"hash":"","length":13090,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1477784816,"hash":"","length":494,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
