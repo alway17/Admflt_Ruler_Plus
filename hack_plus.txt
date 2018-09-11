@@ -976,7 +976,8 @@ wasu.cn##[class*="ads_"],[class*="_ads"]
 ||sports.eastday.com/jscss/*/theme_video.js$S@(var adtime ?= ?)\d{1,2}@${1}0@
 ||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
 ||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
-||video.eastday.com/*new_gethot.js$s@(playNoAdRight())@(1)@
+||video.eastday.com/*new_gethot.js$S@time ?== ?-?\d{1,2} ?&& ?!isTrue@1@
+video.eastday.com##.beforegg
 !======[video.eastday.com]---↑
 
 !======[video.duowan.com]---↓
