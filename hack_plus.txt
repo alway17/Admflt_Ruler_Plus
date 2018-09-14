@@ -300,6 +300,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/nativeads.js
 ||/ntesrich/*dlbox.js
 ||/projectpoi
+||/undefined
 ||101.37.26.251
 ||119.29.29.29/404
 ||126.net/advertisement/
@@ -1005,12 +1006,15 @@ pptv.com##[id^="afp_"],#video-download-game
 !======[v.17173.com]---↑
 
 !======[www.1905.com]---↓
-||api.bjvca.com/api/getAdvertising
-||wa5as4.com/vd
-||wa5as4.com/crossdomain.xml
-||www.1905.com/coll/ssproxy.html
 ||/1905/1905.swf
+||1905/openad_swf_plugin.swf
+||api.bjvca.com/api/getAdvertising
+||m1905.cn/data/sspvodmap.js
 ||oa-mssp.data.aliyun.com/fetch_adslot
+||trace.m1905.cn/collect.gif
+||wa5as4.com/crossdomain.xml
+||wa5as4.com/vd
+||www.1905.com/coll/ssproxy.html
 !======[www.1905.com]---↑
 
 !------[前端 CDN 加速服务begin]
