@@ -1009,7 +1009,6 @@ pptv.com##[id^="afp_"],#video-download-game
 ||/1905/1905.swf
 ||1905/openad_swf_plugin.swf
 ||api.bjvca.com/api/getAdvertising
-||m1905.cn/data/sspvodmap.js
 ||oa-mssp.data.aliyun.com/fetch_adslot
 ||trace.m1905.cn/collect.gif
 ||wa5as4.com/crossdomain.xml
