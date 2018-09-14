@@ -465,6 +465,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||s.pcapps.qq.com
 ||s.union.360.cn
 ||sax.sina.cn
+||show.^.mediav.com/s?
 ||sina.com.cn/*sinaads*js
 ||sohu.com/*/js/f.js
 ||sports.eastday.com/ad_async.html
@@ -1003,6 +1004,15 @@ pptv.com##[id^="afp_"],#video-download-game
 ||v.17173.com/advideo/$m@res:block/null.mp4
 !======[v.17173.com]---↑
 
+!======[www.1905.com]---↓
+||api.bjvca.com/api/getAdvertising
+||wa5as4.com/vd
+||wa5as4.com/crossdomain.xml
+||www.1905.com/coll/ssproxy.html
+||/1905/1905.swf
+||oa-mssp.data.aliyun.com/fetch_adslot
+!======[www.1905.com]---↑
+
 !------[前端 CDN 加速服务begin]
 !------↓谷歌字体fonts.googleapis.com/css?family=Ravi+Prakash
 fonts.googleapis.com$f@302:s@fonts.googleapis.com@fonts.lug.ustc.edu.cn@
@@ -1051,7 +1061,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1841430250,"hash":"","length":16537,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":744570927,"hash":"","length":16575,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
