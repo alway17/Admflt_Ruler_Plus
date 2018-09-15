@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-15
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-16
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -329,6 +329,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||ads-union.jd.com
 ||adservice.google.com
 ||adsfile.qq.com/$script
+||adshow.58.com
 ||adshow.php
 ||adxvip.com
 ||afp.alicdn.com
@@ -570,6 +571,7 @@ www.gaoqingkong.com#@#.widget.box.row
 3g.163.com##[id^="ssp-"]
 4399.com###addiv,#defaultbglink,.a-d
 51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
+58.com###home_fl_wrap,#listBottomBar
 72du.com##.tipb
 7k7k.com###player-ad,#J-loop-flash,.loop-flash
 91.com##.banner-gg,.side-bs,.top_a,.advs[class*="advs-"],[class^="ad"],iframe.iframe-pic-box
@@ -593,7 +595,7 @@ dl.3dmgame.com##[class^="youdao"]
 dmzj.com##.user_show
 down.52pk.com##a[onclick*="hmt.push"]
 e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php"]
-eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"]
+eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"],.app-download>div
 eastmoney.com##.lyad
 gamersky.com##.ad_r,.ngg_down,[class$="_ad"]
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
@@ -839,8 +841,6 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 !======[H webs]---↑
 
 !======[cpro.baidu.com]---↓
-!||v.baidu.com/kan/*format=json*$S@"off":\d@"off":1@
-!||bdstatic.com/browse_static/v3/common/pkg/common_video_*.js$S@=(\w\.off(?![\w]))@=1@
 !Baidu-union
 |http://bd1.*$script
 |http://bd2.*$script
@@ -855,6 +855,7 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||bdstatic.com/*tam-ogel/$script
 ||cb.baidu.com
 ||cbjs.baidu.com
+||cir-smart.baidu.com
 ||click.hm.baidu.com
 ||cpro.baidustatic.com
 ||cpu.baidu.com
@@ -862,12 +863,14 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||dl.client.baidu.com
 ||dup.baidustatic.com
 ||dzl.baidu.com
+||ecmb.bdimg.com/
 ||eduad.baidu.com/
 ||eiv.baidu.com
 ||entry.baidu.com
 ||gimg.baidu.com
 ||gss^.bdstatic.com$script,domain=~news.baidu.com,~hao123.com
 ||hm.baidu.com/hm.js
+||idm-su.baidu.com
 ||mobads-logs.baidu.com
 ||mobads.baidu.com
 ||nsclick.baidu.com
@@ -878,14 +881,10 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||toolbar.baidu.com
 ||utility.baidu.com
 ||znsv.baidu.com
-!Baidu-src-js
-||baidu_ad.js
-||idm-su.baidu.com
-||cir-smart.baidu.com
 /cpro/*/noexpire/*.js$f@302:s@@@
 ||/cpro/*/noexpire/*.js$S@^.*$@location.href='about:blank';@s
-|http://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
-|https://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
+!|http://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
+!|https://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
 cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
 ||/cpro/*/noexpire/*.css$S@^.*$@*{display:none!important}@s
 ||baidu.com/s?$S@("#"\+t\.id\+"{).*?}@${1}display:none!important}@sg
@@ -1066,7 +1065,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1680473949,"hash":"","length":16899,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1341698839,"hash":"","length":17031,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
