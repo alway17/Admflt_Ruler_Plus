@@ -504,6 +504,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.52z.com/js/52z.js
 ||www.66ys.tv/d/
 ||www.btdx8.com/tmp/tall.js
+||www.ccchoo.com/includes/js/float_tips.js
 ||www.cncrk.com/*/js/rjbz.js
 ||www.cr173.com/jsBI/js/info.js
 ||www.cr173.com/show/$script
@@ -662,6 +663,7 @@ www.aihami.com##.conText>div[style],.adDingT,.ad640x90,ad300x90,.h250
 www.bilibili.com##.bilibili-player-promote-wrap,#v_top_gg,#slide_ad,#bannerAd,[class*="gg-"],#fixed_app_download
 www.biquzi.com##iframe[src*="html/click"]
 www.btbtt##a[style*="float"][target*="blank"]>img[style*="width"]
+www.ccchoo.com###ann_list,.down_two>[class="clearfix"],.down_tl,.down_three
 www.chapaofan.com##[class^="pf-ad"],.details-ad
 www.chinanews.com##.hotlist_top_right,#news_top_advert
 www.cnprint.org##.top-post-ads
@@ -822,6 +824,7 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||www.65yw.com$S@<frame .*?\.html[^>]>@@
 ||www.65yw.com$S@rows='\d*(%)*,\d*(%)*'@rows='100%'@
 ||www.amfuli.com/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
+||www.ccchoo.com/down*.html$S@secs ?= ?\d{1,2};@secs=0;@
 ||www.greenxf.com/js/maim.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.igeek.com.cn/static/css/articlen/style.css$S@(\.ad_box[^{]*{)[^}]*@${1}display:none@
 ||www.jz5u.com/js/t*.js$S@^.*@@s
@@ -960,6 +963,7 @@ live.iqiyi.com###modal[data-count]
 ||*/videos/other/*.f4v|$m@res:block/null.mp4
 ||cupid.iqiyi.com/show2?a=qc_$S@^.*$@@s
 |http://qiyu.iqiyi.com/p13n20?
+||static.iqiyi.com/js/player_v1/config/online.js$S@(FLASH_PLAYER_Z?URL:)".*",@${1}"http://player.video.iqiyi.com/0/0/",@
 !||dispatcher.video.qiyi.com/dispn/player/preloader.swf
 !======[www.iqiyi.com]---↑
 
@@ -1065,7 +1069,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1341698839,"hash":"","length":17031,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3226342933,"hash":"","length":17032,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
