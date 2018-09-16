@@ -963,7 +963,7 @@ live.iqiyi.com###modal[data-count]
 ||*/videos/other/*.f4v|$m@res:block/null.mp4
 ||cupid.iqiyi.com/show2?a=qc_$S@^.*$@@s
 |http://qiyu.iqiyi.com/p13n20?
-||static.iqiyi.com/js/player_v1/config/online.js$S@(FLASH_PLAYER_Z?URL:)".*",@${1}"http://player.video.iqiyi.com/0/0/",@
+||static.iqiyi.com/js/player_v1/pcweb.wonder.js$s@QiyiPlayerConfig.FLASH_PLAYER_ZURL@"http://player.video.iqiyi.com/0/0/"@
 !||dispatcher.video.qiyi.com/dispn/player/preloader.swf
 !======[www.iqiyi.com]---↑
 
