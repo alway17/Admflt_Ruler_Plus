@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-17
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-18
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -325,6 +325,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||adm.dxpmedia.com
 ||admarket.21cn.com
 ||admaster.com.cn
+||adnxs.com
 ||ads-iframe-display.php
 ||ads-union.jd.com
 ||adservice.google.com
@@ -469,6 +470,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||s.pcapps.qq.com
 ||s.union.360.cn
 ||sax.sina.cn
+||servicer.mgid.com
 ||show.^.mediav.com/s?
 ||sina.com.cn/*sinaads*js
 ||sinaimg.cn/unipro/
@@ -594,6 +596,7 @@ cnfol.com##[data-revive-zoneid],[id^="as_"],[class*="Ad"]
 cri.cn##.ad-item
 ctfile.com,pipipan.com##.modal-backdrop.fade
 dayoo.com##.ad-area
+dbw.cn##.header_c .h-p1,.header_c>div[style]:not([class]):not([id]),[class^="ad-"]
 dl.3dmgame.com##[class^="youdao"]
 dmzj.com##.user_show
 down.52pk.com##a[onclick*="hmt.push"]
