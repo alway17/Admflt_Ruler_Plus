@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-16
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-17
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -357,6 +357,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||cdn.jsdelivr.net/opensug/*/opensug.js
 ||cdn.tanx.com/t/tanxssp
 ||cdn.tudown.com/script
+||ceshi.maoyun.tv
 ||chucity.com
 ||clientsolutions.cn/*?ad
 ||cn.miaozhen.com
@@ -454,6 +455,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||p2pmid.baofeng.com
 ||pg-ad*.nosdn.127.net
 ||pic.fastapi.net
+||pic.liwo.tv
 ||pic.x.soso.com
 ||pic^.zhimg.com/*adx^.$image
 ||pingma.qq.com
@@ -765,8 +767,10 @@ www.rjno1.com$s@<script>(*;</script>@@
 |http://*left_ad.js$S@^.*@@s
 |http://*right_ad.js$S@^.*@@s
 |http://*top_ad.js$S@^.*@@s
+|http://g.163.com$S@(var ad_winWidth|var ad_random|adInfoTemp|index\d{4}_adtop_callback|<iframe src=.*?jd.com).*$@@isg
 |http://img.tingroom.com/file/*.js$S@^( )*?document.write.+?(a href.*?target|iframe|script).+?\).?@@img
 |http://q.z.vip.totv.72du.com/$S@showTime\(\d{1,2}\);@showTime(0);@
+|http://static.iqiyi.com/ext/share8_tips/tipdata.xml$s@duration="-1"@duration="1"@
 |http://www.greenxf.com/js/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 |http://www.tingchina.com/js/*.js$S@^( )*?document.write.+?(a href.*?target|iframe|script).+?\).?@@img
 |https://*/ads-$S@^.*@@s
@@ -774,6 +778,7 @@ www.rjno1.com$s@<script>(*;</script>@@
 |https://*/js/c/$f@302:s@^https?:\/\/.*\/js\/c\/\d+.*\.js@http://119.29.29.29/404@
 |https://*btkitty$S@<div class="footer"[^>]*?>.*</div>@@s
 |https://btso.pw/$s@<div type="text/data-position"*</div>@@
+|https://g.163.com$S@(var ad_winWidth|var ad_random|adInfoTemp|index\d{4}_adtop_callback|<iframe src=.*?jd.com).*$@@isg
 |https://www.panda.tv/|$s@</head>@<script>inHackcss.S('.index-slider-video-container','background:none')</script></head>@
 ||.eastday.com/*da_*.js$S@{.*}@{}@
 ||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
@@ -809,6 +814,7 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||show-^.mediav.com$S@"ads":.?\[.?{.*}.?]@"ads":[{}]@sig
 ||show-^.mediav.com$S@"duration":\d{1,2}@"duration":0@
 ||show-^.mediav.com$S@"http.*?"@""@
+||shuikaile.com/play.php$S@(count ?= ?|}, ?)\d{1,2}@${1}0@
 ||sjs.sinajs.cn/blog*/index.js$S@job.add\("\w*?Ad"\);@@
 ||static.ali213.net/js/data/zad/$S@https?:.*?",@",@ig
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
@@ -957,12 +963,12 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
-iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box
+iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"]
 live.iqiyi.com###modal[data-count]
 ||cupid.iqiyi.com/show2?e=*$S@:"(https?://.*?\.jpg|https?://.*?\.mp4|https?://.*?\.f4v)@:" @
 ||*/videos/other/*.f4v|$m@res:block/null.mp4
 ||cupid.iqiyi.com/show2?a=qc_$S@^.*$@@s
-|http://qiyu.iqiyi.com/p13n20?
+||qiyu.iqiyi.com/p13n20?
 ||static.iqiyi.com/js/player_v1/pcweb.wonder.js$s@QiyiPlayerConfig.FLASH_PLAYER_ZURL@"http://player.video.iqiyi.com/0/0/"@
 !||dispatcher.video.qiyi.com/dispn/player/preloader.swf
 !======[www.iqiyi.com]---↑
