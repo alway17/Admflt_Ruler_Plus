@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-18
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-19
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -25,6 +25,7 @@
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
 @@|https://www.gstatic.com/*Account*$pass
+@@||/style/css/*.css$pass
 @@||99ddd.com/*.7z
 @@||99ddd.com/*.exe
 @@||99ddd.com/*.rar
@@ -312,6 +313,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||3dwwwgame.com/ep/
 ||3dwwwgame.com/p/
 ||42xz.com/
+||4paradigm.com/sdk/js/ParadigmSDK
 ||51240.com/g/*.js
 ||52pk.com/*/webThunderDetect.js
 ||52pk.com/*/yingsu.js
@@ -321,6 +323,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||AdModel/$script
 ||AdSystem/$script
 ||a.alimama.cn
+||ad-survey.com
 ||ad.caiba520.win
 ||adimg*.weibo.com
 ||adm.dxpmedia.com
@@ -362,6 +365,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||cdn.tanx.com/t/tanxssp
 ||cdn.tudown.com/script
 ||ceshi.maoyun.tv
+||chinaso.com/adshow
 ||chucity.com
 ||clientsolutions.cn/*?ad
 ||cn.miaozhen.com
@@ -394,6 +398,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||epro.sogou.com
 ||feng.com/frame.php
 ||g.alicdn.com/*odv.min.js
+||g.alicdn.com/openad/
 ||g.cn.miaozhen.com
 ||g.downg.com/*.js
 ||g.doyo.cn/js/dygg*.js
@@ -535,6 +540,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.laonanren.com/js/mn.js
 ||www.linguilife.com/c*.js
 ||www.newsres.cn/temp/tempad
+||www.nkscdn.com/smu0/o.js
 ||www.omanhua.com/scripts/show/^00^.js
 ||www.omanhua.com/scripts/show/a*.js
 ||www.people.com.cn/adv/
@@ -620,6 +626,7 @@ i.qq.com##.icon_adv_logo,[id^="adImg"]
 ifeng.com##[id^="optimusPrimeContentId"]
 image.baidu.com##.text-link-ads,.fcImgli
 item.btime.com#@##subLayout
+jandan.net###sidebar [rel="external nofollow"]
 jb51.net##li.da-download,[style*="width:1080px"]
 kankan.com##.banner[id^="cm"]
 kuwo.cn##.tuiguang,[class*="Ad"]
@@ -1085,7 +1092,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":790851970,"hash":"","length":18400,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":4214024396,"hash":"","length":18408,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
