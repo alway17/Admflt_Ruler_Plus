@@ -549,7 +549,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.qqyewu.com/jss/*.js
 ||www.ttrar.com/statics/skin_js/
 ||www.ucbug.com/new201^/$script
-||www.webkaka.com/script/
+||www.webkaka.com/script/cp.js
 ||www.xdowns.com/js/lefttuijian.js
 ||www.xdowns.com/js/syad.js
 ||www.xdowns.com/template/tshouyou/js/jietu.js
@@ -671,7 +671,7 @@ v.qq.com/x/##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
-webkaka.com##a[href*="/click/"],table:not([id]):not([class]),span[class*="Ad"],p[class*="Ad"]
+webkaka.com##a[href*="/click/"],#div_top,#dedenews,span[class*="Ad"],p[class*="Ad"]
 weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"]
 wemedia.ifeng.com##.h_top_box,.yc_con_r a iframe
 www.17ce.com##[class^="add_"]
@@ -1099,7 +1099,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2159829856,"hash":"","length":18864,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3204375854,"hash":"","length":18876,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
