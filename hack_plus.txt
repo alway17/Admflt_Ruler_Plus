@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-21
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-22
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
@@ -26,6 +26,7 @@
 @@|https://su.baidu.com/console/website/$pass
 @@|https://www.gstatic.com/*Account*$pass
 @@||/style/css/*.css$pass
+@@||/wp-admin/$pass
 @@||99ddd.com/*.7z
 @@||99ddd.com/*.exe
 @@||99ddd.com/*.rar
@@ -47,14 +48,19 @@
 @@||static.yxdown.com/pc/index/js/jquery.lazyload.js$pass
 @@||static/css/style.css$pass
 @@||wkinfo.com.cn$pass
+@@||wp-tinymce.php$pass
 @@||www.3987.com/*.html
 @@||www.hdsky.net/ad/down.png
 S:api.geetest.com
 S:api.weibo.com
 S:cf.aliyun.com
+S:cloudxns.net
+S:dnspod.cn
+S:dnspod.com
 S:exmail.qq.com
 S:jd.hk
 S:mail.qq.com
+S:newdefend.com
 S:passport.aliyun.com
 S:ptlogin2.qq.com
 S:res.suning.cn
@@ -161,6 +167,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*tempAd.js
 |http://*zoneid=
 |http://225bt.com/js/config.js
+|http://ad.*.cn/
 |http://ad.*.com/
 |http://adman.
 |http://ads.*
@@ -263,6 +270,8 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/unionjs/*.js
 |https://*300x2^0.js
 |https://*zoneid=
+|https://ad.*.cn/
+|https://ad.*.com/
 |https://adman.
 |https://ads.*
 |https://adserver.*
@@ -428,6 +437,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||img*.126.net/ntesrich/*ad*$script
 ||img.aolusb.com/forever/$script
 ||img.shaqm.com/*/qls_AdCommon.min.js
+||insightexpressai.com
 ||int.dpool.sina.com.cn/iplookup/iplookup.php
 ||inte.sogou.com/ask?id=*cxid=
 ||inte.sogou.com/ct
@@ -704,7 +714,6 @@ www.fawan.com##[id^="ynetG"]
 www.fun.tv##.play-banner-ad,[class^="dialog-"][id^="dialog-"],.banner-ad,[class$="-ad"]
 www.gaoqingkong.com###cgVshow
 www.greenxf.com/*.html##a[class][href="#"]
-www.haha.mx##.fl.sidebar>div[class][style],.waterfall-column iframe
 www.haote.com##[class$="banner"],.flashbox.f_list,.bigmainIn
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iplaysoft.com##a[rel="nofollow"][href*="/go/"],[class*="_white"],li[id^="_"],#sidebar_scroll_bdad,[id^="post"].post>div[style]:not([id]):not([class]),div[style*="width:336px"],#sidebar_scroll>[style],li.widget[style],#section_event,[class*="bdad"]
@@ -864,6 +873,32 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
 ||yande.re$s@hide-advanced-editing@@
 !======[replace]---↑
+
+!======[Web Track Logs]---↓
+|http://*/*.gif?UATrack
+|http://*/^.gif?*&*&
+|http://*/cse.gif?*&
+|http://*/e.gif?
+|http://*/s.gif?*&
+|http://*/tmp.gif?*&*&
+|http://*/v.gif?*&
+|https://*/*.gif?UATrack
+|https://*/^.gif?*&*&
+|https://*/cse.gif?*&
+|https://*/e.gif?
+|https://*/s.gif?*&
+|https://*/tmp.gif?*&*&
+|https://*/v.gif?*&
+||/index/q.php?cid=
+||apstat.js?url=
+||b.scorecardresearch.com
+||eclick.baidu.com
+||log.qianzhan.com
+||pv.sohu.com
+||rs.sinajs.cn
+||webdig_test.js
+||webterren.com/webdig.js
+!======[Web Track Logs]---↑
 
 !======[H webs]---↓
 www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet:"]),iframe
@@ -1100,7 +1135,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3741721070,"hash":"","length":18919,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":28745875,"hash":"","length":19019,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
