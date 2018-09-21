@@ -457,7 +457,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||js.tv.itc.cn/base/core/gg_
 ||js.tv.itc.cn/site/play/*/menu_ad_*$script
 ||js.users.51.la
-||jspassport.ssl.qhimg.com
 ||kengdie.com/statics/js/view.js
 ||kfkfl.cn/vs.php?id=*
 ||kwiago.com
@@ -890,12 +889,15 @@ www.rjno1.com$s@<script>(*;</script>@@
 |https://*/tmp.gif?*&*&
 |https://*/v.gif?*&
 ||/index/q.php?cid=
+||/logger.js?
 ||apstat.js?url=
 ||b.scorecardresearch.com
 ||eclick.baidu.com
 ||log.qianzhan.com
 ||pv.sohu.com
 ||rs.sinajs.cn
+||s.360.cn/*/s.htm?
+||s.qhupdate.com/sou/home.gif?
 ||webdig_test.js
 ||webterren.com/webdig.js
 !======[Web Track Logs]---↑
