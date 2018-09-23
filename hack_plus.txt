@@ -1,6 +1,5 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-22
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-23
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
-!-----| 公益项目？不！是向往爱与和平！
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !======[wlist]---↓
@@ -291,6 +290,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||.gtimg.com/*tips/tips.js
 ||.hdslb.com/bfs/cm/st/bundle.js
 ||.icast.cn/adtypes/$script
+||.reachmax.cn
+||.zunmi.cn
 ||/1000^^0.gif
 ||/521fl/pc.js
 ||/521fl/tj.js
@@ -400,6 +401,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||dingding*.com$third-party
 ||doubleclick.ctfile.com/?adv
 ||down.admin5.com/z/$script
+||dragonstatic.com
 ||dsp.ali213.net
 ||dw998.com
 ||dydab.com$third-party
@@ -411,6 +413,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||g.alicdn.com/*odv.min.js
 ||g.alicdn.com/openad/
 ||g.cn.miaozhen.com
+||g.doubleclick.net
 ||g.downg.com/*.js
 ||g.doyo.cn/js/dygg*.js
 ||g.fastapi.net
@@ -898,25 +901,33 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||/index/q.php?cid=
 ||/logger.js?
 ||365dmp.com/*?
+||analytics.126.net
+||analytics.163.com
 ||apstat.js?url=
 ||b.scorecardresearch.com
 ||btrace.qq.com
 ||btrace.video.qq.com
+||c.yes.youku.com/cm.gif?
 ||changyan.sohu.com/stat/event?
 ||changyan.sohu.com/stat/uvstat
+||ckm.iqiyi.com/pixel?
 ||count.atm.youku.com/mlog?
 ||ctr.hd.sohu.com
 ||eclick.baidu.com
 ||ef-dongfeng.tanx.com/tanx?
 ||ems.youku.com/event?
 ||ems.youku.com/imp?e=
+||fundin.douban.com/piwik?
+||google-analytics.com
 ||gridsumdissector.com/gs.gif?
+||idm.bce.baidu.com/t/ping.gif
 ||imrworldwide.com/cgi-bin/gn?
 ||ipm.atm.youku.com/ipm?
 ||irs01.net
 ||log.qianzhan.com
 ||mmstat.com
 ||msg.qy.net/*.gif?*&
+||optimix.asia
 ||pv.hd.sohu.com
 ||pv.sohu.com
 ||qq.com/stdlog/
@@ -928,7 +939,9 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||val.atm.youku.com/over?
 ||val.atm.youku.com/show?
 ||webdig_test.js
+||webstat.ws.126.net/stat/?
 ||webterren.com/webdig.js
+||www.douban.com/stat.html
 ||www.webdissector.com/recv/gs.gif?
 !======[Web Track Logs]---↑
 
@@ -1167,7 +1180,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2106418394,"hash":"","length":19053,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3809518401,"hash":"","length":19106,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":1954120436,"hash":"","length":360,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
