@@ -64,6 +64,7 @@ S:passport.aliyun.com
 S:ptlogin2.qq.com
 S:res.suning.cn
 S:suning.com
+S:unipay.qq.com
 S:upyun.com
 S:ynuf.aliapp.org
 bbs.zol.com.cn#@##bookContent
@@ -721,7 +722,6 @@ www.greenxf.com/*.html##a[class][href="#"]
 www.haote.com##[class$="banner"],.flashbox.f_list,.bigmainIn
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iplaysoft.com##a[rel="nofollow"][href*="/go/"],[class*="_white"],li[id^="_"],#sidebar_scroll_bdad,[id^="post"].post>div[style]:not([id]):not([class]),div[style*="width:336px"],#sidebar_scroll>[style],li.widget[style],#section_event,[class*="bdad"]
-www.iqiyi.com/*.html##.rightPCAdv,.pca-img$B
 www.kafan.cn/edu/,www.kafan.cn/jc.php##.container[style],[id^="content"][style],#categories-4[style],a[rel="nofollow"][style],h6
 www.kuman.com###top-banner
 www.kuwo.cn##.tuiguang
@@ -1032,7 +1032,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 !======[v.youku.com]---↓
 v.youku.com##%li.fn-play-mode{display:block!important}
 !||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
-.youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#__btn_
+.youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#LAIFENG_REQUEST
 player.youku.com##.outsitepanel
 ||html.atm.youku.com/html*h5%2Cimg*
 ||v2html.atm.youku.com/vhtml*h5,img*
@@ -1046,6 +1046,8 @@ player.youku.com##.outsitepanel
 ||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@<span class="vip-label">@<span style="display:none">@
 !---> flash-1080p
 ||ups.youku.com/ups/get.json$s@"hd3":false@"hd3":true@
+!---> block laifeng
+||static.youku.com/ddshow/img/static/js/youku_laifeng
 !======[v.youku.com]---↑
 
 !======[tv.sohu.com]---↓
@@ -1068,8 +1070,10 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
-iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"]
+iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"],.search_result_download
 live.iqiyi.com###modal[data-count]
+www.iqiyi.com/*.html##.rightPCAdv,.pca-img
+||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||cupid.iqiyi.com/show2?e=*$S@:"(https?://.*?\.jpg|https?://.*?\.mp4|https?://.*?\.f4v)@:" @
 ||*/videos/other/*.f4v|$m@res:block/null.mp4
 ||cupid.iqiyi.com/show2?a=qc_$S@^.*$@@s
@@ -1169,7 +1173,6 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
-||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||blog.sina.com.cn/s/$s@</body>@<script>unHackcss.A('#sina_keyword_ad_area2')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
 ||www.zhuihd.com$s@</body>@<script>unHackcss.F('.theiaStickySidebar')</script></body>@
