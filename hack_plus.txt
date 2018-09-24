@@ -1013,8 +1013,8 @@ tieba.baidu.com,zhidao.baidu.com,wenku.baidu.com##[class*="EC_"],[class*="union"
 wenku.baidu.com##.banner-wrap,[href*="adfree"],.lastcell-dialog,[class*="adWrap"],.search-result>[id],[class*="vip-close"],.yuedu-recommend-wrap iframe
 www.hao123.com##[id^="hao123-gw"]
 ||wkstatic.bdimg.com/static/wkview/pkg/viewcommon2$S@(/ad|/crm)@/noad@
-baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>div:not([id]):not([class]):not([style]),#content_right>br
-||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>div:not([id]):not([class]):not([style]),#content_right>br','display:none!important')</script>@
+baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>*:not(table)
+||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right>*:not(table)','display:none!important')</script>@
 !======[cpro.baidu.com]---↑
 
 !======[www.le.com]---↓
