@@ -688,7 +688,7 @@ v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="
 v.youku.com/pad_show/##.hy_limit
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
 webkaka.com##a[href*="/click/"],#div_top,#dedenews,span[class*="Ad"],p[class*="Ad"]
-weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"]
+weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"],.wbv-ad
 wemedia.ifeng.com##.h_top_box,.yc_con_r a iframe
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
@@ -1013,8 +1013,8 @@ tieba.baidu.com,zhidao.baidu.com,wenku.baidu.com##[class*="EC_"],[class*="union"
 wenku.baidu.com##.banner-wrap,[href*="adfree"],.lastcell-dialog,[class*="adWrap"],.search-result>[id],[class*="vip-close"],.yuedu-recommend-wrap iframe
 www.hao123.com##[id^="hao123-gw"]
 ||wkstatic.bdimg.com/static/wkview/pkg/viewcommon2$S@(/ad|/crm)@/noad@
-baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos]
-||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos]','display:none!important')</script>@
+baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>div:not([id]):not([class]):not([style]),#content_right>br
+||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>div:not([id]):not([class]):not([style]),#content_right>br','display:none!important')</script>@
 !======[cpro.baidu.com]---↑
 
 !======[www.le.com]---↓
@@ -1139,6 +1139,10 @@ pptv.com##[id^="afp_"],#video-download-game
 ||wa5as4.com/vd
 ||www.1905.com/coll/ssproxy.html
 !======[www.1905.com]---↑
+
+!======[weibo.com]---↓
+||adimg*.weibo.com/*.mp4$m@res:block/null.mp4
+!======[weibo.com]---↑
 
 !------[前端 CDN 加速服务begin]
 !------↓谷歌字体fonts.googleapis.com/css?family=Ravi+Prakash
