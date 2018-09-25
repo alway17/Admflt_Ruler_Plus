@@ -685,7 +685,6 @@ ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
 tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
 user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"]
 uuu9.com###uuu9_tips,#top,.top2box
-v.qq.com/x/##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
@@ -883,6 +882,8 @@ www.rjno1.com$s@<script>(*;</script>@@
 !======[replace]---↑
 
 !======[Web Track Logs]---↓
+!||btrace.qq.com
+!||btrace.video.qq.com
 |http://*/*.gif?UATrack
 |http://*/^.gif?*&*&
 |http://*/cse.gif?*&
@@ -909,8 +910,6 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||analytics.163.com
 ||apstat.js?url=
 ||b.scorecardresearch.com
-||btrace.qq.com
-||btrace.video.qq.com
 ||c.yes.youku.com/cm.gif?
 ||changyan.sohu.com/stat/event?
 ||changyan.sohu.com/stat/uvstat
@@ -930,7 +929,6 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||ipm.atm.youku.com/ipm?
 ||irs01.net
 ||log.qianzhan.com
-||mmstat.com
 ||msg.qy.net/*.gif?*&
 ||optimix.asia
 ||pv.hd.sohu.com
@@ -1027,6 +1025,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 !======[www.le.com]---↑
 
 !======[v.qq.com]---↓
+v.qq.com##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad,a[href*="mall.jd.com"],.jimu-module a[target]:not([href*="qq.com"])
 ||variety.tc.qq.com
 ||vlive.qqvideo.tc.qq.com
 ||bla.gtimg.com/qqlive/*.mp4
