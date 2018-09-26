@@ -681,7 +681,6 @@ sports.eastday.com/video/##.dalink
 sports.qq.com##[data-matchtype]
 subhd.com##a[target*="blank"]>img[src$=".gif"][width]
 szhk.com##div[id*="_banner"],div[class*="banner_"]
-t66y.com##a[href*="www.viidii.info/?http"]:not([href*="download"]):not([href*="/link"]),[valign="top"] br
 tech.ifeng.com##[class^="adv"]
 tianya.cn##[id*="js-tybc"]
 tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_WW"],[id^="Baidu_PIC"],.goudan
@@ -956,6 +955,9 @@ www.rjno1.com$s@<script>(*;</script>@@
 !======[Web Track Logs]---↑
 
 !======[H webs]---↓
+||88files______net/download$S@(waitfunction, ?)1000@${1}0@
+88files______net/download##a[target] img
+t66y.com##a[href*="www.viidii.info/?http"]:not([href*="download"]):not([href*="/link"]),[valign="top"] br+br,[valign="top"] a:not([href*="download"]):not([href*="/link"])+br,img[data-src$=".gif"]
 www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet:"]),iframe
 91porn.com##iframe[src*="/fans/"],.vast-blocker
 |http:/*/fans/ad.php|
