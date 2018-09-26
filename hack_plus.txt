@@ -478,7 +478,6 @@ www.gaoqingkong.com#@#.widget.box.row
 ||mediav.com/js/mvf
 ||mellowads.com
 ||mfp.deliver.ifeng.com
-||mgtv.com/mediafiles/wiad
 ||mop.com/assets/js/c_detail_
 ||mydisplay.ctfile.com/popjump.php?r=
 ||p2pmid.baofeng.com
@@ -656,7 +655,6 @@ kankan.com##.banner[id^="cm"]
 kuwo.cn##.tuiguang,[class*="Ad"]
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
-mgtv.com/b/###a_box,[class^="plugins_"],[class^="nodes_"],[node-type="guide-app"]
 mop.com##.header[style],[class^="dsp"]
 myzaker.com##a[href*="ads_id="],[id^="dsp_id"]
 news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend,.news_bt+div[style],.baidu
@@ -737,7 +735,6 @@ www.kuman.com###top-banner
 www.kuwo.cn##.tuiguang
 www.landiannews.com##a[rel="external nofollow"]
 www.lbldy.com##.ad-pc,.listad
-www.mgtv.com##.m-focus-ad
 www.omanhua.com##[class*="uzmh-"]
 www.oschina.net##.float_adbox,[data-traceid*="_ad"]
 www.ouhua.info##img[src*="/ad2015/"]
@@ -954,6 +951,7 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||webterren.com/webdig.js
 ||www.douban.com/stat.html
 ||www.webdissector.com/recv/gs.gif?
+||stat.funshion.com/
 !======[Web Track Logs]---↑
 
 !======[H webs]---↓
@@ -1095,20 +1093,24 @@ www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 !======[www.iqiyi.com]---↑
 
 !======[www.mgtv.com]---↓
+||mgtv.com/mediafiles/wiad
 ||da.mgtv.com/*/player|$S@^.*$@@s
+mgtv.com/b/###a_box,[class^="plugins_"],[class^="nodes_"],[node-type="guide-app"]
+www.mgtv.com##.m-focus-ad,.gg-main,.m-extensbar-game,[data-ad]
 !======[www.mgtv.com]---↑
 
 !======[www.fun.tv]---↓
 ||adm.funshion.com
 |http://static.funshion.com/*open_adview
+www.fun.tv##.ad_microlen
 !======[www.fun.tv]---↑
 
 !======[www.wasu.cn]---↓
 ||adsystem.wasu.tv
 ||delivery.wasu.cn/d/vast/
 ||delivery*.wasu.cn/d/js/1.0?pos=
-||delivery.wasu.cn/d/frontJs/*?pos=$S@: ?\d{1,2}@:0@
-wasu.cn##[class*="ads_"],[class*="_ads"]
+||delivery*.wasu.cn/d/frontJs/*?pos=
+wasu.cn##[class*="ads_"],[class*="_ads"],.qp
 !======[www.wasu.cn]---↑
 
 !======[video.eastday.com]---↓
@@ -1133,6 +1135,7 @@ pptv.com##[id^="afp_"],#video-download-game
 !======[www.pptv.com]---↑
 
 !======[v.17173.com]---↓
+v.17173.com##.side-ad,.ad-lt,.ad-rt
 ||17173im.alllget.com/main/s$S@"t":"\d{1,2}"@"t":"0"@
 ||v.17173.com/advideo/$m@res:block/null.mp4
 !======[v.17173.com]---↑
@@ -1200,7 +1203,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2479331847,"hash":"","length":20204,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3443106362,"hash":"","length":20468,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
