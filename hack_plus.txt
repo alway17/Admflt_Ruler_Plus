@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-27
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-09-28
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -482,12 +482,14 @@ www.gaoqingkong.com#@#.widget.box.row
 ||letvimg.com/*gugwl/*.swf$object
 ||ltcprtc.com
 ||lu.sogou.com/kwd
+||m.fcdm.cc/js/ne/$script
 ||mbai.cn$third-party
 ||mediav.com/ad/
 ||mediav.com/galileo/*.mp4
 ||mediav.com/js/mvf
 ||mellowads.com
 ||mfp.deliver.ifeng.com
+||miaomiaojia.cc/*/static/copy/
 ||mop.com/assets/js/c_detail_
 ||mydisplay.ctfile.com/popjump.php?r=
 ||p2pmid.baofeng.com
@@ -672,6 +674,7 @@ jandan.net###sidebar [rel="external nofollow"]
 jb51.net##li.da-download,[style*="width:1080px"]
 kankan.com##.banner[id^="cm"]
 kuwo.cn##.tuiguang,[class*="Ad"]
+m.fcdm.cc##div[onclick][data-s]
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
 mop.com##.header[style],[class^="dsp"]
@@ -683,6 +686,7 @@ outlook.live##._n_h
 pan.baidu.com##.ad-platform-tips
 pcauto.com.cn##[class*="ivy"],[id^="ad"]
 pconline.com.cn##iframe[id^="ad"],a[id^="ad"],[class^="ivy"],[class*="JCZ-"],[class*="jcz-"],#Jappinfo,.PCdlWrap,.navi-bottom
+player.s1905.com##div[id][style*="block;"]
 q.z.vip.totv.72du.com##.secs strong
 qianzhan.com##.advBox,.footApp,.shop-tj,a[href*="www.qianzhan.com/go/"]
 qichamao.com##.side-ad1
@@ -707,7 +711,7 @@ tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_
 tool.lu##.ad-container
 ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
 tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
-user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"]
+user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"],#qz_notification
 uuu9.com###uuu9_tips,#top,.top2box
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
@@ -1233,7 +1237,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":484442053,"hash":"","length":20896,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":403274048,"hash":"","length":20888,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
