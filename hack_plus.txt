@@ -571,6 +571,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.people.com.cn/adv/
 ||www.qqtn.com/js/downinfo-*.js
 ||www.qqyewu.com/jss/*.js
+||www.sxrb.com/upload/js/*/9*.js
 ||www.ttrar.com/statics/skin_js/
 ||www.ucbug.com/new201^/$script
 ||www.webkaka.com/script/cp.js
@@ -637,6 +638,7 @@ chinaz.com###bottomImg,.textad
 cn.investing.com##.midHeader
 cnbeta.com##.tks,.cnbeta-side-sponsor,#upcoming_box,.cbv,.item.cooperation,[class^="cbv"],.cbimage-fixed
 cnfol.com##[data-revive-zoneid],[id^="as_"],[class*="Ad"]
+cqnews.net###qhSwf
 cri.cn##.ad-item
 ctfile.com,pipipan.com##.modal-backdrop.fade
 dayoo.com##.ad-area
@@ -644,6 +646,7 @@ dbw.cn##.header_c .h-p1,.header_c>div[style]:not([class]):not([id]),[class^="ad-
 dl.3dmgame.com##[class^="youdao"]
 dmzj.com##.user_show
 down.52pk.com##a[onclick*="hmt.push"]
+dzwww.com##.popular
 e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php"]
 eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"],.app-download>div,[href="undefined"],.extend-box
 eastmoney.com##.lyad
@@ -692,6 +695,7 @@ sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bot
 sports.eastday.com/video/##.dalink
 sports.qq.com##[data-matchtype]
 subhd.com##a[target*="blank"]>img[src$=".gif"][width]
+sxrb.com###MyMoveAd
 szhk.com##div[id*="_banner"],div[class*="banner_"]
 tech.ifeng.com##[class^="adv"]
 tianya.cn##[id*="js-tybc"]
@@ -723,7 +727,7 @@ www.biquzi.com##iframe[src*="html/click"]
 www.btbtt##a[style*="float"][target*="blank"]>img[style*="width"]
 www.ccchoo.com###ann_list,.down_two>[class="clearfix"],.down_tl,.down_three
 www.chapaofan.com##[class^="pf-ad"],.details-ad
-www.chinanews.com##.hotlist_top_right,#news_top_advert
+www.chinanews.com##.hotlist_top_right,#news_top_advert,.bottomBox
 www.chinaz.com,www.chinaz.com/index.shtml##a[target="_blank"][rel*="nofollow"],.goTop,.CClose,.Atext
 www.cnprint.org##.top-post-ads
 www.crsky.com##.banner-leader
