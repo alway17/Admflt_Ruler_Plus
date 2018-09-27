@@ -140,6 +140,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |http://*/html/click/$document
 |http://*/i.php?^=*
 |http://*/js/*cpc$script
+|http://*/js/ad.js
 |http://*/js/ads^.js$domain=~tmearn.com
 |http://*/js/ashow.js
 |http://*/js/ds.js
@@ -262,6 +263,7 @@ www.gaoqingkong.com#@#.widget.box.row
 |https://*/cpv/
 |https://*/d/js/*/extended*.js
 |https://*/gg/xx*.js
+|https://*/js/ad.js
 |https://*/js/ads^.js$domain=~tmearn.com
 |https://*/js/ds.js
 |https://*/myad/
@@ -316,6 +318,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||/ntesrich/*dlbox.js
 ||/projectpoi
 ||/undefined
+||/view/image/QT_HY.jpg
 ||101.37.26.251
 ||119.29.29.29/404
 ||126.net/advertisement/
@@ -572,6 +575,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.xdowns.com/js/syad.js
 ||www.xdowns.com/template/tshouyou/js/jietu.js
 ||www.xpgod.com/statics/skin_js/xpgod/*.js
+||www.you85.com/ling/*.js
 ||www.zzlxs.net/ap
 ||www1.elecfans.com
 ||x-ssp.com
@@ -608,7 +612,9 @@ www.gaoqingkong.com#@#.widget.box.row
 3g.163.com##[id^="ssp-"]
 4399.com###addiv,#defaultbglink,.a-d
 51cto.com##.top_bg>.wrap,#edu_adver,.left-ad,.right-ad
+55188.com##.corner-gg
 58.com###home_fl_wrap,#listBottomBar
+678cn.com##.ibtad
 72du.com##.tipb
 7k7k.com###player-ad,#J-loop-flash,.loop-flash
 91.com##.banner-gg,.side-bs,.top_a,.advs[class*="advs-"],[class^="ad"],iframe.iframe-pic-box
@@ -719,9 +725,10 @@ www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wr
 www.demaxiya.com##body>a[style]
 www.diyiziti.com##a[id][rel*="nofollow"]
 www.douban.com/note/##.ui-overlay-mask
-www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[data-target="promote"]
+www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[data-target="promote"],[class*="recommendAD"],[class*="recommendAp"],.QRcode
 www.duote.com##div[class*="-banner"],div[class*="-ad"]
 www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
+www.epbiao.com##.layui-layer-shade,.hb_pop_wrap,.hb_wrap,.floadcom,.floadbg,.actions
 www.epinv.com##.huadong,.epinv_f,.footbar,.danger
 www.fawan.com##[id^="ynetG"]
 www.fun.tv##.play-banner-ad,[class^="dialog-"][id^="dialog-"],.banner-ad,[class$="-ad"]
@@ -1206,7 +1213,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":4121871166,"hash":"","length":20458,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":346690036,"hash":"","length":20841,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
