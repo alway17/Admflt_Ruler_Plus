@@ -294,6 +294,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||.0x55.com
 ||.52pk.com/www/delivery/
 ||.com/vs.php?id=
+||.duomai.com
 ||.ggweb.net
 ||.gtimg.com/*crystal$script
 ||.gtimg.com/*tips/tips.js
@@ -656,6 +657,7 @@ dbw.cn##.header_c .h-p1,.header_c>div[style]:not([class]):not([id]),[class^="ad-
 dl.3dmgame.com##[class^="youdao"]
 dmzj.com##.user_show
 down.52pk.com##a[onclick*="hmt.push"]
+duote.com##div[class*="-banner"],div[class*="-ad"],#hengfu,[class^="u27"]
 dzwww.com##.popular
 e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php"]
 eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"],.app-download>div,[href="undefined"],.extend-box
@@ -750,7 +752,6 @@ www.demaxiya.com##body>a[style]
 www.diyiziti.com##a[id][rel*="nofollow"]
 www.douban.com/note/##.ui-overlay-mask
 www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[data-target="promote"],[class*="recommendAD"],[class*="recommendAp"],.QRcode
-www.duote.com##div[class*="-banner"],div[class*="-ad"]
 www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
 www.epbiao.com##.layui-layer-shade,.hb_pop_wrap,.hb_wrap,.floadcom,.floadbg,.actions
 www.epinv.com##.huadong,.epinv_f,.footbar,.danger
@@ -892,7 +893,7 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||show-^.mediav.com$S@"duration":\d{1,2}@"duration":0@
 ||show-^.mediav.com$S@"http.*?"@""@
 ||shuikaile.com/play.php$S@(count ?= ?|}, ?)\d{1,2}@${1}0@
-||sjs.sinajs.cn/blog*/index.js$S@job.add\("\w*?Ad"\);@@
+||sjs.sinajs.cn/blog^/*$S@job.add\("\w*?Ad"\);@@
 ||static.ali213.net/js/data/zad/$S@https?:.*?",@",@ig
 ||static.jfrft.com/js/*.js$S@function WRITE[^{]*@function noad()@
 ||static.mediav.com/js/mvf*.js$S@^.*@@s
@@ -1240,7 +1241,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1571932830,"hash":"","length":20869,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3700150883,"hash":"","length":20881,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 !|http://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 !|https://$S@<!-- *(<html.*?>|<head.*?>|<body.*?).*?-->@@i
