@@ -1047,7 +1047,7 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 !|https://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
 cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
 ||/cpro/*/noexpire/*.css$S@^.*$@*{display:none!important}@s
-||baidu.com/s?$S@("#"\+t\.id\+"{).*?}@${1}display:none!important}@sg
+||baidu.com/s?$S@("#"\+\w\.id\+"{).*?}@${1}display:none!important}@sg
 ||baidu.com/s?*$S@(#container (\.(?!noback)\w{5,}).*?){.*?}@${1}{display:none}@sig
 ||baidu.com/s?*$S@<script id="ecomScript">.*?</script>@@sig
 ||baidu.com/baidu?*$S@<script id="ecomScript">.*?</script>@@sig
