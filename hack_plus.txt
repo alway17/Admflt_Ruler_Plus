@@ -446,6 +446,8 @@ www.gaoqingkong.com#@#.widget.box.row
 ||hao6v.com/d/f.js
 ||hao6v.com/d/f^.js
 ||hauchi.com.tw
+||home.51cto.com/iframe/get-station-ads
+||home.51cto.com/iframe/iframe-member-adv
 ||hoopchina.com.cn/*-ad.js
 ||hoopchina.com.cn/*-v^.html
 ||houyi.baofeng.net
@@ -545,6 +547,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||webapi.acfun.cn/appSpreadContents/danmuad/
 ||webkaka.com/ad/
 ||webkaka.com/click/
+||weixingshexiangji.net
 ||wm.makeding.com/redirect
 ||www.05sun.com/images/123.gif
 ||www.05sun.com/js/05sun.js
@@ -759,6 +762,7 @@ www.fawan.com##[id^="ynetG"]
 www.fun.tv##.play-banner-ad,[class^="dialog-"][id^="dialog-"],.banner-ad,[class$="-ad"]
 www.gaoqingkong.com###cgVshow
 www.greenxf.com/*.html##a[class][href="#"]
+www.halihali.me##.tuiguang
 www.haote.com##[class$="banner"],.flashbox.f_list,.bigmainIn
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iplaysoft.com##a[rel="nofollow"][href*="/go/"],[class*="_white"],li[id^="_"],#sidebar_scroll_bdad,[id^="post"].post>div[style]:not([id]):not([class]),div[style*="width:336px"],#sidebar_scroll>[style],li.widget[style],#section_event,[class*="bdad"]
@@ -797,6 +801,7 @@ www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display
 www.zimuzu.tv##div[style]>a[rel="nofollow"]
 www.zyzhan.com##a[href*="AdvertisInfo"]
 wzshipin.com##img[width="1200"],.boxg
+xcar.com.cn##.mark-imga
 xingkbjm.com##.d_banner_inner
 xinhuanet.com##[id^="YCADS"],.Xfuchaung
 yahoo.com##[id*="-Ad"]
