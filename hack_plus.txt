@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-02
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-03
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -354,6 +354,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||adnxs.com
 ||ads-iframe-display.php
 ||ads-union.jd.com
+||adsafeprotected.com
 ||adservice.google.com
 ||adsfile.qq.com/$script
 ||adshow.58.com
@@ -522,6 +523,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||sohu.com/*/js/f.js
 ||sports.eastday.com/ad_async.html
 ||ssajax.cn/*info/*global$script
+||sso.people.com
 ||static.luna.58.com/js/mad.js
 ||static.mediav.com/js/mvf$script
 ||static.segmentfault.com/sponsor/
@@ -538,6 +540,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||tiexue.net/ajax/getcityforip.ashx$block
 ||tj.ali213.net$script
 ||tongji/tj.php
+||torrentkitty2.js
 ||ts.profuture3d.com
 ||u.x.jd.com/static/js/auto.js
 ||union.baofeng.com
@@ -724,6 +727,7 @@ tiexue.net##[onclick*="click_out_ad"],a[href*="txads_from"],.goushi,[id^="Baidu_
 tool.lu##.ad-container
 ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
 tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
+ufanw.com###banne
 user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"],#qz_notification
 uuu9.com###uuu9_tips,#top,.top2box
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
@@ -979,6 +983,7 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||ipm.atm.youku.com/ipm?
 ||irs01.net
 ||log.qianzhan.com
+||m.wrating.com/m.gif?
 ||msg.qy.net/*.gif?*&
 ||optimix.asia
 ||pv.hd.sohu.com
@@ -988,6 +993,7 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||s.360.cn/*/s.htm?
 ||s.qhupdate.com/sou/home.gif?
 ||sbeacon.sina.com.cn/mrt.gif?
+||stat.funshion.com/
 ||synacast.com/1.html?
 ||trace.qq.com
 ||webdig_test.js
@@ -995,7 +1001,6 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||webterren.com/webdig.js
 ||www.douban.com/stat.html
 ||www.webdissector.com/recv/gs.gif?
-||stat.funshion.com/
 !======[Web Track Logs]---↑
 
 !======[H webs]---↓
@@ -1253,7 +1258,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":4269962907,"hash":"","length":28482,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":680335186,"hash":"","length":29896,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 |https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=https://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
