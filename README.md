@@ -38,4 +38,4 @@ GitHub和码云同步，coding备份
 > 
 > 捐助开销：域名、又拍云、啃鸡腿
 
-![wechat_code](http://wx2.sinaimg.cn/large/6fd368d6ly1fryey8r91vj207u09qabg.jpg)  ![alipay_code](http://wx1.sinaimg.cn/large/6fd368d6ly1fryey8v2jmj207u09qwfz.jpg)
+![donate_code](https://wx1.sinaimg.cn/large/0060lm7Tly1fvv8xwzkwaj30p30aiaak.jpg)
