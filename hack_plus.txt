@@ -587,6 +587,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||www.jz5u.com/new/down2.js
 ||www.ktkkt.com/js/tvb/
 ||www.laonanren.com/js/mn.js
+||www.lieqinews.com/assets/detail_v1^/detail^^^^.js
 ||www.linguilife.com/c*.js
 ||www.newsres.cn/temp/tempad
 ||www.nkscdn.com/smu0/o.js
@@ -697,6 +698,7 @@ jandan.net###sidebar [rel="external nofollow"]
 jb51.net##li.da-download,[style*="width:1080px"]
 kankan.com##.banner[id^="cm"]
 kuwo.cn##.tuiguang,[class*="Ad"]
+lieqinews.com##.topggCnt,.ggcnt,.float_bot_right,.lq_mcngg
 m.fcdm.cc##div[onclick][data-s]
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
@@ -1270,7 +1272,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1459534282,"hash":"","length":31053,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":1269746826,"hash":"","length":31088,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 |https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=https://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
