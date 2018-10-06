@@ -301,6 +301,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||.hdslb.com/bfs/cm/st/bundle.js
 ||.icast.cn/adtypes/$script
 ||.reachmax.cn
+||.wenpie.com
 ||.zunmi.cn
 ||/1000^^0.gif
 ||/521fl/pc.js
@@ -488,6 +489,7 @@ www.gaoqingkong.com#@#.widget.box.row
 ||jspassport.ssl.qhimg.com$domain=~360.cn|~so.com|~i360mall.com
 ||kengdie.com/statics/js/view.js
 ||kfkfl.cn/vs.php?id=*
+||kuai8.com/v1/pc/js/
 ||kwiago.com
 ||letvimg.com/*gugwl/*.swf$object
 ||ltcprtc.com
