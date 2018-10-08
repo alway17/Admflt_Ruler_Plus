@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-07
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-08
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -24,6 +24,7 @@
 @@|https://notifications.google.com/$pass
 @@|https://su.baidu.com/console/website/$pass
 @@|https://www.gstatic.com/*Account*$pass
+@@||.cloud.tencent.com$pass
 @@||/style/css/*.css$pass
 @@||/wp-admin/$pass
 @@||99ddd.com/*.7z
@@ -36,6 +37,7 @@
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||cache/editor.js$pass
 @@||console*.baidu.com$pass
+@@||console.aliyun.com$pass
 @@||dianping.com
 @@||g1.dfcfw.com/g2/201702/20170216133526.png
 @@||jquery.pjax*.js$pass
@@ -50,9 +52,11 @@
 @@||wp-tinymce.php$pass
 @@||www.3987.com/*.html
 @@||www.hdsky.net/ad/down.png
+S:account.aliyun.com
 S:api.geetest.com
 S:api.weibo.com
 S:cf.aliyun.com
+S:cloud.tencent.com
 S:cloudxns.net
 S:dnspod.cn
 S:dnspod.com
@@ -61,11 +65,13 @@ S:jd.hk
 S:mail.qq.com
 S:newdefend.com
 S:passport.aliyun.com
+S:pay.qq.com
 S:ptlogin2.qq.com
 S:res.suning.cn
 S:suning.com
 S:unipay.qq.com
 S:upyun.com
+S:www.aliyun.com
 S:ynuf.aliapp.org
 bbs.zol.com.cn#@##bookContent
 news.xinhuanet.com#@#.domPC
@@ -1085,8 +1091,8 @@ zhidao.baidu.com###cms-scroll,#wgt-promotions
 wenku.baidu.com##.banner-wrap,[href*="adfree"],.lastcell-dialog,[class*="adWrap"],.search-result>[id],[class*="vip-close"],.yuedu-recommend-wrap iframe
 www.hao123.com##[id^="hao123-gw"]
 ||wkstatic.bdimg.com/static/wkview/pkg/viewcommon2$S@(/ad|/crm)@/noad@
-baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>*:not(table)
-||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right>*:not(table)','display:none!important')</script>@
+baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>*:not(table),#content_left [id$="canvas"]
+||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right>*:not(table),#content_left [id$="canvas"]','display:none!important')</script>@
 !======[cpro.baidu.com]---↑
 
 !======[www.le.com]---↓
@@ -1242,7 +1248,6 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||bootstrap.min.css$pass
 @@||cdn.120askimages.com/ask/css/topfloat.css$pass
 @@||changyan.*/v*src/start.min.js$pass
-@@||console.cloud.tencent.com/*$pass
 @@||css.ykimg.com/youku/dist/css/find/revision/g_*.css$pass
 @@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
 @@||down.51cto.com/css/newcss/module.css$pass
@@ -1273,7 +1278,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3781626960,"hash":"","length":31116,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2314335977,"hash":"","length":31153,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 |https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=https://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
