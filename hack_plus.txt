@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-09
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-10
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -455,6 +455,7 @@ news.xinhuanet.com#@#.domPC
 ||gg.cs090.com$script
 ||gg.dsxdn.com/2cto/$script
 ||gg.uuu9.com/js/$script
+||googletagmanager.com/gtag/js?id=
 ||googletagservices.com
 ||guangzizai.com$script
 ||hao6v.com/d/f.js
@@ -770,6 +771,7 @@ www.4aqq.com##div[style]>a[href*="?"][target="_blank"]
 www.52z.com##.elYxxzRight
 www.54new.com###imgshow,.topseeds,.downad,.adline,table:not([style]) tr:not([class]):not([id])
 www.65yw.com##.tui__header
+www.6pingm.cc###hovertree_float_layer
 www.9ht.com###tlAdtop
 www.admin5.com##.logo_textAd,.logoAd,.headerAd,.footerAd,.adr,.infoAd,[data-zbj-union-key]
 www.aihami.com##.conText>div[style],.adDingT,.ad640x90,ad300x90,.h250
@@ -1160,7 +1162,7 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
-iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"],.search_result_download
+iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"],.search_result_download,.anchor-wenjuan
 live.iqiyi.com###modal[data-count]
 www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 ||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
@@ -1179,6 +1181,11 @@ www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 ||da.mgtv.com/*/player|$S@^.*$@@s
 mgtv.com/b/###a_box,[class^="plugins_"],[class^="nodes_"],[node-type="guide-app"]
 www.mgtv.com##.m-focus-ad,.gg-main,.m-extensbar-game,[data-ad]
+!---> PC client
+||pc.api.mgtv.com/v^/video/getVideoFiles$s@advconfig@no_advconfig@
+||pc.api.mgtv.com/v^/versions/advconfig
+||yunfan.com/imgotv/new/ad.txt
+||js.mgtv.com/imgotv-client*anuncio.tpl.js
 !======[www.mgtv.com]---↑
 
 !======[www.fun.tv]---↓
