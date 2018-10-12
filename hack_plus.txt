@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-11
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-12
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -331,6 +331,7 @@ news.xinhuanet.com#@#.domPC
 ||/nativeads.js
 ||/ntesrich/*dlbox.js
 ||/projectpoi
+||/sinaads/
 ||/undefined
 ||/view/image/QT_HY.jpg
 ||030e.com/img/clipboard.min.js
@@ -690,6 +691,7 @@ e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php
 eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"],.app-download>div,[href="undefined"],.extend-box
 eastmoney.com##.lyad,.popswipe
 edushi.com###unLogin
+eeo.com.cn##.xd-gg
 fang.com##.shade,.tc_app,.adBox,[class*="floatlayer"]
 fanjian.net##.banner,.gd
 finance.sina.com.cn###SFA_NV_POP,[class*="f_app_"],#ny-link-r,[data-sudaclick^="ad_"]
@@ -737,7 +739,7 @@ qlwb.com.cn##.full-banner
 redocn.com##[id$="_gg"]
 segmentfault.com##.side>div[class]
 sina.cn##[id*="Ads"],[sax-type="proxy"]
-sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner,.tab_related_app_imglink,[data-info*="ad_none"]
+sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner,.tab_related_app_imglink,[data-info*="ad_none"],.blk-zcapp
 so.com###rt-gallery,[id^="js-businiess"],#bottom_ask
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
 sports.eastday.com/video/##.dalink
@@ -1293,7 +1295,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 ||www.gaoqingkong.com$s@</body>@<script>unHackcss.A('#ad.search_site')</script></body>@
 !-白名单放行end
-|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":2658801663,"hash":"","length":31094,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
+|http://update2.admflt.com/v3/res.css$s@{"res": [@{"res":[{"crc":3503302506,"hash":"","length":31086,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/fcss.min.js","type":1},{"crc":933116935,"hash":"","length":1037,"localpath":"%ADMDATAPATH%/doc","remotefile":"https://static.x-boy.cn/test_src.js","type":1},@
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 |https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=https://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
