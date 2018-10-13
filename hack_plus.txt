@@ -230,9 +230,6 @@ news.xinhuanet.com#@#.domPC
 |http://www.btbtdy.com/templets/btdy/js/*ad*.js
 |http://www.bxkxw.com/*show_poster*
 |http://www.carnoc.com/noticejs/
-|http://www.fjlqqc.com/common/api/*/al?u=*
-|http://www.fjlqqc.com/common/api/*/slot-code/publisher/*
-|http://www.fjlqqc.com/static/sl/$script
 |http://www.gaoqingkong.com/wp-content/themes/*/bar.js
 |http://www.ifeng.com/ssi-incs/*_ad_*.html
 |http://www.mingxing.com/*/js/_$script
@@ -321,6 +318,8 @@ news.xinhuanet.com#@#.domPC
 ||/api/ad.ashx
 ||/caches/poster_js/$script
 ||/code/adview_
+||/common/api/*/al?u=*
+||/common/api/*/slot-code/publisher/*
 ||/count.js
 ||/count.php
 ||/floatAd.js
@@ -1101,7 +1100,7 @@ cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
 ||tieba.com/$S@('asyncHTML':) ?'.*?',@${1}'',@
 ||tieba.com/p$S@(<style>.?div\..*?){.*?</style>@${1}{display:none}</style>@isg
 ||tieba.com/p$s@</body>@<script>unHackcss.F('#bdshare_tb')</script></body>@
-tieba.baidu.com,tieba.com##%body{margin-top:0!important}
+tieba.baidu.com,tieba.com##%body,#glob{margin-top:0!important}
 tieba.baidu.com,tieba.com##.appPromote,#pblist>li:not([tid]):not([data-info]),a.j_click_stats,a.j_click_stats+*,.tl_shadow.tl_shadow_new+[class*="tl_shadow_new "]
 tieba.baidu.com,zhidao.baidu.com,wenku.baidu.com##[class*="EC_"],[class*="union"]
 zhidao.baidu.com###cms-scroll,#wgt-promotions
