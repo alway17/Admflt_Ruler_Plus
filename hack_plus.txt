@@ -1131,7 +1131,7 @@ v.qq.com##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad,a[href*="mall.jd.com"],.
 
 !======[v.youku.com]---↓
 www.youku.com##.focus-wrap a[href*="miaozhen.com"],li.xh
-www.youku.com##%ul.focus-list>[data-spm-anchor-id]{background:url(https://i.loli.net/2018/10/13/5bc1baa03c0df.jpg) center /cover!important}
+www.youku.com##%ul.focus-list>[style*="ykimg.com/material/"]{background:url(https://i.loli.net/2018/10/13/5bc1baa03c0df.jpg) center /cover!important}
 v.youku.com##%li.fn-play-mode{display:block!important}
 .youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#LAIFENG_REQUEST
 player.youku.com##.outsitepanel
