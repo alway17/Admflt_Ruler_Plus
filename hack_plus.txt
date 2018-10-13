@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-12
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-13
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -52,6 +52,7 @@
 @@||wp-tinymce.php$pass
 @@||www.3987.com/*.html
 @@||www.hdsky.net/ad/down.png
+@@||www.x-boy.cn$pass
 S:account.aliyun.com
 S:api.geetest.com
 S:api.weibo.com
@@ -1129,8 +1130,9 @@ v.qq.com##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad,a[href*="mall.jd.com"],.
 !======[v.qq.com]---↑
 
 !======[v.youku.com]---↓
+www.youku.com##.focus-wrap a[href*="miaozhen.com"],li.xh
+www.youku.com##%ul.focus-list>[data-spm-anchor-id]{background:url(https://i.loli.net/2018/10/13/5bc1baa03c0df.jpg) center /cover!important}
 v.youku.com##%li.fn-play-mode{display:block!important}
-!||v.youku.com$s@</head>@<script>_ykpsls=localStorage["YK_PSL_SETTINGS"]&&JSON.parse(localStorage["YK_PSL_SETTINGS"])||JSON.parse('{"quality":"720p","preferQuality":"1080p"}');_ykpsls.preferQuality="1080p";_ykpsls.quality="720p";localStorage["YK_PSL_SETTINGS"]=JSON.stringify(_ykpsls);</script></head>@
 .youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#LAIFENG_REQUEST
 player.youku.com##.outsitepanel
 ||html.atm.youku.com/html*h5%2Cimg*
