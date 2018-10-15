@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-14
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-15
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -33,7 +33,6 @@
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
 @@||baidu.com/link?url=$pass
-@@||bdstatic.com/*/admLoader/main_$script
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||cache/editor.js$pass
 @@||console*.baidu.com$pass
@@ -390,7 +389,6 @@ news.xinhuanet.com#@#.domPC
 ||avideos.php
 ||bashare.cn
 ||bd-film.co*/cms-sidebar$script
-||bdstatic.com/*/admLoader/$script
 ||beacon.sina.com.cn
 ||bitcoadz.io/display/items.php
 ||bmp.ali213.net/JS/$script
@@ -538,6 +536,7 @@ news.xinhuanet.com#@#.domPC
 ||sinaimg.cn/unipro/
 ||sohu.com/*/js/f.js
 ||sports.eastday.com/ad_async.html
+||sports.mop.com/jscss/v^/js/da.js
 ||ssajax.cn/*info/*global$script
 ||sso.people.com
 ||static.luna.58.com/js/mad.js
@@ -719,7 +718,7 @@ m.163.com##.g-ad,.js-ad
 m.fcdm.cc##div[onclick][data-s]
 m.toutiao.com##.icon-container
 maoyun.tv###tui,[class^="tui"]
-mop.com##.header[style],[class^="dsp"]
+mop.com##.header[style],[class^="dsp"],[suffix*="subtype=new360"],.ad-r,.ad-h,.gg-right,.gg-wrap
 myzaker.com##a[href*="ads_id="],[id^="dsp_id"]
 news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend,.news_bt+div[style],.baidu
 nipic.com##[class*="advertCloseBtn"]
@@ -739,6 +738,7 @@ qiuziti.com##.popularize,.search_wordimg,a[rel="nofollow"][target*="blank"]>img
 qlwb.com.cn##.full-banner
 redocn.com##[id$="_gg"]
 segmentfault.com##.side>div[class]
+sh.qihoo.com###extra_totop
 sina.cn##[id*="Ads"],[sax-type="proxy"]
 sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner,.tab_related_app_imglink,[data-info*="ad_none"],.blk-zcapp
 so.com###rt-gallery,[id^="js-businiess"],#bottom_ask
@@ -1102,8 +1102,11 @@ cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
 ||tieba.com/$S@('asyncHTML':) ?'.*?',@${1}'',@
 ||tieba.com/p$S@(<style>.?div\..*?){.*?</style>@${1}{display:none}</style>@isg
 ||tieba.com/p$s@</body>@<script>unHackcss.F('#bdshare_tb')</script></body>@
-tieba.baidu.com,tieba.com##%body,#glob{margin-top:0!important}
-tieba.baidu.com,tieba.com##.appPromote,#pblist>li:not([tid]):not([data-info]),a.j_click_stats,a.j_click_stats+*,.tl_shadow.tl_shadow_new+[class*="tl_shadow_new "]
+||jump2.bdimg.com/$S@('asyncHTML':) ?'.*?',@${1}'',@
+||jump2.bdimg.com/p$S@(<style>.?div\..*?){.*?</style>@${1}{display:none}</style>@isg
+||jump2.bdimg.com/p$s@</body>@<script>unHackcss.F('#bdshare_tb')</script></body>@
+tieba.baidu.com,tieba.com,jump2.bdimg.com##%body,#glob{margin-top:0!important}
+tieba.baidu.com,tieba.com,jump2.bdimg.com##.appPromote,#pblist>li:not([tid]):not([data-info]),a.j_click_stats,a.j_click_stats+*,.tl_shadow.tl_shadow_new+[class*="tl_shadow_new "]
 tieba.baidu.com,zhidao.baidu.com,wenku.baidu.com##[class*="EC_"],[class*="union"]
 zhidao.baidu.com###cms-scroll,#wgt-promotions
 wenku.baidu.com##.banner-wrap,[href*="adfree"],.lastcell-dialog,[class*="adWrap"],.search-result>[id],[class*="vip-close"],.yuedu-recommend-wrap iframe
@@ -1217,7 +1220,7 @@ wasu.cn##[class*="ads_"],[class*="_ads"],.qp
 ||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
 ||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
 ||video.eastday.com/*new_gethot.js$S@time ?== ?-?\d{1,2} ?&& ?!isTrue@1@
-video.eastday.com##.beforegg,.ad.poa
+video.eastday.com##.beforegg,.ad.poa,[class*="right_adv"],[class*="rightAd"]
 !||video.eastday.com/json_newversion/*.json
 !======[video.eastday.com]---↑
 
