@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-19
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-21
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -32,7 +32,6 @@
 @@||99ddd.com/*.rar
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
-@@||baidu.com/link?url=$pass
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||cache/editor.js$pass
 @@||console*.baidu.com$pass
@@ -679,6 +678,7 @@ bbs.pcbeta.com##.asdad+div
 brtn.cn,btime.com##[adview-id],[id^="adview"],[id^="cpm-"]
 bt-film.co*##[id^="ad"]
 china.com.cn##iframe[src*="china.com.cn"][src*="ads/"]
+chinacar.com.cn##.left_pouple_box
 chinaz.com###bottomImg,.textad
 cn.investing.com##.midHeader
 cnbeta.com##.tks,.cnbeta-side-sponsor,#upcoming_box,.cbv,.item.cooperation,[class^="cbv"],.cbimage-fixed,.cb-help
@@ -707,7 +707,7 @@ gamersky.com##.ad_r,.ngg_down,[class$="_ad"]
 gaoqing.la###head,center img[src*="sinaimg.cn"],.subsidiary+a
 gitee.com##.float-left-box,body>style+[class*="widget"]
 google.com##.ads-ad
-guokr.com##[class*="-advert"]
+guokr.com##[class*="-advert"],.guokr-layer-beforelogin
 hanhande.com###bg_link
 health.qq.com##[class^="ad_"]
 hexun.com###newsPopWin
@@ -1088,6 +1088,7 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||ubmcmm.baidustatic.com
 ||utility.baidu.com
 ||znsv.baidu.com
+||zz.bdstatic.com/linksubmit/push.js
 /cpro/*/noexpire/*.js$f@302:s@@@
 ||/cpro/*/noexpire/*.js$S@^.*$@location.href='about:blank';@s
 !|http://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
@@ -1114,6 +1115,7 @@ zhidao.baidu.com###cms-scroll,#wgt-promotions
 wenku.baidu.com##.banner-wrap,[href*="adfree"],.lastcell-dialog,[class*="adWrap"],.search-result>[id],[class*="vip-close"],.yuedu-recommend-wrap iframe
 www.hao123.com##[id^="hao123-gw"]
 ||wkstatic.bdimg.com/static/wkview/pkg/viewcommon2$S@(/ad|/crm)@/noad@
+||baidu.com/link?url=$S@^.*?<noscript>@@s
 baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>*:not(table),#content_left [id$="canvas"]
 ||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right>*:not(table),#content_left [id$="canvas"]','display:none!important')</script>@
 !======[cpro.baidu.com]---↑
@@ -1142,7 +1144,7 @@ js.ykimg.com/youku/dist/js/page/find/revision/index_*.js$s@$focusH5Ad.show()@$fo
 www.youku.com##.focus-wrap a[href*="miaozhen.com"],li.xh
 www.youku.com##%ul.focus-list>[style*="ykimg.com/material/"]{background:url(https://i.loli.net/2018/10/13/5bc1baa03c0df.jpg) center /cover!important}
 v.youku.com##%li.fn-play-mode{display:block!important}
-.youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#LAIFENG_REQUEST,[class*="yk-AD-"],.ad-wrap
+.youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#LAIFENG_REQUEST,[class*="yk-AD-"],.ad-wrap,[id^="ab_"]
 player.youku.com##.outsitepanel
 ||html.atm.youku.com/html*h5%2Cimg*
 ||v2html.atm.youku.com/vhtml*h5,img*
