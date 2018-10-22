@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-21
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-22
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -56,6 +56,7 @@ S:api.geetest.com
 S:api.weibo.com
 S:cf.aliyun.com
 S:cloud.tencent.com
+S:cloudflare.com
 S:cloudxns.net
 S:dnspod.cn
 S:dnspod.com
@@ -73,6 +74,7 @@ S:unipay.qq.com
 S:upyun.com
 S:www.aliyun.com
 S:ynuf.aliapp.org
+S:yunaq.com
 bbs.zol.com.cn#@##bookContent
 item.btime.com#@##subLayout
 news.xinhuanet.com#@#.domPC
@@ -431,6 +433,7 @@ news.xinhuanet.com#@#.domPC
 ||dfpcitv
 ||dingding*.com$third-party
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
+||divcss5.com/ibeifeng/
 ||doubleclick.ctfile.com/?adv
 ||down.admin5.com/z/$script
 ||dragonstatic.com
@@ -767,7 +770,7 @@ tool.lu##.ad-container
 ttmeiju.vip##[class*="duilian"],[style*="margin-top"][style*="margin-bottom"]
 tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
 ufanw.com###banne
-user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"],#qz_notification
+user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"],[class*="gg-qz-"],#qz_notification
 uuu9.com###uuu9_tips,#top,.top2box
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
 vipsite.info###yhq,.sj-nav-down-search,[style*="text-align:center"]
@@ -861,13 +864,16 @@ zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"],
 4399.com##%body{background-image:none!important}
 51cto.com##%.top_bg{height:85px!important}
 bbs.pcbeta.com##%style[type="text/css"]+div{height:auto!important}
+csdn.net##%ol.hljs-ln{width:100%!important}
 enjoy.eastday.com##%#contentMain{height:1575px!important}
 gaoqing.la##%body{background-image:url()!important}
 hanhande.com##%body>.warp{background:none!important}
 www.aihami.com##%.conText>.recommend{margin-top:4em}
 www.chinaz.com##%#imgbd{background:none!important}.CCtop{margin-top:10px!important}
 www.lbldy.com##%#center{min-height:0!important}
+www.panda.tv##%.index-slider-video-container{background:none!important}
 www.tiexue.net/ShowPicClass##%.picleft{display:block!important}
+www.yy.com##%#banner-fg{background:none!important}
 zol.com.cn##%body{background-image:none!important}
 !======[Admflt ABPex css]---↑
 
@@ -901,7 +907,6 @@ www.rjno1.com$s@<script>(*;</script>@@
 |https://*btkitty$S@<div class="footer"[^>]*?>.*</div>@@s
 |https://btso.pw/$s@<div type="text/data-position"*</div>@@
 |https://g.163.com$S@(var ad_winWidth|var ad_random|adInfoTemp|index\d{4}_adtop_callback|<iframe src=.*?jd.com).*$@@isg
-|https://www.panda.tv/|$s@</head>@<script>inHackcss.S('.index-slider-video-container','background:none')</script></head>@
 ||.eastday.com/*da_*.js$S@{.*}@{}@
 ||.eastday.com/*detail*.js$S@^@function fuck_ad(){return ""}@s
 ||.eastday.com/*detail*.js$s@show_ad_dynamic@fuck_ad@
@@ -961,7 +966,6 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||www.jz5u.com/js/t*.js$S@^.*@@s
 ||www.laozuo.org/wp-content/themes/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.pc0359.cn/style/js/main.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
-||www.yy.com$s@</head>@<script>inHackcss.S('#banner-fg','background:none')</script></head>@
 ||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
 ||yande.re$s@hide-advanced-editing@@
 !======[replace]---↑
@@ -1314,7 +1318,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 ||www.gaoqingkong.com$s@</body>@<script>unHackcss.A('#ad.search_site')</script></body>@
 !-白名单放行end
-||update2.admflt.com/v3/version.css$s@http://update2.admflt.com/v3/res.css@http://res.x-boy.cn/emADM_v3res.json@
+||update2.admflt.com/v3/version.css$m@http://res.x-boy.cn/emADM_v3version.json
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 |https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=https://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
