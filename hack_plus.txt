@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-22
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-23
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -698,7 +698,7 @@ down.52pk.com##a[onclick*="hmt.push"]
 duote.com##div[class*="-banner"],div[class*="-ad"],#hengfu,[class^="u27"]
 dzwww.com##.popular,[id^="ad"],.top-banner2
 e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php"]
-eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"],.app-download>div,[href="undefined"],.extend-box
+eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"],.app-download>div,[href="undefined"],.extend-box,[class*="ssy_"]
 eastmoney.com##.lyad,.popswipe
 edushi.com###unLogin
 eeo.com.cn##.xd-gg
@@ -772,7 +772,7 @@ tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
 ufanw.com###banne
 user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"],[class*="gg-qz-"],#qz_notification
 uuu9.com###uuu9_tips,#top,.top2box
-video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad
+video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad,[class*="db11"]
 vipsite.info###yhq,.sj-nav-down-search,[style*="text-align:center"]
 webkaka.com##a[href*="/click/"],#div_top,#dedenews,span[class*="Ad"],p[class*="Ad"]
 weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"],.wbv-ad
