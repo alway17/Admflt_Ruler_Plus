@@ -1128,10 +1128,12 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 !======[cpro.baidu.com]---↑
 
 !======[www.le.com]---↓
-||letv.com/*ark=
-||le.com/*ark=
+||letv.com/*ark=$s@<Ad@<noAd@
+||le.com/*ark=$s@<Ad@<noAd@
+||ark.letv.com/adx$s@"Ad"@"noAd"@
+||ark.letv.com/s?$s@"Ad"@"noAd"@
 ||api.message.le.com/v^/messages?
-||play.videocache.lecloud.com/*/letv-gug/*.mp4
+!||play.videocache.lecloud.com/*/letv-gug/*.mp4
 !======[www.le.com]---↑
 
 !======[v.qq.com]---↓
@@ -1170,11 +1172,12 @@ player.youku.com##.outsitepanel
 !======[v.youku.com]---↑
 
 !======[tv.sohu.com]---↓
+tv.sohu.com##%#crumbsBar{margin-top:50px}
 tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 !||js.tv.itc.cn/gg.seed.js
 ||data.vod.itc.cn/*prod=ad*
 ||api.my.tv.sohu.com/wm/getads.do
-||v.aty.sohu.com/v?prot=vast
+||v.aty.sohu.com/v?prot=vast$s@<Ad@<noAd@
 !||js.tv.itc.cn/player/h5playe$s@on("playError"@on("Error"@
 !======[tv.sohu.com]---↑
 
