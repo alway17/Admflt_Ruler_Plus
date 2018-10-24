@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-23
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-24
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -739,6 +739,7 @@ outlook.live##._n_h
 pan.baidu.com##.ad-platform-tips
 pcauto.com.cn##[class*="ivy"],[id^="ad"]
 pconline.com.cn##iframe[id^="ad"],a[id^="ad"],[class^="ivy"],[class*="JCZ-"],[class*="jcz-"],#Jappinfo,.PCdlWrap,.navi-bottom,.softjs3,#JrightSideFocus
+people.com.cn##.text_con_right a>img[src*="/NMediaFile/"]
 player.s1905.com##div[id][style*="block;"]
 q.z.vip.totv.72du.com##.secs strong
 qianzhan.com##.advBox,.footApp,.shop-tj,a[href*="www.qianzhan.com/go/"]
@@ -755,7 +756,7 @@ sina.cn##[id*="Ads"],[sax-type="proxy"]
 sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner,.tab_related_app_imglink,[data-info*="ad_none"],.blk-zcapp
 so.com###rt-gallery,[id^="js-businiess"],#bottom_ask
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
-sports.eastday.com/video/##.dalink
+sports.eastday.com##a.da[update],.dalink,.drain_app
 sports.qq.com##[data-matchtype]
 sports.qq.com##[data-module="advertisement"],[class^="ad-"],.adrthide,[pluginspage*="admaster"]
 stackoverflow.com###clc-mlb
@@ -772,6 +773,7 @@ tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
 ufanw.com###banne
 user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"],[class*="gg-qz-"],#qz_notification
 uuu9.com###uuu9_tips,#top,.top2box
+v.renrenfabu.com##.hongbao_hd
 video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad,[class*="db11"]
 vipsite.info###yhq,.sj-nav-down-search,[style*="text-align:center"]
 webkaka.com##a[href*="/click/"],#div_top,#dedenews,span[class*="Ad"],p[class*="Ad"]
@@ -851,6 +853,7 @@ xingkbjm.com##.d_banner_inner
 xinhuanet.com##[id^="YCADS"],.Xfuchaung
 xmfish.com###marry_laping,.bobing-theme,.wrapxy,.cmp_v,#b_login
 yahoo.com##[id*="-Ad"]
+ynet.com##.ynetGCom
 ys.km.com###baiduIvy,#bottom_focus_ivy,#js-swiper-focus-banner
 zcool.com##[class*="advertisement"],#cubeAd
 zhihu.com##.Card.Banner,[data-info*="ad_id"]
@@ -1145,8 +1148,8 @@ v.qq.com##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad,a[href*="mall.jd.com"],.
 v.youku.com##.h5-ext-layer-adsdk,.hint-information-tip i,.vip-label,div[class^="control-"] button img,.h5-layer-conatiner>a[href*="javascript"],.h5-wrap [class*="-ads"],.mainCol [id*="_cms_"]
 v.youku.com/pad_show/##.hy_limit
 js.ykimg.com/youku/dist/js/page/find/revision/index_*.js$s@$focusH5Ad.show()@$focusH5Ad.remove()@
-www.youku.com##.focus-wrap a[href*="miaozhen.com"],li.xh
-www.youku.com##%ul.focus-list>[style*="ykimg.com/material/"]{background:url(https://i.loli.net/2018/10/13/5bc1baa03c0df.jpg) center /cover!important}
+www.youku.com##.focus-wrap a[href*="miaozhen.com"],li.xh,ul.focus-list>[style*="ykimg.com/material/"] a
+www.youku.com##%ul.focus-list>[style*="ykimg.com/material/"]{background:url(https://i.loli.net/2018/10/24/5bd0229761948.jpg) center /cover!important}
 v.youku.com##%li.fn-play-mode{display:block!important}
 .youku.com###bt-banner,[class*="adplayer"],.h5-ext-layer,#LAIFENG_REQUEST,[class*="yk-AD-"],.ad-wrap,[id^="ab_"]
 player.youku.com##.outsitepanel
