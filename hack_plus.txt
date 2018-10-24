@@ -1205,7 +1205,8 @@ www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 
 !======[www.mgtv.com]---↓
 ||mgtv.com/mediafiles/wiad
-||da.mgtv.com/*/player|$S@^.*$@@s
+||da.mgtv.com/*/player$s@<Ad@<noAd@
+!||da.mgtv.com/*/player$S@^.*$@@s
 mgtv.com/b/###a_box,[class^="plugins_"],[class^="nodes_"],[node-type="guide-app"]
 www.mgtv.com##.m-focus-ad,.gg-main,.m-extensbar-game,[data-ad]
 !---> PC client
