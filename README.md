@@ -4,7 +4,7 @@
 * https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/hack_plus.txt
 * https://gitee.com/emCupid/Admflt_Ruler_Plus/raw/master/hack_plus.txt
 * https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git/raw/master/hack_plus.txt
-* 可选Baidu_AD_JS.txt订阅（三个选其一）
+* Baidu_AD_JS.txt订阅（三个选其一）
 * https://raw.githubusercontent.com/emCupid/Admflt_Ruler_Plus/master/Baidu_AD_JS.txt
 * https://gitee.com/emCupid/Admflt_Ruler_Plus/raw/master/Baidu_AD_JS.txt
 * https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git/raw/master/Baidu_AD_JS.txt
