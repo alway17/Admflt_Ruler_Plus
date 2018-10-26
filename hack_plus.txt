@@ -1160,6 +1160,8 @@ player.youku.com##.outsitepanel
 ||v2html.atm.youku.com/vhtml*h5,img*
 ||valp.atm.youku.com/vp*swf,img*
 ||ups.youku.com/ups/get.json?vid=*$S@"P":[^0],@"P":0,@
+||acs.youku.com/h5/$S@"P":[^0],@"P":0,@
+!||acs.youku.com/h5/$S@"RS":".*?"@"RS":""@
 ||val^.atm.youku.com/v$f@s@p=[^0]@p=0@
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
 |http://lvip.youku.com/*api/player/adText
