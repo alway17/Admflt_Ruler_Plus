@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-27
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-28
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -803,7 +803,7 @@ www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wr
 www.demaxiya.com##body>a[style],.play>div[style],.pda>a
 www.diyiziti.com##a[id][rel*="nofollow"]
 www.douban.com/note/##.ui-overlay-mask
-www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[data-target="promote"],[class*="recommendAD"],[class*="recommendAp"],.QRcode
+www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[data-target="promote"],[class*="recommendAD"],[class*="recommendAp"],.QRcode,#js-room-activity,.Bottom-ad,[class*="ngad"]
 www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
 www.epbiao.com##.layui-layer-shade,.hb_pop_wrap,.hb_wrap,.floadcom,.floadbg,.actions
 www.epinv.com##.huadong,.epinv_f,.footbar,.danger
