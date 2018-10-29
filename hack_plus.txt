@@ -1202,7 +1202,6 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"],.search_result_download,.anchor-wenjuan
 live.iqiyi.com###modal[data-count]
 www.iqiyi.com/*.html##.rightPCAdv,.pca-img
-||iqiyi.com/*.html##%:-webkit-full-screen{max-width:none!important;visibility:visible!important}$B
 ||cupid.iqiyi.com/show2?e=*$S@:"https?:\/\/.*?\.(jpg|mp4|f4v)"@:" @
 ||cupid.iqiyi.com/show2?e=*$s@<Ad>@<noAd>@
 ||*/videos/other/*.f4v|$m@res:block/null.mp4
@@ -1320,17 +1319,11 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
+@@||http://www.uzzf.com/skin/*.css$pass
 ||blog.sina.com.cn/s/$s@</body>@<script>unHackcss.A('#sina_keyword_ad_area2')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
-||www.zhuihd.com$s@</body>@<script>unHackcss.F('.theiaStickySidebar')</script></body>@
-||ynet.com/*.html$s@</body>@<script>unHackcss.F('#navBar')</script></body>@
-||uzzf.com/*.html$s@</body>@<script>unHackcss.F('.down_dizhi')</script></body>@
-||2018.hellorf.com$s@</body>@<script>unHackcss.A('#__next');inHackcss.S('#__next','display:flex!important')</script></body>@
-||www.xiaoyi.com$s@</body>@<script>unHackcss.F('.m-header')</script></body>@
-||www.onlytvb.com$s@</body>@<script>unHackcss.F('#header,#leftMenu,#menuCover')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 ||www.gaoqingkong.com$s@</body>@<script>unHackcss.A('#ad.search_site')</script></body>@
-||www.dysfz.vip$s@</body>@<script>unHackcss.F('#top')</script></body>@
 !-白名单放行end
 ||update2.admflt.com/v3/version.css$m@http://res.x-boy.cn/emADM_v3version.json
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
@@ -1338,7 +1331,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
 ||fuckcss/test_ins.js$m@res:test_src.js
 ||/doc/fuckcss.js
-|http://$S@(z-index(:| )*\d{9,10})@${1};display:none!important;max-width:0!important;visibility:hidden!important;hackcss:@
+!|http://$S@(z-index(:| )*\d{9,10})@${1};display:none!important;max-width:0!important;visibility:hidden!important;hackcss:@
 ||*/*.css|$S@z-index(:| )*(9){4,5}\d@${1};display:none!important;max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
 !------[全局处理浮动窗+隐藏类规则屏蔽增强end]
 
