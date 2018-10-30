@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-29
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-30
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -505,6 +505,7 @@ news.xinhuanet.com#@#.domPC
 ||js.users.51.la
 ||js.xcar.com.cn/cms/*/jsonpAndRedTab.js
 ||jspassport.ssl.qhimg.com$domain=~360.cn|~so.com|~i360mall.com
+||jstucdn.com/*/tool*.js
 ||kengdie.com/statics/js/view.js
 ||kfkfl.cn/vs.php?id=*
 ||kuai8.com/v1/pc/js/
@@ -513,6 +514,7 @@ news.xinhuanet.com#@#.domPC
 ||ltcprtc.com
 ||lu.sogou.com/kwd
 ||m.fcdm.cc/js/ne/$script
+||maoyun.tv/*/ad-img/
 ||mbai.cn$third-party
 ||mediav.com/ad/
 ||mediav.com/galileo/*.mp4
@@ -523,6 +525,7 @@ news.xinhuanet.com#@#.domPC
 ||mop.com/assets/js/c_detail_
 ||mydisplay.ctfile.com/popjump.php?r=
 ||p.egou.com
+||p.gouwubang.com
 ||p2pmid.baofeng.com
 ||pg-ad*.nosdn.127.net
 ||pic.fastapi.net
@@ -620,6 +623,7 @@ news.xinhuanet.com#@#.domPC
 ||www.sxrb.com/upload/js/*/9*.js
 ||www.ttrar.com/statics/skin_js/
 ||www.ucbug.com/new201^/$script
+||www.uzzf.com/skin/know/downright.js
 ||www.webkaka.com/script/cp.js
 ||www.xdowns.com/js/lefttuijian.js
 ||www.xdowns.com/js/syad.js
@@ -817,7 +821,7 @@ www.greenxf.com/*.html##a[class][href="#"]
 www.haote.com##[class$="banner"],.flashbox.f_list,.bigmainIn
 www.hxnews.com##.bd ul li a[rel="nofollow"],[class*="banner-"]
 www.iplaysoft.com##a[rel="nofollow"][href*="/go/"],[class*="_white"],li[id^="_"],#sidebar_scroll_bdad,[id^="post"].post>div[style]:not([id]):not([class]),div[style*="width:336px"],#sidebar_scroll>[style],li.widget[style],#section_event,[class*="bdad"]
-www.kafan.cn/edu/,www.kafan.cn/jc.php##.container[style],[id^="content"][style],#categories-4[style],a[rel="nofollow"][style],h6
+www.kafan.cn/edu/,www.kafan.cn/jc.php##.container[style],[id^="content"][style],#categories-4[style],a[rel="nofollow"][style],h6,.bdinfo
 www.kuman.com###top-banner
 www.landiannews.com##a[rel="external nofollow"],.special-message-wrapper
 www.lbldy.com##.ad-pc,.listad
@@ -859,6 +863,7 @@ xmfish.com###marry_laping,.bobing-theme,.wrapxy,.cmp_v,#b_login
 yahoo.com##[id*="-Ad"]
 ynet.com##.ynetGCom
 ys.km.com###baiduIvy,#bottom_focus_ivy,#js-swiper-focus-banner
+yunlaige.com##[id*="_baidu"],#downdiv
 zcool.com##[class*="advertisement"],#cubeAd
 zhihu.com##.Card.Banner,[data-info*="ad_id"]
 zmtiantang.com###myModal,.modal-backdrop
@@ -1324,6 +1329,7 @@ code.jquery.com/ui/$f@302:s@//code.jquery.com/ui/@//cdn.staticfile.org/jqueryui/
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
 ||www.gaoqingkong.com$s@</body>@<script>unHackcss.A('#ad.search_site')</script></body>@
+||www.ttmeiju.vip$s@</body>@<script>unHackcss.A('a[href*="weibo.com"]>img')</script></body>@
 !-白名单放行end
 ||update2.admflt.com/v3/version.css$m@http://res.x-boy.cn/emADM_v3version.json
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
