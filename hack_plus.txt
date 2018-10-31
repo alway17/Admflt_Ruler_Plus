@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-30
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-31
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -312,6 +312,8 @@ news.xinhuanet.com#@#.domPC
 ||/521fl/pc.js
 ||/521fl/tj.js
 ||/a/display.php?r=
+||/ad-img/
+||/ad_mode.html
 ||/adimg/$image
 ||/admaster/
 ||/ads.htm
@@ -514,7 +516,6 @@ news.xinhuanet.com#@#.domPC
 ||ltcprtc.com
 ||lu.sogou.com/kwd
 ||m.fcdm.cc/js/ne/$script
-||maoyun.tv/*/ad-img/
 ||mbai.cn$third-party
 ||mediav.com/ad/
 ||mediav.com/galileo/*.mp4
@@ -630,6 +631,7 @@ news.xinhuanet.com#@#.domPC
 ||www.xdowns.com/template/tshouyou/js/jietu.js
 ||www.xpgod.com/statics/skin_js/xpgod/*.js
 ||www.you85.com/ling/*.js
+||www.zmtiantang.com/static/m.js
 ||www.zzlxs.net/ap
 ||www1.elecfans.com
 ||x-ssp.com
@@ -826,7 +828,7 @@ www.kuman.com###top-banner
 www.landiannews.com##a[rel="external nofollow"],.special-message-wrapper
 www.lbldy.com##.ad-pc,.listad
 www.omanhua.com##[class*="uzmh-"]
-www.oschina.net##.float_adbox,[data-traceid*="_ad"],.jj
+www.oschina.net##.float-adbox,[data-traceid*="_ad"],.jj
 www.ouhua.info##img[src*="/ad2015/"]
 www.panda.tv##.index-slider-video-container>a
 www.pc6.com##.ad-download
@@ -853,7 +855,7 @@ www.yxdown.com/*.html##div[id*="adv"],iframe,#highdown
 www.yy.com##.bg-link,#sideNotice
 www.zhangxinxu.com###topAdOut,[id^="da"][id$="Float"],a[onClick][style*="display:block!important"]
 www.zhicheng.com###m_ccs
-www.zimuzu.tv##div[style]>a[rel="nofollow"]
+www.zimuzu.tv##div[style]>a[rel="nofollow"],#focus>ul>:nth-child(1),#focus>ul>:last-child
 www.zyzhan.com##a[href*="AdvertisInfo"],#adNewLeft,#adNewRight
 wzshipin.com##img[width="1200"],.boxg
 xcar.com.cn###xcarpackage,.ad980
@@ -882,10 +884,13 @@ gaoqing.la##%body{background-image:url()!important}
 hanhande.com##%body>.warp{background:none!important}
 www.aihami.com##%.conText>.recommend{margin-top:4em}
 www.chinaz.com##%#imgbd{background:none!important}.CCtop{margin-top:10px!important}
+www.dysfz.vip##&li:contains(\u7ea2\u5305),li:contains(\u4f18\u60e0\u5238)
+www.kafan.cn/edu/##&p:contains(\u7406\u8bba\u6c38\u4e45),p:contains(\u817e\u8baf)
 www.lbldy.com##%#center{min-height:0!important}
 www.panda.tv##%.index-slider-video-container{background:none!important}
 www.tiexue.net/ShowPicClass##%.picleft{display:block!important}
 www.yy.com##%#banner-fg{background:none!important}
+zimuzu.tv##%#output{background:url(https://i.loli.net/2018/10/30/5bd8793b200fd.jpg) center /cover!important}
 zol.com.cn##%body{background-image:none!important}
 !======[Admflt ABPex css]---↑
 
@@ -1189,7 +1194,7 @@ tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 !||js.tv.itc.cn/gg.seed.js
 ||data.vod.itc.cn/*prod=ad*
 ||api.my.tv.sohu.com/wm/getads.do
-||v.aty.sohu.com/v?prot=vast$s@<Ad@<noAd@
+||v.aty.sohu.com/v?prot=vast$S@(</?Ad)@${1}_block@ig
 !||js.tv.itc.cn/player/h5playe$s@on("playError"@on("Error"@
 !======[tv.sohu.com]---↑
 
@@ -1208,7 +1213,7 @@ iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="sw
 live.iqiyi.com###modal[data-count]
 www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 ||cupid.iqiyi.com/show2?e=*$S@:"https?:\/\/.*?\.(jpg|mp4|f4v)"@:" @
-||cupid.iqiyi.com/show2?e=*$s@<Ad>@<noAd>@
+||cupid.iqiyi.com/show2?e=*$S@(</?Ad)@${1}_block@ig
 ||*/videos/other/*.f4v|$m@res:block/null.mp4
 ||cupid.iqiyi.com/show2?a=qc_$S@^.*$@@s
 ||qiyu.iqiyi.com/p13n20?
@@ -1219,10 +1224,9 @@ www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 
 !======[www.mgtv.com]---↓
 ||mgtv.com/mediafiles/wiad
-||da.mgtv.com/*/player$s@<Ad@<noAd@
-!||da.mgtv.com/*/player$S@^.*$@@s
+||da.mgtv.com/*/player$S@(</?Ad)@${1}_block@ig
 mgtv.com/b/###a_box,[class^="plugins_"],[class^="nodes_"],[node-type="guide-app"]
-www.mgtv.com##.m-focus-ad,.gg-main,.m-extensbar-game,[data-ad]
+www.mgtv.com##.m-focus-ad,.gg-main,.m-extensbar-game,[data-ad],.v-panel-banner
 !---> PC client
 ||pc.api.mgtv.com/v^/video/getVideoFiles$s@advconfig@no_advconfig@
 ||pc.api.mgtv.com/v^/versions/advconfig
