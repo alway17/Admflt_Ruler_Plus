@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-10-31
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-03
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -6,7 +6,6 @@
 @@|http://*/^.php?^=*search
 @@|http://*attachment*/ad/$image
 @@|http://exmail.qq.com$pass
-@@|http://mail.qq.com$pass
 @@|https://*/^.php?^=*search
 @@|https://g.alicdn.com/*.css$pass
 @@|https://g.alicdn.com/??kissy/$pass
@@ -62,7 +61,6 @@ S:dnspod.cn
 S:dnspod.com
 S:exmail.qq.com
 S:jd.hk
-S:mail.qq.com
 S:newdefend.com
 S:passport.aliyun.com
 S:pay.qq.com
@@ -149,7 +147,10 @@ news.xinhuanet.com#@#.domPC
 |http://*/i.php?^=*
 |http://*/js/*cpc$script
 |http://*/js/ad.js
+|http://*/js/adleft
+|http://*/js/adright
 |http://*/js/ads^.js$domain=~tmearn.com
+|http://*/js/adtop
 |http://*/js/adv.js
 |http://*/js/ashow.js
 |http://*/js/ds.js
@@ -271,7 +272,10 @@ news.xinhuanet.com#@#.domPC
 |https://*/d/js/*/extended*.js
 |https://*/gg/xx*.js
 |https://*/js/ad.js
+|https://*/js/adleft
+|https://*/js/adright
 |https://*/js/ads^.js$domain=~tmearn.com
+|https://*/js/adtop
 |https://*/js/adv.js
 |https://*/js/ds.js
 |https://*/k.html?s=
@@ -743,6 +747,7 @@ new.qq.com##[class^="g-box"]
 news.mydrivers.com##[class*="adggg"],[class^="ad_baidu"],#recommend,.news_bt+div[style],.baidu
 nipic.com##[class*="advertCloseBtn"]
 orsoon.com##.down-sect2,#other-link,.recover
+oschina.net##.float-adbox,[data-traceid*="_ad"],.jj
 outlook.live##._n_h
 pan.baidu.com##.ad-platform-tips
 pcauto.com.cn##[class*="ivy"],[id^="ad"]
@@ -828,7 +833,6 @@ www.kuman.com###top-banner
 www.landiannews.com##a[rel="external nofollow"],.special-message-wrapper
 www.lbldy.com##.ad-pc,.listad
 www.omanhua.com##[class*="uzmh-"]
-www.oschina.net##.float-adbox,[data-traceid*="_ad"],.jj
 www.ouhua.info##img[src*="/ad2015/"]
 www.panda.tv##.index-slider-video-container>a
 www.pc6.com##.ad-download
@@ -905,7 +909,6 @@ www.rjno1.com$s@<script>(*;</script>@@
 |http://*/ads-$S@^.*@@s
 |http://*/dc?i=*$f@302:s@^https?:\/\/.*@http://119.29.29.29/404@
 |http://*/gg/$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script|img|font).+?\);?@@img
-|http://*/js/ad*.js$f@302:s@^http:\/\/.*\/js\/ad\d{1,3}\.js@http://119.29.29.29/404/ad.js@
 |http://*/js/c/$f@302:s@^https?:\/\/.*\/js\/c\/\d+.*\.js@http://119.29.29.29/404@
 |http://*btkitty$S@<div class="footer"[^>]*?>.*</div>@@s
 |http://*btkitty$s@<head>@<head><script>window.opoen=null</script>@
@@ -1209,7 +1212,7 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
-iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"],.search_result_download,.anchor-wenjuan
+iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"],.search_result_download,.anchor-wenjuan,.tw-app-download
 live.iqiyi.com###modal[data-count]
 www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 ||cupid.iqiyi.com/show2?e=*$S@:"https?:\/\/.*?\.(jpg|mp4|f4v)"@:" @
