@@ -49,6 +49,7 @@
 @@||wp-tinymce.php$pass
 @@||www.3987.com/*.html
 @@||www.hdsky.net/ad/down.png
+@@||www.qingting.fm/assets/main*$pass
 @@||www.x-boy.cn$pass
 S:account.aliyun.com
 S:api.geetest.com
@@ -195,7 +196,7 @@ news.xinhuanet.com#@#.domPC
 |http://ent.jxnews.com.cn/js/a_cont.js
 |http://g.163.com/*type=popup
 |http://g.doyo.cn/js/$script
-|http://gg.*
+|http://gg.*$domain=~hupu.com
 |http://honey.hunantv.com/*/anuncio.js
 |http://hxjs.tool.hexun.com/forex/hx_pageMediaControl.js
 |http://img.hexun.com/*appDplus.js
@@ -293,7 +294,7 @@ news.xinhuanet.com#@#.domPC
 |https://ads.*
 |https://adserver.*
 |https://g.163.com/*type=popup
-|https://gg.*
+|https://gg.*$domain=~hupu.com
 |https://p.ssl.so.com/p/
 |https://ssp.$script
 |https://union*.js
@@ -726,7 +727,7 @@ hanhande.com###bg_link
 health.qq.com##[class^="ad_"]
 hexun.com###newsPopWin
 house.qq.com##.headgg
-hupu.com###hupu-stream
+hupu.com###hupu-stream,[class*="shihuo"],[id*="-ad-"],[class*="hp-ad"],[class^="ad"],[class*=" ad"]
 i.maxthon.cn##.listNews-item-ave,.top-slider-ad
 i.qq.com##.icon_adv_logo,[id^="adImg"]
 ifeng.com##[id^="optimusPrimeContentId"]
