@@ -1,9 +1,10 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-03
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-06
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !======[wlist]---↓
 @@|http://*/^.php?^=*search
+@@|http://bbs.*/^.php?uid=*
 @@|http://*attachment*/ad/$image
 @@|http://exmail.qq.com$pass
 @@|https://*/^.php?^=*search
@@ -710,7 +711,7 @@ down.52pk.com##a[onclick*="hmt.push"]
 duote.com##div[class*="-banner"],div[class*="-ad"],#hengfu,[class^="u27"]
 dzwww.com##.popular,[id^="ad"],.top-banner2
 e0575.com,e0575.cn##ul[class^="tg"],#hiddenLayer,#jump,#img2,a[href*="showad.php"]
-eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"],.app-download>div,[href="undefined"],.extend-box,[class*="ssy_"],#readerExtension
+eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_ad_"],div[id^="dsp"],iframe[src*="gg/gg"],[class*="gg_right"],.ave_cns,div[class^="ave_"][id^="left_"],[class*="360_ad"],a[href*="mediav.com/s?type="],[class*="baidu_ad"],div[class$="suspension"],div[id^="lovexin"],[class*="_gg"],[updata*="360gg"],[id^="ggwrap_"],.app-download>div,[href="undefined"],.extend-box,[class*="ssy_"],#readerExtension,.wechatQRcode
 eastmoney.com##.lyad,.popswipe
 edushi.com###unLogin
 eeo.com.cn##.xd-gg
