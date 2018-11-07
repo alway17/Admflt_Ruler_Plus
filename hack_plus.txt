@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-06
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-08
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -324,6 +324,7 @@ news.xinhuanet.com#@#.domPC
 ||/admaster/
 ||/ads.htm
 ||/ads.js
+||/ads/
 ||/api/ad.ashx
 ||/caches/poster_js/$script
 ||/code/adview_
@@ -541,8 +542,10 @@ news.xinhuanet.com#@#.domPC
 ||pic^.zhimg.com/*adx^.$image
 ||pingma.qq.com
 ||pmm.people.com.cn
+||popads.net
 ||popme.163.com/js/vedioad*.js
 ||ppoi.org/*key*
+||qzonestyle.gtimg.cn/qzone/*/api/interface/tips.js
 ||rec.letv.com/curve
 ||res.cngoldres.com/libs/jtams/*/jtams.js
 ||res.suning.cn/*ssa*.js
@@ -593,6 +596,7 @@ news.xinhuanet.com#@#.domPC
 ||wm.makeding.com/redirect
 ||www.05sun.com/images/123.gif
 ||www.05sun.com/js/05sun.js
+||www.17yy.com/style/loading/*.htm
 ||www.17ziti.com/z/$script
 ||www.52z.com/js/52z.js
 ||www.66ys.tv/d/
@@ -602,6 +606,7 @@ news.xinhuanet.com#@#.domPC
 ||www.cr173.com/jsBI/js/info.js
 ||www.cr173.com/show/$script
 ||www.danji6.com/xingg/$script
+||www.diyiyou.com/jscode/js/
 ||www.douyu.com/lapi/sign/phonegameapi/getinfo
 ||www.douyu.com/lapi/sign/signapi/getinfo
 ||www.fengchedm.com/gg/
@@ -742,6 +747,7 @@ lieqinews.com##.topggCnt,.ggcnt,.float_bot_right,.lq_mcngg
 m.163.com##.g-ad,.js-ad
 m.fcdm.cc##div[onclick][data-s]
 m.toutiao.com##.icon-container
+mail.qq.com##.tipbook-top
 maoyun.tv###tui,[class^="tui"]
 mop.com##.header[style],[class^="dsp"],[suffix*="subtype=new360"],.ad-r,.ad-h,.gg-right,.gg-wrap
 myzaker.com##a[href*="ads_id="],[id^="dsp_id"]
@@ -757,6 +763,7 @@ pconline.com.cn##iframe[id^="ad"],a[id^="ad"],[class^="ivy"],[class*="JCZ-"],[cl
 people.com.cn##.text_con_right a>img[src*="/NMediaFile/"]
 player.s1905.com##div[id][style*="block;"]
 q.z.vip.totv.72du.com##.secs strong
+qiannao.com##a[href*="from=qiao"]
 qianzhan.com##.advBox,.footApp,.shop-tj,a[href*="www.qianzhan.com/go/"]
 qichamao.com##.side-ad1
 qidian.com##[id^="banner"],div[id^="j-"]:not([class*="content"]),div[id^="j_"].hidden,.operation-wrap,[id$="-ops"],[id$="-op"]
@@ -789,13 +796,13 @@ ufanw.com###banne
 user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"],[class*="gg-qz-"],#qz_notification
 uuu9.com###uuu9_tips,#top,.top2box
 v.renrenfabu.com##.hongbao_hd
-video.eastday.com##iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad,[class*="db11"]
 vipsite.info###yhq,.sj-nav-down-search,[style*="text-align:center"]
 webkaka.com##a[href*="/click/"],#div_top,#dedenews,span[class*="Ad"],p[class*="Ad"]
 weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"],.wbv-ad
 wemedia.ifeng.com##.h_top_box,.yc_con_r a iframe
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
+www.17yy.com###addiv,#loadingdiv
 www.4399.com##a[href*="/?4399"]
 www.4399dmw.com##iframe[id^="baidu"],[id^="baidu"]
 www.4aqq.com##div[style]>a[href*="?"][target="_blank"]
@@ -951,7 +958,7 @@ www.rjno1.com$s@<script>(*;</script>@@
 ||ckplayer.js$S@(advmarquee:).+?\),@${1}'',@sg
 ||comic.kukudm.com/js/*.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||csdnimg.cn/*passport*login.css$S@$@.login-banner{width:500px!important}@s
-||ctfile.com/i$s@!_popup_ispoped@!userid@
+||ctfile.com/$s@!_popup_ispoped@!userid@
 ||dl.3dmgame.com$S@<script>img\d+?.+?/script>@@
 ||down.gamersky.com$s@</body>@<script>unHackcss.A('[itemprop="downloadUrl"]')</script></body>@
 ||eastday.com/*.js$S@getad:.*?},@getad:function(){return ""},@s
@@ -1258,7 +1265,7 @@ wasu.cn##[class*="ads_"],[class*="_ads"],.qp
 ||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
 ||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
 ||video.eastday.com/*new_gethot.js$S@time ?== ?-?\d{1,2} ?&& ?!isTrue@1@
-video.eastday.com##.beforegg,.ad.poa,[class*="right_adv"],[class*="rightAd"]
+video.eastday.com##.beforegg,.ad.poa,[class*="right_adv"],[class*="rightAd"],iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad,[class*="db11"],.con_11
 !||video.eastday.com/json_newversion/*.json
 !======[video.eastday.com]---↑
 
