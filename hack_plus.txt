@@ -183,6 +183,7 @@ news.xinhuanet.com#@#.domPC
 |http://225bt.com/js/config.js
 |http://ad.*.cn/
 |http://ad.*.com/
+|http://adm.*
 |http://adm.*$script
 |http://adman.
 |http://ads.*
@@ -290,6 +291,7 @@ news.xinhuanet.com#@#.domPC
 |https://*zoneid=
 |https://ad.*.cn/
 |https://ad.*.com/
+|https://adm.*
 |https://adm.*$script
 |https://adman.
 |https://ads.*
@@ -567,8 +569,11 @@ news.xinhuanet.com#@#.domPC
 ||static.segmentfault.com/sponsor/
 ||static.xitongzhijia.net/theme/*/js/total
 ||static.yxdown.com/zt/zt/js/zt.js
+||staticadm.leju.com
 ||statics/js/xzq*.js
 ||stats.chinaz.com/^^_g/$script
+||stats.chinaz.com/gj_g/
+||stats.chinaz.com/tools_img/tool*.js
 ||suning.com/mediamax/adxcm
 ||supfree.net/stat.asp
 ||taboola.com/*loader.js
