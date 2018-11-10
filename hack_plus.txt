@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-10
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-11
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
@@ -776,7 +776,7 @@ redocn.com##[id$="_gg"]
 segmentfault.com##.side>div[class]
 sh.qihoo.com###extra_totop
 sina.cn##[id*="Ads"],[sax-type="proxy"]
-sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner,.tab_related_app_imglink,[data-info*="ad_none"],.blk-zcapp
+sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner,.tab_related_app_imglink,[data-info*="ad_none"],.blk-zcapp,[ds-all="suda-all"]
 so.com###rt-gallery,[id^="js-businiess"],#bottom_ask
 sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
 sports.eastday.com##a.da[update],.dalink,.drain_app
@@ -1148,7 +1148,7 @@ cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
 tieba.baidu.com,tieba.com,jump2.bdimg.com##%body,#glob{margin-top:0!important}
 tieba.baidu.com,tieba.com,jump2.bdimg.com##.appPromote,#pblist>li:not([tid]):not([data-info]),a.j_click_stats,a.j_click_stats+*,.tl_shadow.tl_shadow_new+[class*="tl_shadow_new "]
 tieba.baidu.com,zhidao.baidu.com,wenku.baidu.com##[class*="EC_"],[class*="union"]
-zhidao.baidu.com###cms-scroll,#wgt-promotions
+zhidao.baidu.com###cms-scroll,#wgt-promotions,.question-number-text-chain,.ec-ad
 wenku.baidu.com##.banner-wrap,[href*="adfree"],.lastcell-dialog,[class*="adWrap"],.search-result>[id],[class*="vip-close"],.yuedu-recommend-wrap iframe
 www.hao123.com##[id^="hao123-gw"]
 ||wkstatic.bdimg.com/static/wkview/pkg/viewcommon2$S@(/ad|/crm)@/noad@
@@ -1282,7 +1282,7 @@ video.eastday.com##.beforegg,.ad.poa,[class*="right_adv"],[class*="rightAd"],ifr
 |http://*/flashcgi?action=flashlist$block
 ||de.as.pptv.com/ikandelivery/vast/$S@^.*@@s
 ||player.aplus.pptv.com/config/v*/pid/$s@"ads":{*},@"ads":"",@
-pptv.com##[id^="afp_"],#video-download-game
+pptv.com##[id^="afp_"],#video-download-game,.download-iconbar
 !======[www.pptv.com]---↑
 
 !======[v.17173.com]---↓
