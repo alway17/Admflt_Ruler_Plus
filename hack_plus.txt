@@ -500,6 +500,7 @@ news.xinhuanet.com#@#.domPC
 ||inte.sogou.com/ask?id=*cxid=
 ||inte.sogou.com/ct
 ||irs01.com
+||ivy.pconline.com.cn/show
 ||j.qiqivv.com
 ||jb51.net/*/arcts.js
 ||jb51.net/*/beitou.js
@@ -538,6 +539,7 @@ news.xinhuanet.com#@#.domPC
 ||p.egou.com
 ||p.gouwubang.com
 ||p2pmid.baofeng.com
+||pconline.com.cn/_hux_/
 ||pconline.com.cn/global/footer/
 ||pg-ad*.nosdn.127.net
 ||pic.fastapi.net
@@ -700,6 +702,7 @@ anhuinews.com##[class^="ad"]
 assrt.net##.detail-top-banner,#top-banner
 baike.baidu.com##.side-content>[class][style*="block"]
 baofeng.com##[data-ads]
+bbs.csdn.net##.post_recommend
 bbs.hupu.com##[class*="hp-ad"]
 bbs.mydigit.cn##.txtMes,[channelid="smzdm"],[channelid="shumatao"],.radi
 bbs.pcbeta.com##.asdad+div
