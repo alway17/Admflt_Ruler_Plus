@@ -538,6 +538,7 @@ news.xinhuanet.com#@#.domPC
 ||p.egou.com
 ||p.gouwubang.com
 ||p2pmid.baofeng.com
+||pconline.com.cn/global/footer/
 ||pg-ad*.nosdn.127.net
 ||pic.fastapi.net
 ||pic.liwo.tv
