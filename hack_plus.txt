@@ -1,11 +1,11 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-11
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-14
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !-----| 防程序更新BUG干扰行：<head></head><body></body>
 
 !======[wlist]---↓
 @@|http://*/^.php?^=*search
-@@|http://bbs.*/^.php?uid=*
 @@|http://*attachment*/ad/$image
+@@|http://bbs.*/^.php?uid=*
 @@|http://exmail.qq.com$pass
 @@|https://*/^.php?^=*search
 @@|https://g.alicdn.com/*.css$pass
@@ -25,6 +25,7 @@
 @@|https://su.baidu.com/console/website/$pass
 @@|https://www.gstatic.com/*Account*$pass
 @@||.cloud.tencent.com$pass
+@@||/editor.js$pass
 @@||/style/css/*.css$pass
 @@||/wp-admin/$pass
 @@||99ddd.com/*.7z
@@ -698,6 +699,7 @@ news.xinhuanet.com#@#.domPC
 9game.cn##.guide-app-fix
 aa^^y.com###buffer,.qr_code_pc
 ac.qq.com##[class*="_ad_"],[class*="-ad-"]
+alexa.cn##[class*="important"]
 anhuinews.com##[class^="ad"]
 assrt.net##.detail-top-banner,#top-banner
 baike.baidu.com##.side-content>[class][style*="block"]
@@ -768,7 +770,7 @@ orsoon.com##.down-sect2,#other-link,.recover
 oschina.net##.float-adbox,[data-traceid*="_ad"],.jj
 outlook.live##._n_h
 pan.baidu.com##.ad-platform-tips
-pcauto.com.cn##[class*="ivy"],[id^="ad"]
+pcauto.com.cn##[class*="ivy"],[id^="ad"],.btn-zfb
 pconline.com.cn##iframe[id^="ad"],a[id^="ad"],[class^="ivy"],[class*="JCZ-"],[class*="jcz-"],#Jappinfo,.PCdlWrap,.navi-bottom,.softjs3,#JrightSideFocus
 people.com.cn##.text_con_right a>img[src*="/NMediaFile/"]
 player.s1905.com##div[id][style*="block;"]
@@ -822,6 +824,7 @@ www.6pingm.cc###hovertree_float_layer
 www.9ht.com###tlAdtop
 www.admin5.com##.logo_textAd,.logoAd,.headerAd,.footerAd,.adr,.infoAd,[data-zbj-union-key]
 www.aihami.com##.conText>div[style],.adDingT,.ad640x90,ad300x90,.h250
+www.beianbeian.com##form a
 www.bilibili.com##.bilibili-player-promote-wrap,#v_top_gg,#slide_ad,#bannerAd,[class*="gg-"],#fixed_app_download
 www.btbtt##a[style*="float"][target*="blank"]>img[style*="width"]
 www.ccchoo.com###ann_list,.down_two>[class="clearfix"],.down_tl,.down_three
@@ -1233,7 +1236,7 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
-iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"],.search_result_download,.anchor-wenjuan,.tw-app-download
+iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.integral_box,[data-player-hook="switchflash"],.search_result_download,.anchor-wenjuan,.tw-app-download,.iqp-box-integral
 live.iqiyi.com###modal[data-count]
 www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 ||cupid.iqiyi.com/show2?e=*$S@:"https?:\/\/.*?\.(jpg|mp4|f4v)"@:" @
