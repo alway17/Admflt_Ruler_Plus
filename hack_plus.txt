@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-14
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-15
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 @@||hack_plus.txt$pass
 @@||hack_plus.txt
@@ -1144,7 +1144,8 @@ www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet
 ||/cpro/*/noexpire/*.js$S@^.*$@location.href='about:blank';@s
 !|http://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
 !|https://*?*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*&*=*$S@<!--sid=\w*-->@<style>#wrapper,[id^="mainDiv_"],#container{display:none!important}</style>@
-cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
+!cpro.baidustatic.com/cpro/*/noexpire/*.css$f@302:s@@@
+@@||cpro.baidustatic.com/cpro/*/noexpire/*.css
 ||/cpro/*/noexpire/*.css$S@^.*$@*{display:none!important}@s
 ||baidu.com/s?$S@("#"\+\w\.id\+"{).*?}@${1}display:none!important}@sg
 ||baidu.com/s?*$S@(#container (\.(?!noback)\w{5,}).*?){.*?}@${1}{display:none}@sig
@@ -1204,7 +1205,6 @@ player.youku.com##.outsitepanel
 ||valp.atm.youku.com/vp*swf,img*
 ||ups.youku.com/ups/get.json?vid=*$S@"P":[^0],@"P":0,@
 ||acs.youku.com/h5/$S@"P":[^0],@"P":0,@
-!||acs.youku.com/h5/$S@"RS":".*?"@"RS":""@
 ||val^.atm.youku.com/v$f@s@p=[^0]@p=0@
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
 |http://lvip.youku.com/*api/player/adText
@@ -1247,8 +1247,7 @@ www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 ||cupid.iqiyi.com/show2?a=qc_$S@^.*$@@s
 ||qiyu.iqiyi.com/p13n20?
 ||static.iqiyi.com/js/player_v1/pcweb.wonder.js$s@QiyiPlayerConfig.FLASH_PLAYER_ZURL@"http://player.video.iqiyi.com/0/0/"@
-!||dispatcher.video.qiyi.com/dispn/player/preloader.swf
-||stc.iqiyipic.com/gaze/uniqy/main/js/vendor*.js$S@(setAttribute\("src",.*?(\w).*?\))@${1},window._qyv_info=window._qyv_info||[],${2}.match(/(dataid|video\/)/)&&window._qyv_info.push(${2})@
+||stc.iqiyipic.com/gaze/uniqy/main/js/vendor*.js$S@(setAttribute\("src",(.*?)\)),@${1},window._qyv_info=window._qyv_info||[],(${2}).match(/(dataid|video\/)/)&&window._qyv_info.push((${2})),@
 !======[www.iqiyi.com]---↑
 
 !======[www.mgtv.com]---↓
