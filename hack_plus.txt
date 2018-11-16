@@ -1,7 +1,7 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-15
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-16
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
-@@||hack_plus.txt$pass
-@@||hack_plus.txt
+@@||/hack_plus.txt$pass
+@@||/hack_plus.txt
 
 !======[wlist]---↓
 @@|http://*/^.php?^=*search
@@ -340,6 +340,7 @@ news.xinhuanet.com#@#.domPC
 ||/floatAd.js
 ||/ggg/tj.js
 ||/guanggao/
+||/js/cmp.js
 ||/js/sspAd
 ||/js/wmz_gg.js
 ||/multiads/
@@ -809,6 +810,7 @@ tv.sohu.com###beautyLive,#miaozhenad,#playtoolbartg
 ufanw.com###banne
 user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad_"],[class*="ads_"],[class*="right-ad"],[class*="gg-qz-"],#qz_notification
 uuu9.com###uuu9_tips,#top,.top2box
+v.douyu.com##.video-info-download
 v.renrenfabu.com##.hongbao_hd
 vipsite.info###yhq,.sj-nav-down-search,[style*="text-align:center"]
 webkaka.com##a[href*="/click/"],#div_top,#dedenews,span[class*="Ad"],p[class*="Ad"]
@@ -839,7 +841,7 @@ www.css88.com##[rel="noopener"],[class^="thumb-banner"],.container-row,.miaov-wr
 www.demaxiya.com##body>a[style],.play>div[style],.pda>a
 www.diyiziti.com##a[id][rel*="nofollow"]
 www.douban.com/note/##.ui-overlay-mask
-www.douyu.com##.firstpay-modal,.gamepacks-box,.header-video-guide,.yw-app-des,.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[data-target="promote"],[class*="recommendAD"],[class*="recommendAp"],.QRcode,#js-room-activity,.Bottom-ad,[class*="ngad"]
+www.douyu.com##.bglink,i.sign-spec+a,i.sign-spec,[class*="-ad-"],.theatre,[class*="AD"],[class*="recommendAp"],.QRcode,#js-room-activity,.Bottom-ad,[class*="ngad"],[class$="-ad"],[class*="advert"],.SysSign-Ad
 www.dysfz.vip##[class*="adv-"],[class*="-fifth-"],[onclick*="window.open"]
 www.elecfans.com##.gg,.advertising,#AdArticleDetailTitle,iframe[src*="advertisement"],iframe[src*="www1.elecfans.com"],.ad-pcb
 www.epbiao.com##.layui-layer-shade,.hb_pop_wrap,.hb_wrap,.floadcom,.floadbg,.actions
@@ -1355,8 +1357,8 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 ||www.ttmeiju.vip$s@</body>@<script>unHackcss.A('a[href*="weibo.com"]>img')</script></body>@
 !-白名单放行end
 ||update2.admflt.com/v3/version.css$m@http://res.x-boy.cn/emADM_v3version.json
-|http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=http://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
-|https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://static.x-boy.cn/fcss_w.js></script><script charset=UTF-8 src=https://static.x-boy.cn/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
+|http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://ssl.admflt.com/doc/fcss_w.js></script><script charset=UTF-8 src=http://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
+|https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://ssl.admflt.com/doc/fcss_w.js></script><script charset=UTF-8 src=https://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
 ||fuckcss/test_ins.js$m@res:test_src.js
 ||/doc/fuckcss.js
