@@ -1357,10 +1357,11 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 ||www.ttmeiju.vip$s@</body>@<script>unHackcss.A('a[href*="weibo.com"]>img')</script></body>@
 !-白名单放行end
 ||update2.admflt.com/v3/version.css$m@http://res.x-boy.cn/emADM_v3version.json
-|http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=http://ssl.admflt.com/doc/fcss_w.js></script><script charset=UTF-8 src=http://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
-|https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=https://ssl.admflt.com/doc/fcss_w.js></script><script charset=UTF-8 src=https://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
+||fuckcss/fcss_w.js$m@res:fcss_w.js
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
 ||fuckcss/test_ins.js$m@res:test_src.js
+|http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=http://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
+|https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=https://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 ||/doc/fuckcss.js
 !|http://$S@(z-index(:| )*\d{9,10})@${1};display:none!important;max-width:0!important;visibility:hidden!important;hackcss:@
 ||*/*.css|$S@z-index(:| )*(9){4,5}\d@${1};display:none!important;max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
