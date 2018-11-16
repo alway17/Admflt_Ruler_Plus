@@ -34,6 +34,7 @@
 @@||99ddd.com/*.rar
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
+@@||assets-cdn.github.com$pass
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||cache/editor.js$pass
 @@||console*.baidu.com$pass
@@ -1360,10 +1361,9 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 ||fuckcss/fcss_w.js$m@res:fcss_w.js
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
 ||fuckcss/test_ins.js$m@res:test_src.js
+||/doc/fuckcss.js
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=http://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 |https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=https://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
-||/doc/fuckcss.js
-!|http://$S@(z-index(:| )*\d{9,10})@${1};display:none!important;max-width:0!important;visibility:hidden!important;hackcss:@
 ||*/*.css|$S@z-index(:| )*(9){4,5}\d@${1};display:none!important;max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
 !------[全局处理浮动窗+隐藏类规则屏蔽增强end]
 
