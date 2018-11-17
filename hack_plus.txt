@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-16
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-18
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 @@||/hack_plus.txt$pass
 @@||/hack_plus.txt
@@ -34,7 +34,6 @@
 @@||99ddd.com/*.rar
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
-@@||assets-cdn.github.com$pass
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||cache/editor.js$pass
 @@||console*.baidu.com$pass
@@ -1357,7 +1356,7 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 ||www.gaoqingkong.com$s@</body>@<script>unHackcss.A('#ad.search_site')</script></body>@
 ||www.ttmeiju.vip$s@</body>@<script>unHackcss.A('a[href*="weibo.com"]>img')</script></body>@
 !-白名单放行end
-||update2.admflt.com/v3/version.css$m@http://res.x-boy.cn/emADM_v3version.json
+||update2.admflt.com/v3/version.css$m@http://adm-res.x-boy.cn/emADM_v3version.json
 ||fuckcss/fcss_w.js$m@res:fcss_w.js
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
 ||fuckcss/test_ins.js$m@res:test_src.js
@@ -1370,4 +1369,4 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 !------[其他规则begin]
 !------↓下载器屏蔽访问
 |http://*_*@*.exe$block
-|http://*@*_*.exe$block
+|http://*@*_*.exe$blockdf234324
