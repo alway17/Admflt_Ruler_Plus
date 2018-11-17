@@ -1,7 +1,11 @@
 !-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-18
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
-@@||/hack_plus.txt$pass
+!======[wlist for self]---↓
+@@|http://*.x-boy.cn/$pass
 @@||/hack_plus.txt
+@@||/hack_plus.txt$pass
+S:x-boy.cn
+!======[wlist for self]---↑
 
 !======[wlist]---↓
 @@|http://*/^.php?^=*search
