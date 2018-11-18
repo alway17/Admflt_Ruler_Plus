@@ -922,6 +922,7 @@ www.dysfz.vip##&li:contains(\u7ea2\u5305),li:contains(\u4f18\u60e0\u5238)
 www.kafan.cn/edu/##&p:contains(\u7406\u8bba\u6c38\u4e45),p:contains(\u817e\u8baf)
 www.lbldy.com##%#center{min-height:0!important}
 www.panda.tv##%.index-slider-video-container{background:none!important}
+www.rjno1.com##&body>div:contains(ad blocker)
 www.tiexue.net/ShowPicClass##%.picleft{display:block!important}
 www.yy.com##%#banner-fg{background:none!important}
 zimuzu.tv##%#output{background:url(https://i.loli.net/2018/10/30/5bd8793b200fd.jpg) center /cover!important}
@@ -933,7 +934,6 @@ zol.com.cn##%body{background-image:none!important}
 /Scripts/jquery-1.4.1.min.js$f@302:s@^https?:\/\/.*/jquery.*.js@https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.4.1.min.js@
 media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/block.m3u8@
 subhd.com$s@</head>@<script>sessionStorage.setItem("hassession", 1);</script></head>@
-www.rjno1.com$s@<script>(*;</script>@@
 |http://*.*.*/?s=*$f@302:s@^http:\/\/.*?/\?\w=\d*$@http://119.29.29.29/404@
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
 |http://*/ads-$S@^.*@@s
@@ -1338,6 +1338,7 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 @@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
 @@||down.51cto.com/css/newcss/module.css$pass
 @@||eastday.com/jscss/*.css$pass
+@@||http://www.uzzf.com/skin/*.css$pass
 @@||image.xinmin.cn/*common.css$pass
 @@||img.dy001.cn/templates/default/css/*.css$pass
 @@||jquery.fancybox*css$pass
@@ -1345,6 +1346,7 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 @@||res*.ynet.com/*header.css$pass
 @@||static.geetest.com/static/*.css$pass
 @@||static.verycloud.cn/sites/*.css$pass
+@@||static.ws.126.net/*.css$pass
 @@||static.zongheng.com/*/style/basic.css$pass
 @@||wp-content/cache/minify/*.css$pass
 @@||www.chinacqsb.com/webhtml/css/*.css$pass
@@ -1353,7 +1355,6 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
-@@||http://www.uzzf.com/skin/*.css$pass
 ||blog.sina.com.cn/s/$s@</body>@<script>unHackcss.A('#sina_keyword_ad_area2')</script></body>@
 ||read*.qidian.com$s@</body>@<script>unHackcss.A('#readHeader')</script></body>@
 ||www.veryhuo.com$s@</body>@<script>unHackcss.A('.down_ads')</script></body>@
