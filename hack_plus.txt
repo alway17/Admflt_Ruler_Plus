@@ -922,7 +922,7 @@ www.dysfz.vip##&li:contains(\u7ea2\u5305),li:contains(\u4f18\u60e0\u5238)
 www.kafan.cn/edu/##&p:contains(\u7406\u8bba\u6c38\u4e45),p:contains(\u817e\u8baf)
 www.lbldy.com##%#center{min-height:0!important}
 www.panda.tv##%.index-slider-video-container{background:none!important}
-www.rjno1.com##&body>div:contains(ad blocker)
+www.rjno1.com##&body>*:contains(ad blocker)
 www.tiexue.net/ShowPicClass##%.picleft{display:block!important}
 www.yy.com##%#banner-fg{background:none!important}
 zimuzu.tv##%#output{background:url(https://i.loli.net/2018/10/30/5bd8793b200fd.jpg) center /cover!important}
