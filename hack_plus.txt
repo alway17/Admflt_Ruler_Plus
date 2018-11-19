@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-18
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-19
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -326,6 +326,7 @@ news.xinhuanet.com#@#.domPC
 ||/1000^^0.gif
 ||/521fl/pc.js
 ||/521fl/tj.js
+||/Adloader/
 ||/a/display.php?r=
 ||/ad-img/
 ||/ad_mode.html
@@ -933,7 +934,6 @@ zol.com.cn##%body{background-image:none!important}
 .miaozhen.com$f@302:s@^https?:\/\/.*@http://119.29.29.29/404@
 /Scripts/jquery-1.4.1.min.js$f@302:s@^https?:\/\/.*/jquery.*.js@https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.4.1.min.js@
 media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/block.m3u8@
-subhd.com$s@</head>@<script>sessionStorage.setItem("hassession", 1);</script></head>@
 |http://*.*.*/?s=*$f@302:s@^http:\/\/.*?/\?\w=\d*$@http://119.29.29.29/404@
 |http://*/ad-*.js$S@^document\.write.*?$@@mg
 |http://*/ads-$S@^.*@@s
@@ -1374,4 +1374,4 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 !------[其他规则begin]
 !------↓下载器屏蔽访问
 |http://*_*@*.exe$block
-|http://*@*_*.exe$blockdf234324
+|http://*@*_*.exe$block
