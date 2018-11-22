@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-21
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-22
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -1072,6 +1072,7 @@ media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/blo
 ||log.qianzhan.com
 ||m.wrating.com/m.gif?
 ||msg.qy.net/*.gif?*&
+||msg.qy.net/b?*&
 ||optimix.asia
 ||pv.hd.sohu.com
 ||pv.sohu.com
@@ -1288,7 +1289,9 @@ wasu.cn##[class*="ads_"],[class*="_ads"],.qp
 ||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
 ||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
 ||video.eastday.com/*new_gethot.js$S@time ?== ?-?\d{1,2} ?&& ?!isTrue@1@
-video.eastday.com##.beforegg,.ad.poa,[class*="right_adv"],[class*="rightAd"],iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad,[class*="db11"],.con_11
+||video.eastday.com/*new_gethot.js$S@(var videShowNum ?= ?).+?;@${1}3@
+||video.eastday.com/*new_gethot.js$S@'[^']+?\.mp4'@'/block_res/null.mp4'@
+video.eastday.com##.countdown,[class^="video"]>a,.beforegg,.ad.poa,[class*="right_adv"],[class*="rightAd"],iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad,[class*="db11"],.con_11
 !||video.eastday.com/json_newversion/*.json
 !======[video.eastday.com]---↑
 
@@ -1366,6 +1369,11 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 ||fuckcss/fcss_w.js$m@res:fcss_w.js
 ||fuckcss/fcss.min.js$m@res:fcss.min.js
 ||fuckcss/test_ins.js$m@res:test_src.js
+||block_res/null.html$m@res:block/null.html
+||block_res/null.null$m@res:block/null.html
+||block_res/null.png$m@res:block/null.png
+||block_res/null.mp4$m@res:block/null.mp4
+||block_res/block.m3u8$m@res:block/block.m3u8
 ||/doc/fuckcss.js
 |http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=http://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 |https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=https://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
