@@ -1091,8 +1091,8 @@ www.99re16.com,www.99tt.co##.main>a[target]>img,#index_tan,.leftadv,.rightadv,[i
 www.viidii.info,88files______net/download,rmdown.com##a[target] img,#foo1ter
 t66y.com##br+b,b+br,img[data-src$=".gif"],img[data-src$=".GIF"],.tpc_content>img+br,.tpc_content>a+br+br,.tpc_content>a+br+br+br,.tpc_content>span+br,a[href*="www.viidii.info/?http"]:not([href*="download"]):not([href*="/link"]):not([href*="/fs/"])
 ||t66y.com/*.html$s@<br><br>@<br>@
-88files.net/download#@#.ad-box
-javccup.net#@#.ad-box
+88files.net/download#@#body.ad-box
+javccup.net#@#body.ad-box
 www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet:"]),iframe
 91porn.com##iframe[src*="/fans/"],.vast-blocker
 |http:/*/fans/ad.php|
@@ -1238,7 +1238,7 @@ youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthea
 !======[www.youtube.com]---↑
 
 !======[www.iqiyi.com]---↓
-iqiyi.com##.vipFloatbgCls,.J_play-underFrame,.qy-mod-ad,.integral_box,[data-player-hook="switchflash"],.search_result_download,.anchor-wenjuan,.tw-app-download,.iqp-box-integral,[data-cupid="container"]>div[style*="position"][style*="pointer"]
+iqiyi.com##[id^="1000"],.banner_box,.vipFloatbgCls,.J_play-underFrame,.qy-mod-ad,.integral_box,[data-player-hook="switchflash"],.search_result_download,.anchor-wenjuan,.tw-app-download,.iqp-box-integral,[data-cupid="container"]>div[style*="position"][style*="pointer"]
 live.iqiyi.com###modal[data-count]
 www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 ||cupid.iqiyi.com/show2?e=*$S@("\w*?":")\d+?",@${1}0",@
