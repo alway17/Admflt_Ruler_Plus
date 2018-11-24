@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-23
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-24
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -1164,12 +1164,17 @@ tieba.baidu.com,tieba.com,jump2.bdimg.com##.appPromote,#pblist>li:not([tid]):not
 tieba.baidu.com,zhidao.baidu.com,wenku.baidu.com##[class*="EC_"],[class*="union"]
 zhidao.baidu.com###cms-scroll,#wgt-promotions,.question-number-text-chain,.ec-ad
 wenku.baidu.com##.banner-wrap,[href*="adfree"],.lastcell-dialog,[class*="adWrap"],.search-result>[id],[class*="vip-close"],.yuedu-recommend-wrap iframe
-www.hao123.com##[id^="hao123-gw"]
 ||wkstatic.bdimg.com/static/wkview/pkg/viewcommon2$S@(/ad|/crm)@/noad@
 ||baidu.com/link?url=$S@^.*?<noscript>@@s
 baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>*:not(table),#content_left [id$="canvas"]
 ||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right>*:not(table),#content_left [id$="canvas"]','display:none!important')</script>@
 !======[Baidu&&Cpro]---↑
+
+!======[导航轻度去广-导航就是集广告的地方,so轻度屏蔽几个浮动之类的]---↓
+www.hao123.com##.treasure-game,.siye,[monkey="shopping"]
+hao.360.cn###large2small,#doc-bd-behind,.feed-item.feed-mv
+www.duba.com##[ad],.box_shopping,.big_mediav,.newslist>[style*="overflow"]
+!======[导航轻度去广]---↑
 
 !======[www.le.com]---↓
 ||letv.com/*ark=$s@<Ad@<noAd@
@@ -1280,7 +1285,7 @@ wasu.cn##[class*="ads_"],[class*="_ads"],.qp
 ||sports.eastday.com/jscss/*/theme_video.js$s@success@error@ig
 ||sports.eastday.com/jscss/*index*.js$s@citys.indexOf(city)@1@
 ||video.eastday.com/*new_gethot.js$S@time ?== ?-?\d{1,2} ?&& ?!isTrue@1@
-||video.eastday.com/*new_gethot.js$S@(var videShowNum ?= ?).+?;@${1}3@
+||video.eastday.com/*new_gethot.js$S@(videShowNum) ?>= ?\d@videoAd@
 ||video.eastday.com/*new_gethot.js$S@'[^']+?\.mp4'@'/block_res/null.mp4'@
 video.eastday.com##.countdown,[class^="video"]>a,.beforegg,.ad.poa,[class*="right_adv"],[class*="rightAd"],iframe[src*="baidu"],.index-ad,.shopwindow,#floating_text_ad,[class*="db11"],.con_11
 !||video.eastday.com/json_newversion/*.json
