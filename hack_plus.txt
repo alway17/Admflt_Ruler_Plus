@@ -248,7 +248,6 @@ news.xinhuanet.com#@#.domPC
 |http://www.minixiazai.com/others/$script
 |http://www.pcbeta.com/data/cache/jquery.js
 |http://www.ps123.net/MyFile/*.js
-|http://www.rarbt.com/*bds_*.js
 |http://www.sjzcmw.com/mypck.js
 |http://www.southmoney.com/*/index*.js
 |http://www.southmoney.com/page/pc/*$script
@@ -363,9 +362,6 @@ news.xinhuanet.com#@#.domPC
 ||17173cdn.com/*/ad17173*.js
 ||17173cdn.com/*/vda/$script
 ||2345.com/duoteimg/dtnew_recom_img/duoteself/$script
-||2mdn.net/ads/
-||3dwwwgame.com/ep/
-||3dwwwgame.com/p/
 ||42xz.com/
 ||51240.com/g/*.js
 ||52pk.com/*/webThunderDetect.js
@@ -401,7 +397,6 @@ news.xinhuanet.com#@#.domPC
 ||alimama.com/ex?a=
 ||ampproject.org/*ad
 ||analytics.chaxiami.com
-||anhuilitian.net
 ||api.*/balance?*&secret
 ||api.47ks.com/cp*ad.js
 ||api.zol.com/index.php?c=Ad_
@@ -417,9 +412,6 @@ news.xinhuanet.com#@#.domPC
 ||bmp.ali213.net/JS/$script
 ||boardx.huanqiu.com
 ||bw.scupio.com
-||c.v4dwkcv.com/js/rr/$script
-||cdn.clearload.bid/static/js/main.js
-||cdn.jsdelivr.net/opensug/*/opensug.js
 ||cdn.tanx.com/t/tanxssp
 ||cdn.tudown.com/script
 ||ceshi.maoyun.tv
@@ -433,7 +425,7 @@ news.xinhuanet.com#@#.domPC
 ||cnfol.com/pc/Js/as/$script
 ||cnhubei.com/lsgg/
 ||cnzz.com
-||code.zantainet.com/$script
+||code.zantainet.com
 ||coinhive.min.js
 ||content-ad.net
 ||cryptonight-asmjs.min.js
@@ -444,7 +436,6 @@ news.xinhuanet.com#@#.domPC
 ||ctfile.com/img/*ssp*.gif
 ||ctfile.com/iz.php?i
 ||ctfile.com/premium_inpage.php
-||ctsywy.com
 ||d.xtianqi.com.cn
 ||d/js/acmsd/*.js
 ||data.9xiazaiqi.com/api/shownums
@@ -455,12 +446,11 @@ news.xinhuanet.com#@#.domPC
 ||dingding*.com
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
 ||divcss5.com/ibeifeng/
-||doubleclick.ctfile.com/?adv
+||doubleclick.ctfile.com/
 ||down.admin5.com/z/$script
 ||dragonstatic.com
 ||dsp.ali213.net
 ||dw998.com
-||dydab.com
 ||e.hnr.cn/choose/view/%7B*%7D.js
 ||e.hnr.cn/choose/view/{*}.js
 ||eastday.com/*/html/ad/
@@ -471,29 +461,28 @@ news.xinhuanet.com#@#.domPC
 ||g.alicdn.com/*odv.min.js
 ||g.alicdn.com/openad/
 ||g.cn.miaozhen.com
+||g*.miaozhen.com
 ||g.doubleclick.net
 ||g.downg.com/*.js
 ||g.doyo.cn/js/dygg*.js
 ||g.fastapi.net
 ||g^.tagtic.cn/$script
-||ge95.com:8008/?aspx=
 ||gg*qiumibao.com
 ||gg.cs090.com$script
 ||gg.dsxdn.com/2cto/$script
 ||gg.uuu9.com/js/$script
 ||googletagmanager.com/gtag/js?id=
 ||googletagservices.com
-||guangzizai.com$script
+||guangzizai.com
 ||hao6v.com/d/f.js
 ||hao6v.com/d/f^.js
 ||hauchi.com.tw
-||home.51cto.com/iframe/get-station-ads
-||home.51cto.com/iframe/iframe-member-adv
+||home.51cto.com/iframe/*-ads
+||home.51cto.com/iframe/*-adv
 ||hongbao$image
 ||hoopchina.com.cn/*-ad.js
 ||hoopchina.com.cn/*-v^.html
 ||houyi.baofeng.net
-||huaduu.com
 ||ifeng.com/showcode?adids=*
 ||ifengimg.com/*/scripts/*tui*$script
 ||ifengimg.com/*/yingguang
@@ -503,7 +492,6 @@ news.xinhuanet.com#@#.domPC
 ||img*.126.net/ntesrich/*ad*$script
 ||img-ads.csdn.net
 ||img.aolusb.com/forever/$script
-||img.shaqm.com/*/qls_AdCommon.min.js
 ||insightexpressai.com
 ||int.dpool.sina.com.cn/iplookup/iplookup.php
 ||inte.sogou.com/ask?id=*cxid=
@@ -687,7 +675,7 @@ news.xinhuanet.com#@#.domPC
 126.com,yeah.net,mail.163.com##.gWel-bottom,li[role="complementary"],div[id$="FooterDiv"],div[id$="AdDiv"],[id*="-ad-"],#mainCnt,[id*="_popup_"],.nui-block-hasClose,#loginExt
 17173.com##[class*="Ad17173"],[id^="adLink"],[class*="ad17173"]:not(.game-hot)
 178.com##[class*="global-ad"]
-21ic.com##.topbanner,.bigbanner,[class^="banner"],[class^="ad_"],[class*="_ad"],iframe[src*="/s?m"]
+21ic.com##.topbanner,.bigbanner,[class^="banner"],[class^="ad_"],[class*="_ad"],iframe[src*="/s?m"],[id$="Ad"]
 360kan.com##[class*="-ad"]:not([class*="-add"]),a[href*="/?"]>div,body>div[style*="background"]
 3g.163.com##[id^="ssp-"]
 4399.com###addiv,#defaultbglink,.a-d
@@ -716,9 +704,9 @@ china.com.cn##iframe[src*="china.com.cn"][src*="ads/"]
 chinacar.com.cn##.left_pouple_box
 chinaz.com###bottomImg,.textad
 cn.investing.com##.midHeader
-cnbeta.com##.tks,.cnbeta-side-sponsor,#upcoming_box,.cbv,.item.cooperation,[class^="cbv"],.cbimage-fixed,.cb-help
+cnbeta.com##.tks,.cnbeta-side-sponsor,#upcoming_box,.cbv,.item.cooperation,[class^="cbv"],.cbimage-fixed,.cb-help,.article-global
 cnfol.com##[data-revive-zoneid],[id^="as_"],[class*="Ad"]
-cnhubei.com###wzy_btl,[class*="ggw"]
+cnhubei.com###wzy_btl,[class*="ggw"],[class*="_gg"],#showSmall,#showBig
 cqnews.net###qhSwf
 cri.cn##.ad-item
 ctfile.com,pipipan.com##.modal-backdrop.fade
@@ -819,6 +807,7 @@ wemedia.ifeng.com##.h_top_box,.yc_con_r a iframe
 www.17ce.com##[class^="add_"]
 www.17sucai.com##div[class^="tb"][class*="x"]$B
 www.17yy.com###addiv,#loadingdiv
+www.1kkk.com##[adgroupid]
 www.4399.com##a[href*="/?4399"]
 www.4399dmw.com##iframe[id^="baidu"],[id^="baidu"]
 www.4aqq.com##div[style]>a[href*="?"][target="_blank"]
@@ -906,7 +895,6 @@ zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"],
 !======[ABP css]---↑
 
 !======[Admflt ABPex css]---↓
-item.btime.com##%.header.header-item{padding-bottom:30px}
 4399.com##%body{background-image:none!important}
 51cto.com##%.top_bg{height:85px!important}
 bbs.pcbeta.com##%style[type="text/css"]+div{height:auto!important}
@@ -914,9 +902,11 @@ csdn.net##%ol.hljs-ln{width:100%!important}
 enjoy.eastday.com##%#contentMain{height:1575px!important}
 gaoqing.la##%body{background-image:url()!important}
 hanhande.com##%body>.warp{background:none!important}
+item.btime.com##%.header.header-item{padding-bottom:30px}
 www.aihami.com##%.conText>.recommend{margin-top:4em}
 www.chinaz.com##%#imgbd{background:none!important}.CCtop{margin-top:10px!important}
 www.dysfz.vip##&li:contains(\u7ea2\u5305),li:contains(\u4f18\u60e0\u5238)
+www.gaoqingkong.com##&li.post.box:contains(\u7ea2\u5305)
 www.kafan.cn/edu/##&p:contains(\u7406\u8bba\u6c38\u4e45),p:contains(\u817e\u8baf)
 www.lbldy.com##%#center{min-height:0!important}
 www.panda.tv##%.index-slider-video-container{background:none!important}
