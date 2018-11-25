@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-25
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-26
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -359,6 +359,7 @@ news.xinhuanet.com#@#.domPC
 ||119.29.29.29/404
 ||126.net/advertisement/
 ||126.net/ntesrich/*.js
+||17173.com/click?*ad*
 ||17173cdn.com/*/ad17173*.js
 ||17173cdn.com/*/vda/$script
 ||2345.com/duoteimg/dtnew_recom_img/duoteself/$script
@@ -458,10 +459,10 @@ news.xinhuanet.com#@#.domPC
 ||eastday.com/*www_baidu_com.js
 ||epro.sogou.com
 ||feng.com/frame.php
+||g*.miaozhen.com
 ||g.alicdn.com/*odv.min.js
 ||g.alicdn.com/openad/
 ||g.cn.miaozhen.com
-||g*.miaozhen.com
 ||g.doubleclick.net
 ||g.downg.com/*.js
 ||g.doyo.cn/js/dygg*.js
@@ -1298,7 +1299,8 @@ pptv.com##[id^="afp_"],#video-download-game,.download-iconbar
 !======[v.17173.com]---↓
 v.17173.com##.side-ad,.ad-lt,.ad-rt
 ||17173im.alllget.com/main/s$S@"t": ?"\d{1,2}"@"t":"0"@
-||17173im.alllget.com/main/s$S@"u": ?"\/\/.+\.mp4",@"u":"/block_res/null.mp4",@
+||17173im.alllget.com/main/s$S@"u": ?"\/\/.+\.(mp4|swf)",@"u":"/block_res/null.mp4",@
+||17173im.alllget.com/main/s$S@"j": ?"[^"]+?",@"j":"about:blank",@
 !======[v.17173.com]---↑
 
 !======[www.1905.com]---↓
