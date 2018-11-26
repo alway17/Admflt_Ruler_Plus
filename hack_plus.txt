@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-26
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-27
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -668,7 +668,7 @@ news.xinhuanet.com#@#.domPC
 !======[block]---↑
 
 !======[ABP css]---↓
-.163.com##[class^="ad-"],[class*="_ad"],[class*="ad_"]:not([class*="head"]),[class*="-ad-"],div[adtype],[onclick^="fcBox"],.post_content_endad
+.163.com##[class^="ad-"],[class*="_ad"],[class*="ad_"]:not([class*="head"]),[class*="-ad-"],div[adtype],[onclick^="fcBox"],.post_content_endad,.ga
 .cr173.com##.m-black-bg,#full_downad
 .csdn.net##.advert,.mediav_ad,[data-mod][style*="height"],[class*="ad-box"],[id*="dmp_ad_"],.pulllog-box,#adContent
 .faloo.com##[class^="ad_"]
@@ -1032,6 +1032,7 @@ media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/blo
 |https://*/tmp.gif?*&*&
 |https://*/v.gif?*&
 |https://*/wb.gif?*&*&
+||.baidu.com/^.gif?*&
 ||.tanx.com/*?*&*&
 ||/index/q.php?cid=
 ||/logger.js?
