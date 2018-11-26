@@ -81,6 +81,7 @@ S:suning.com
 S:unipay.qq.com
 S:upyun.com
 S:www.aliyun.com
+S:www.sonkwo.com
 S:ynuf.aliapp.org
 S:yunaq.com
 bbs.zol.com.cn#@##bookContent
@@ -724,7 +725,7 @@ eastday.com##.ad-r,#zwad_360ad,[adshow],iframe[id^="ad"],.bigDA,.smallDA,[id*="_
 eastmoney.com##.lyad,.popswipe
 edushi.com###unLogin
 eeo.com.cn##.xd-gg
-fang.com##.shade,.tc_app,.adBox,[class*="floatlayer"]
+fang.com##.shade,.tc_app,.adBox,[class*="floatlayer"],#mark_mask,[id^="PopUp"]
 fanjian.net##.banner,.gd
 finance.sina.com.cn###SFA_NV_POP,[class*="f_app_"],#ny-link-r,[data-sudaclick^="ad_"]
 freehao123.com##a[target] img[width="200"][height="200"],a[target] img[width="250"][height="250"],#right>.box,#right>.boxad
@@ -1157,7 +1158,8 @@ tieba.baidu.com,zhidao.baidu.com,wenku.baidu.com##[class*="EC_"],[class*="union"
 zhidao.baidu.com###cms-scroll,#wgt-promotions,.question-number-text-chain,.ec-ad
 wenku.baidu.com##.banner-wrap,[href*="adfree"],.lastcell-dialog,[class*="adWrap"],.search-result>[id],[class*="vip-close"],.yuedu-recommend-wrap iframe
 ||wkstatic.bdimg.com/static/wkview/pkg/viewcommon2$S@(/ad|/crm)@/noad@
-||baidu.com/link?url=$S@^.*?<noscript>@@s
+!||baidu.com/link?url=$S@^.*?<noscript>@@s
+@@||baidu.com/link?url=*$pass
 baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="display:block"][style*="visibility:visible"],#content_left > div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right [class*="-show-ad-tip"],#content_right>*:not(table),#content_left [id$="canvas"]
 ||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right>*:not(table),#content_left [id$="canvas"]','display:none!important')</script>@
 !======[Baidu&&Cpro]---↑
