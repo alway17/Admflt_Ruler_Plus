@@ -63,6 +63,7 @@ S:1688.com
 S:account.aliyun.com
 S:api.geetest.com
 S:api.weibo.com
+S:auth.sonkwo.com
 S:cf.aliyun.com
 S:cloud.tencent.com
 S:cloudflare.com
@@ -1005,6 +1006,7 @@ media/adv_new_tmp/*.m3u8$f@302:s@^http://.*$@http://ssl.admflt.com/doc/block/blo
 ||www.jz5u.com/js/t*.js$S@^.*@@s
 ||www.laozuo.org/wp-content/themes/*.js$S@^( )*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
 ||www.pc0359.cn/style/js/main.js$S@^[ \t]*?document.write.+?(a.*?href.*?(target)?|iframe|script).+?\);?@@img
+||www.zdfans.com/js/page.js$s@rm=="2"@rm=="9"@
 ||www.zhicheng.com/statics/v2/js/global.js$S@$@function tyLoader(){return!0}@s
 ||yande.re$s@hide-advanced-editing@@
 !======[replace]---↑
