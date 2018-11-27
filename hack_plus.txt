@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-27
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-28
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -367,6 +367,7 @@ news.xinhuanet.com#@#.domPC
 ||2345.com/duoteimg/dtnew_recom_img/duoteself/$script
 ||42xz.com/
 ||51240.com/g/*.js
+||51cto.com/edu/blog/mobile/js/lib/box.js
 ||52pk.com/*/webThunderDetect.js
 ||52pk.com/*/yingsu.js
 ||71.am/*AdManager
@@ -491,10 +492,13 @@ news.xinhuanet.com#@#.domPC
 ||ifengimg.com/*/yingguang
 ||ifengimg.com/autoflash/$script
 ||ifengimg.com/iis/iis_v*.js
+||images.sohu.com/bill/
 ||images.sohu.com/cs/jsfile/js/c.js
 ||img*.126.net/ntesrich/*ad*$script
 ||img-ads.csdn.net
 ||img.aolusb.com/forever/$script
+||imp.ad-plus.cn
+||imp.go.sohu.com
 ||insightexpressai.com
 ||int.dpool.sina.com.cn/iplookup/iplookup.php
 ||inte.sogou.com/ask?id=*cxid=
@@ -556,6 +560,7 @@ news.xinhuanet.com#@#.domPC
 ||res.cngoldres.com/libs/jtams/*/jtams.js
 ||res.suning.cn/*ssa*.js
 ||s.faloo.com/ou/$script
+||s.go.sohu.com/adgtr/
 ||s.pcapps.qq.com
 ||s.union.360.cn
 ||sax.sina.cn
@@ -701,6 +706,7 @@ bbs.csdn.net##.post_recommend
 bbs.hupu.com##[class*="hp-ad"]
 bbs.mydigit.cn##.txtMes,[channelid="smzdm"],[channelid="shumatao"],.radi
 bbs.pcbeta.com##.asdad+div
+blog.51cto.com##[id*="topbanner"][style]
 brtn.cn,btime.com##[adview-id],[id^="adview"],[id^="cpm-"]
 bt-film.co*##[id^="ad"]
 china.com.cn##iframe[src*="china.com.cn"][src*="ads/"]
@@ -783,7 +789,7 @@ sh.qihoo.com###extra_totop
 sina.cn##[id*="Ads"],[sax-type="proxy"]
 sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner,.tab_related_app_imglink,[data-info*="ad_none"],.blk-zcapp,[ds-all="suda-all"]
 so.com###rt-gallery,[id^="js-businiess"],#bottom_ask
-sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id]
+sohu.com##[data-role="god_column"],[data-role="god"],[data-role="godR"],#god_bottom_banner,[data-god-id],[id*="beans_"],sohuadcode
 sports.eastday.com##a.da[update],.dalink,.drain_app
 sports.qq.com##[data-matchtype]
 sports.qq.com##[data-module="advertisement"],[class^="ad-"],.adrthide,[pluginspage*="admaster"]
@@ -1332,6 +1338,7 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 @@||bootstrap.min.css$pass
 @@||cdn.120askimages.com/ask/css/topfloat.css$pass
 @@||changyan.*/v*src/start.min.js$pass
+@@||csdnimg.cn/public/common/toolbar/*.css$pass
 @@||css.ykimg.com/youku/dist/css/find/revision/g_*.css$pass
 @@||dl.3dmgame.com/templets/xiazai/css/style.css$pass
 @@||down.51cto.com/css/newcss/module.css$pass
