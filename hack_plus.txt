@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-28
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-29
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -1178,7 +1178,7 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 hao.360.cn###large2small,#doc-bd-behind,.feed-item.feed-mv,#activity
 www.2345.com,www.9991.com###right>.event1
 www.duba.com##[ad],.box_shopping,.big_mediav,.newslist>[style*="overflow"],.top_func_ad
-www.hao123.com##.treasure-game,.siye,[monkey="shopping"]
+www.hao123.com##.treasure-game,.siye,[monkey="shopping"],[monkey*="topbannerad"]
 www.so.com/s?##[id*="e_idea_pp"],#so_kw-ad
 www.sogou.com###PZL,#PZR
 www.youdao.com##.win-download
@@ -1222,8 +1222,8 @@ player.youku.com##.outsitepanel
 ||ott.cibntv.net/youku/*.mp4*&ctype=$m@res:block/null.mp4
 |http://lvip.youku.com/*api/player/adText
 !---> h5-1080p
-||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@r+=" disable"@r+=""@
-||g.alicdn.com/player/ykplayer/*/youku-player.min.js$s@<span class="vip-label">@<span style="display:none">@
+||g.alicdn.com/player/*/youku-player.min.js$s@r+=" disable"@r+=""@
+||g.alicdn.com/player/*/youku-player.min.js$s@<span class="vip-label">@<span style="display:none">@
 !---> flash-1080p
 ||ups.youku.com/ups/get.json$s@"hd3":false@"hd3":true@
 !---> block laifeng
