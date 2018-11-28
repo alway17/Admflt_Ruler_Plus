@@ -1173,17 +1173,16 @@ baidu.com###content_left > [data-click*="rsv_srcid"],#content_left > [style*="di
 ||baidu.com$s@</title>@</title><script>inHackcss.S('#content_left>[data-click*="rsv_srcid"],#content_left>[style*="display:block"][style*="visibility:visible"],#content_left>div[style][data-pos],#content_right a[href*="baidu.com/other.php"],#content_right>*:not(table),#content_left [id$="canvas"]','display:none!important')</script>@
 !======[Baidu&&Cpro]---↑
 
-!======[导航轻度去广-导航就是集广告的地方,so轻度屏蔽几个浮动之类的]---↓
+!======[Search Engine & Navigation]---↓
+123.sogou.com,hao.qq.com##[id^="AD"],.hd-slider
+hao.360.cn###large2small,#doc-bd-behind,.feed-item.feed-mv,#activity
+www.2345.com,www.9991.com###right>.event1
+www.duba.com##[ad],.box_shopping,.big_mediav,.newslist>[style*="overflow"],.top_func_ad
 www.hao123.com##.treasure-game,.siye,[monkey="shopping"]
-hao.360.cn###large2small,#doc-bd-behind,.feed-item.feed-mv
-www.duba.com##[ad],.box_shopping,.big_mediav,.newslist>[style*="overflow"]
-!======[导航轻度去广]---↑
-
-!======[Search Engine]---↓
-www.youdao.com##.win-download
-www.sogou.com###PZL,#PZR
 www.so.com/s?##[id*="e_idea_pp"],#so_kw-ad
-!======[Search Engine]---↑
+www.sogou.com###PZL,#PZR
+www.youdao.com##.win-download
+!======[Search Engine & Navigation]---↑
 
 !======[www.le.com]---↓
 ||letv.com/*ark=$s@<Ad@<noAd@
@@ -1361,11 +1360,11 @@ v.17173.com##.side-ad,.ad-lt,.ad-rt
 @@||static.zongheng.com/*/style/basic.css$pass
 @@||wp-content/cache/minify/*.css$pass
 @@||www.chinacqsb.com/webhtml/css/*.css$pass
-@@||www.css-js.com/*.css
-@@||www.css-js.com/*/compressor.css$pass
+@@||www.css-js.com/*.css$pass
 @@||www.meijutt.com/*meijutt.css$pass
 @@||www.mop.com/css/login.css$pass
 @@||yjsstatic.baidu.com/pkg/app/page/console/*.css$pass
+@@||/editor*.css$pass
 www.gaoqingkong.com#@##ad.search_site
 www.veryhuo.com#@#.down_ads.pad
 read*.qidian.com#@##readHeader
@@ -1383,8 +1382,8 @@ www.baofeng.com#@##js_ads_panel
 ||block_res/null.mp4$m@res:block/null.mp4
 ||block_res/block.m3u8$m@res:block/block.m3u8
 ||/doc/fuckcss.js
-|http://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=http://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
-|https://$S@((?<!<!-- )(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=https://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
+|http://$S@((?<!<!--)(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=http://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
+|https://$S@((?<!<!--)(?=<html.*?>)[\W\S]*?<head.*?>|<meta[^>]+?name[^>]+?>|<meta[^>]+?charset[^>]+?>)([\s]{1,2}|)@${1}${2}<script src=/fuckcss/fcss_w.js></script><script charset=UTF-8 src=https://ssl.admflt.com/doc/fcss.min.js></script><script async src=/fuckcss/test_ins.js></script>${2}@im
 ||*/*.css|$S@z-index(:| )*(9){4,5}\d@${1};display:none!important;max-width:0!important;max-height:0;overflow:hidden;visibility:hidden!important;hackcss:@
 !------[全局处理浮动窗+隐藏类规则屏蔽增强end]
 
