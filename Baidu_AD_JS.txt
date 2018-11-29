@@ -1,3 +1,4 @@
+!Baidu unionJS block ruler [ emCupid ]
 !Last modified: 2018-11-30
 
 ||hbfjhs.js
