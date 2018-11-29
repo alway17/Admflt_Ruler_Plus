@@ -38,6 +38,7 @@ S:x-boy.cn
 @@||99ddd.com/*.rar
 @@||99ddd.com/*.torrent
 @@||99ddd.com/*.zip
+@@||adm-res.x-boy.cn$pass
 @@||battlenet.com.cn/account/$pass
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/*.js$domain=image.baidu.com
 @@||cache/editor.js$pass
@@ -61,6 +62,7 @@ S:x-boy.cn
 @@||www.x-boy.cn$pass
 S:1688.com
 S:account.aliyun.com
+S:adm-res.x-boy.cn
 S:api.geetest.com
 S:api.weibo.com
 S:auth.sonkwo.com
@@ -1258,6 +1260,10 @@ www.iqiyi.com/*.html##.rightPCAdv,.pca-img
 ||cupid.iqiyi.com/show2?e=*$S@("\w*?":")\d+?",@${1}0",@
 ||cupid.iqiyi.com/show2?e=*$S@"[^"]+?\.(jpg|png)"@""@
 ||cupid.iqiyi.com/show2?a=qc_$domain=~live.iqiyi.com
+!||ssports.iqiyi.com/app/front.json$S@"time":\d{1,2}@"time":0@
+!||ssports.com/advertisement-file/*.mp4$m@res:block/null.mp4
+||ssports.iqiyi.com/app/front.json
+ssports.com##[class*="ad"]:not([class*="head"]),.ssports-member
 ||qiyu.iqiyi.com/p13n20?
 ||static.iqiyi.com/js/player_v1/pcweb.wonder.js$s@QiyiPlayerConfig.FLASH_PLAYER_ZURL@"http://player.video.iqiyi.com/0/0/"@
 ||stc.iqiyipic.com/gaze/uniqy/main/js/vendor*.js$S@(setAttribute\("src",(.*?)\)),@${1},window._qyv_info=window._qyv_info||[],(${2}).match(/(dataid|video\/)/)&&window._qyv_info.push((${2})),@
