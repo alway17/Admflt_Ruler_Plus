@@ -68,6 +68,7 @@ S:cf.aliyun.com
 S:cloud.tencent.com
 S:cloudflare.com
 S:cloudxns.net
+S:coding.net
 S:dnspod.cn
 S:dnspod.com
 S:exmail.qq.com
