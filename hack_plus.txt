@@ -453,6 +453,7 @@ news.xinhuanet.com#@#.domPC
 ||dingding*.com
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
 ||divcss5.com/ibeifeng/
+||dl.pconline.com.cn/download/
 ||doubleclick.ctfile.com/
 ||down.admin5.com/z/$script
 ||dragonstatic.com
@@ -661,6 +662,7 @@ news.xinhuanet.com#@#.domPC
 ||www1.elecfans.com
 ||x-ssp.com
 ||xdssp.mediav.com
+||xiazai.zol.com.cn/detail/
 ||xikdn.com
 ||xinhuanet.com/js/xadn$script
 ||xmfish.com/bshw/
@@ -789,6 +791,7 @@ qlwb.com.cn##.full-banner
 redocn.com##[id$="_gg"]
 segmentfault.com##.side>div[class]
 sh.qihoo.com###extra_totop
+share.weiyun.com##.mod-guide-bar.vip
 sina.cn##[id*="Ads"],[sax-type="proxy"]
 sina.com.cn##[class*="-ad"],[class*="ad_"],.top-banner,.tab_related_app_imglink,[data-info*="ad_none"],.blk-zcapp,[ds-all="suda-all"]
 so.com###rt-gallery,[id^="js-businiess"],#bottom_ask
