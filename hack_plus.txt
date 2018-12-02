@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-11-30
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-02
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -70,7 +70,9 @@ S:cf.aliyun.com
 S:cloud.tencent.com
 S:cloudflare.com
 S:cloudxns.net
+S:codehub.cn
 S:coding.net
+S:dev.tencent.com
 S:dnspod.cn
 S:dnspod.com
 S:exmail.qq.com
@@ -685,7 +687,7 @@ news.xinhuanet.com#@#.domPC
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"],[class*="FNewRAvtLisBox"],#wx,.h_top_box,.slide_popo_modal
 .ithome.com###con>div:not([id]):not([class]),.AdblockBanner
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float,.ggshow,[class*="-Ad"]
-126.com,yeah.net,mail.163.com##.gWel-bottom,li[role="complementary"],div[id$="FooterDiv"],div[id$="AdDiv"],[id*="-ad-"],#mainCnt,[id*="_popup_"],.nui-block-hasClose,#loginExt
+126.com,yeah.net,mail.163.com##.gWel-bottom,li[role="complementary"],#mainCnt #theme,div[id$="FooterDiv"],div[id$="AdDiv"],[id*="-ad-"],[id*="_popup_"],.nui-block-hasClose,#loginExt
 17173.com##[class*="Ad17173"],[id^="adLink"],[class*="ad17173"]:not(.game-hot)
 178.com##[class*="global-ad"]
 21ic.com##.topbanner,.bigbanner,[class^="banner"],[class^="ad_"],[class*="_ad"],iframe[src*="/s?m"],[id$="Ad"]
@@ -777,7 +779,6 @@ outlook.live##._n_h
 pan.baidu.com##.ad-platform-tips
 pcauto.com.cn##[class*="ivy"],[id^="ad"],.btn-zfb
 pconline.com.cn##iframe[id^="ad"],a[id^="ad"],[class^="ivy"],[class*="JCZ-"],[class*="jcz-"],#Jappinfo,.PCdlWrap,.navi-bottom,.softjs3,#JrightSideFocus
-people.com.cn##.text_con_right a>img[src*="/NMediaFile/"]
 player.s1905.com##div[id][style*="block;"]
 q.z.vip.totv.72du.com##.secs strong
 qiannao.com##a[href*="from=qiao"]
@@ -910,6 +911,7 @@ zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"],
 !======[ABP css]---↑
 
 !======[Admflt ABPex css]---↓
+126.com,yeah.net,mail.163.com##%#mainCnt{background:none!important}
 4399.com##%body{background-image:none!important}
 51cto.com##%.top_bg{height:85px!important}
 bbs.pcbeta.com##%style[type="text/css"]+div{height:auto!important}
