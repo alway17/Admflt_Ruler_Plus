@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-02
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-03
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -816,6 +816,8 @@ user.qzone.qq.com##li.f-single-biz,#top_tips_container,[id*="_ad_"],[class*="_ad
 uuu9.com###uuu9_tips,#top,.top2box
 v.douyu.com##.video-info-download
 v.renrenfabu.com##.hongbao_hd
+v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units,.cell[align]
+v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 vipsite.info###yhq,.sj-nav-down-search,[style*="text-align:center"]
 webkaka.com##a[href*="/click/"],#div_top,#dedenews,span[class*="Ad"],p[class*="Ad"]
 weibo.com##div[ad-data],[feedtype="ad"],a[href*="adid="],[suda-data="key=tblog_weibologin3&value=picture"],.wbv-ad
@@ -879,8 +881,6 @@ www.tadu.com##a[target="_blank"][style*="display:block"],.bannerAll
 www.takefoto.cn##.news-ad,.advert
 www.ttyyy.cc##.video-ad,#tlad,a[style*="#FFFF00"],[class^="ui-sponsor"]
 www.utubon.com##div[class*="text"][id^="text"]
-www.v2ex.com##.inner[align="center"],.inner[align="center"]+.sidebar_compliance,.sidebar_units,.cell[align]
-www.v2ex.com/t/##.inner>a:not([class]):not([id]):not([href^="/"]),.inner>span[class],.inner>strong.green
 www.webqianduan.cn##.adW
 www.wmzhe.com##.downgs
 www.wpdaxue.com##a[href*="/go/"][rel="nofollow"],.text-html-box a[href*="/go/"],.sbad,.f32tr-below_header,.kill-adblock-container,aside#sidebar .wdp-appear,[title*="WordPress快站"]
@@ -1203,7 +1203,7 @@ www.youdao.com##.win-download
 !======[www.le.com]---↑
 
 !======[v.qq.com]---↓
-v.qq.com##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad,a[href*="mall.jd.com"],.jimu-module a[target]:not([href*="qq.com"])
+v.qq.com##.tvip_layer,.mask_layer,.mod_ad,.player_bg_ad,a[href*="mall.jd.com"],.jimu-module a[target]:not([href*="qq.com"]),body>div[style*="pointer-events: none"][style*="transition"]
 ||variety.tc.qq.com
 !||vlive.qqvideo.tc.qq.com
 ||bla.gtimg.com/qqlive/*.mp4
@@ -1249,7 +1249,7 @@ tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 !======[tv.sohu.com]---↑
 
 !======[www.youtube.com]---↓
-youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthead-ad,#player-ads
+youtube.com##.video-ads,#player-ads,ytd-compact-promoted-video-renderer,#masthead-ad,#player-ads,ytd-search-pyv-renderer
 ||www.googleadservices.com
 ||youtube.com/get_video_info*ad_id=*
 ||youtube.com/api/stats/ads*
