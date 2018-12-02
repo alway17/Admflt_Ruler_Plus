@@ -687,7 +687,7 @@ news.xinhuanet.com#@#.domPC
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"],[class*="FNewRAvtLisBox"],#wx,.h_top_box,.slide_popo_modal
 .ithome.com###con>div:not([id]):not([class]),.AdblockBanner
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float,.ggshow,[class*="-Ad"]
-126.com,yeah.net,mail.163.com##.gWel-bottom,li[role="complementary"],#mainCnt #theme,div[id$="FooterDiv"],div[id$="AdDiv"],[id*="-ad-"],[id*="_popup_"],.nui-block-hasClose,#loginExt
+126.com,yeah.net,mail.163.com##.gWel-bottom,li[role="complementary"],.main-inner-wrap>*:not(#loginBlock),div[id$="FooterDiv"],div[id$="AdDiv"],[id*="-ad-"],[id*="_popup_"],.nui-block-hasClose,#loginExt
 17173.com##[class*="Ad17173"],[id^="adLink"],[class*="ad17173"]:not(.game-hot)
 178.com##[class*="global-ad"]
 21ic.com##.topbanner,.bigbanner,[class^="banner"],[class^="ad_"],[class*="_ad"],iframe[src*="/s?m"],[id$="Ad"]
