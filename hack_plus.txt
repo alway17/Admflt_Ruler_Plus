@@ -1,9 +1,9 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-03
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-04
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
-@@||/hack_plus.txt
 @@||/hack_plus.txt$pass
+@@||UA-130416852-1
 S:x-boy.cn
 !======[wlist for self]---↑
 
@@ -66,6 +66,7 @@ S:adm-res.x-boy.cn
 S:api.geetest.com
 S:api.weibo.com
 S:auth.sonkwo.com
+S:bitwarden.com
 S:cf.aliyun.com
 S:cloud.tencent.com
 S:cloudflare.com
