@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-05
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-06
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -128,6 +128,7 @@ news.xinhuanet.com#@#.domPC
 |http://*/?sspid=
 |http://*/Ad.swf
 |http://*/PC_ad$script
+|http://*/^.html?^=*&adid=
 |http://*/^.php?^=
 |http://*/^.php?id=*
 |http://*/^.php?uid=*
@@ -266,6 +267,7 @@ news.xinhuanet.com#@#.domPC
 |http://yyygwz.com/$image
 |https://*/*@*!$script
 |https://*/960X^0.js
+|https://*/^.html?^=*&adid=
 |https://*/^.php?^=
 |https://*/^.php?id=*
 |https://*/^.php?s=*
