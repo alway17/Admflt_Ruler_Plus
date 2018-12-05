@@ -371,6 +371,7 @@ news.xinhuanet.com#@#.domPC
 ||17173cdn.com/*/ad17173*.js
 ||17173cdn.com/*/vda/$script
 ||2345.com/duoteimg/dtnew_recom_img/duoteself/$script
+||3^^x2^0.gif|
 ||42xz.com/
 ||51240.com/g/*.js
 ||51cto.com/edu/blog/mobile/js/lib/box.js
@@ -683,7 +684,7 @@ news.xinhuanet.com#@#.domPC
 !======[ABP css]---↓
 .163.com##[class^="ad-"],[class*="_ad"],[class*="ad_"]:not([class*="head"]),[class*="-ad-"],div[adtype],[onclick^="fcBox"],.post_content_endad,.ga
 .cr173.com##.m-black-bg,#full_downad
-.csdn.net##.advert,.mediav_ad,[data-mod][style*="height"],[class*="ad-box"],[id*="dmp_ad_"],.pulllog-box,#adContent
+.csdn.net##.advert,.mediav_ad,[data-mod][style*="height"],[class*="ad-box"],[id*="dmp_ad_"],.pulllog-box,#adContent,#ad-div
 .faloo.com##[class^="ad_"]
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"],[class*="FNewRAvtLisBox"],#wx,.h_top_box,.slide_popo_modal
 .ithome.com###con>div:not([id]):not([class]),.AdblockBanner
@@ -917,7 +918,6 @@ zol.com.cn##[class*="ad-box"],iframe[src*="/ad/"],.zmall-ad-1000,[class$="_ad"],
 4399.com##%body{background-image:none!important}
 51cto.com##%.top_bg{height:85px!important}
 bbs.pcbeta.com##%style[type="text/css"]+div{height:auto!important}
-csdn.net##%ol.hljs-ln{width:100%!important}
 enjoy.eastday.com##%#contentMain{height:1575px!important}
 gaoqing.la##%body{background-image:url()!important}
 hanhande.com##%body>.warp{background:none!important}
