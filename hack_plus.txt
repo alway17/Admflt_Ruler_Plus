@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-04
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-05
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -714,6 +714,7 @@ bbs.csdn.net##.post_recommend
 bbs.hupu.com##[class*="hp-ad"]
 bbs.mydigit.cn##.txtMes,[channelid="smzdm"],[channelid="shumatao"],.radi
 bbs.pcbeta.com##.asdad+div
+bbs.zol.com.cn##.tmall-activies,.fixed-login-bar,.tmall
 blog.51cto.com##[id*="topbanner"][style]
 brtn.cn,btime.com##[adview-id],[id^="adview"],[id^="cpm-"]
 bt-film.co*##[id^="ad"]
