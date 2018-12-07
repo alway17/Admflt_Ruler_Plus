@@ -1,4 +1,4 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-06
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-08
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
@@ -691,10 +691,10 @@ news.xinhuanet.com#@#.domPC
 .ifeng.com##div[class^="adv"],.l_ifeng_com,[class^="vAd"],[class^="newAd"],[class^="ad"],[class*="FNewRAvtLisBox"],#wx,.h_top_box,.slide_popo_modal
 .ithome.com###con>div:not([id]):not([class]),.AdblockBanner
 .qq.com##[class*="topAD"],[class*="ad-box"],[adconfig_lview],body>div[style*="width:1000px"],[class*="adzxbtl"],.l_qq_com,.yw-gg-float,.ggshow,[class*="-Ad"]
-126.com,yeah.net,mail.163.com##.gWel-bottom,li[role="complementary"],.main-inner-wrap>*:not(#loginBlock),div[id$="FooterDiv"],div[id$="AdDiv"],[id*="-ad-"],[id*="_popup_"],.nui-block-hasClose,#loginExt
+126.com,yeah.net,mail.163.com##.gWel-bottom,li[role="complementary"],.main-inner-wrap>*:not(#loginBlock),div[id$="FooterDiv"],div[id$="AdDiv"],[id*="-ad-"],[id*="_popup_"],.nui-block-hasClose,#loginExt,[id$="Ad"]
 17173.com##[class*="Ad17173"],[id^="adLink"],[class*="ad17173"]:not(.game-hot)
 178.com##[class*="global-ad"]
-21ic.com##.topbanner,.bigbanner,[class^="banner"],[class^="ad_"],[class*="_ad"],iframe[src*="/s?m"],[id$="Ad"]
+21ic.com##.topbanner,.bigbanner,[class^="banner"],[class^="ad_"],[class*="_ad"],iframe[src*="/s?m"],[id$="Ad"],.nui-closeable
 360kan.com##[class*="-ad"]:not([class*="-add"]),a[href*="/?"]>div,body>div[style*="background"]
 3g.163.com##[id^="ssp-"]
 4399.com###addiv,#defaultbglink,.a-d
@@ -924,6 +924,7 @@ enjoy.eastday.com##%#contentMain{height:1575px!important}
 gaoqing.la##%body{background-image:url()!important}
 hanhande.com##%body>.warp{background:none!important}
 item.btime.com##%.header.header-item{padding-bottom:30px}
+s.weibo.com##&.card-wrap:has(iframe)
 www.aihami.com##%.conText>.recommend{margin-top:4em}
 www.chinaz.com##%#imgbd{background:none!important}.CCtop{margin-top:10px!important}
 www.dysfz.vip##&li:contains(\u7ea2\u5305),li:contains(\u4f18\u60e0\u5238)
@@ -1243,7 +1244,6 @@ player.youku.com##.outsitepanel
 !======[v.youku.com]---↑
 
 !======[tv.sohu.com]---↓
-tv.sohu.com##%#crumbsBar{margin-top:50px}
 tv.sohu.com/upload/swf/*/Main.swf$m@res:sohu_live.swf
 !||js.tv.itc.cn/gg.seed.js
 ||data.vod.itc.cn/*prod=ad*
