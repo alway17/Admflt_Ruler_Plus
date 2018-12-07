@@ -11,13 +11,12 @@
 
 ## hack_plus.txt
 * 此规则由本人自用规则（ADM）而来，开放给有兴趣同学，其他程序可能会不兼容
-* 不介意其他程序可以稍改语法拿去使用，共同学习，请告知或注明来源
+* 不介意其他程序可以稍改语法拿去使用，共同学习，【请告知并注明来源】
 * 类似以前的骚规则，只不过从阿呆喵退休后基本自用，更新看时间和心情
 
 ## Baidu_AD_JS.txt
 * 屏蔽百度推广JS，由于可以自定义域名，而JS的文件也随机，普通方式抓规则量太大，用了特殊手段抓插入的JS，达到屏蔽作用。
 * 如有其他更好的方法请告知。
-* 2018-07-31 此项为可选订阅，已用其他方法达到屏蔽作用。
 
 ## fcss.min.js
 * 全局元素广告屏蔽、功能性脚本，无需下载或订阅，规则自动调用。
@@ -25,12 +24,13 @@
 * 支持IE10+，但并未对其进行大量测试，请用现代浏览器。
 
 ## 其他
-GitHub和码云同步，coding备份
-* https://github.com/emCupid/Admflt_Ruler_Plus
-* https://gitee.com/emCupid/Admflt_Ruler_Plus
-* https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git
+> https://github.com/emCupid/Admflt_Ruler_Plus
+>
+> https://gitee.com/emCupid/Admflt_Ruler_Plus
+> 
+> https://coding.net/u/emCupid/p/Admflt_Ruler_Plus/git
   
->主页：http://www.x-boy.cn/2018_1.html
+>主页：https://xadm.x-boy.cn
 >
 >微博：https://weibo.com/emcupid
 
@@ -38,4 +38,4 @@ GitHub和码云同步，coding备份
 > 
 > 捐助开销：域名、又拍云、啃鸡腿
 
-![donate_code](https://wx4.sinaimg.cn/large/6fd368d6ly1fxrbc4nt5sj20p30aignu.jpg)
+![donate_code](https://i.loli.net/2018/12/05/5c07c19a25dee.png)
