@@ -1,9 +1,10 @@
-!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-08
+!-----| ADM不特别规则[ emCupid ] Last modified: 2018-12-09
 !-----| 反馈：http://www.x-boy.cn/2018_1.html   QQ群：650740600
 !======[wlist for self]---↓
 @@|http://*.x-boy.cn/$pass
 @@||/hack_plus.txt$pass
-@@||UA-130416852-1
+@@||UA-130416852-1$pass
+@@||frame-vip.min.html$pass
 S:x-boy.cn
 !======[wlist for self]---↑
 
@@ -73,6 +74,7 @@ S:cloudflare.com
 S:cloudxns.net
 S:codehub.cn
 S:coding.net
+S:console.bce.baidu.com
 S:dev.tencent.com
 S:dnspod.cn
 S:dnspod.com
@@ -1106,8 +1108,6 @@ www.99re16.com,www.99tt.co##.main>a[target]>img,#index_tan,.leftadv,.rightadv,[i
 www.viidii.info,88files______net/download,rmdown.com##a[target] img,#foo1ter
 t66y.com##br+b,b+br,img[data-src$=".gif"],img[data-src$=".GIF"],.tpc_content>img+br,.tpc_content>a+br+br,.tpc_content>a+br+br+br,.tpc_content>span+br,a[href*="www.viidii.info/?http"]:not([href*="download"]):not([href*="/link"]):not([href*="/fs/"])
 ||t66y.com/*.html$s@<br><br>@<br>@
-88files.net/download#@#body.ad-box
-javccup.net#@#body.ad-box
 www.javbus*##[class*="ad-"],table:not([id]),a[rel="nofollow"]:not([href*="magnet:"]),iframe
 91porn.com##iframe[src*="/fans/"],.vast-blocker
 |http:/*/fans/ad.php|
